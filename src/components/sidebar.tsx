@@ -19,7 +19,7 @@ function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
       <Link
         href={item.href}
         className={`
-          group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
+          group flex items-center gap-3 px-4 pl-6 py-1.5 text-sm transition-all duration-150
           ${
             active
               ? "text-[#C11F2A] border-l-[3px] border-[#C11F2A] bg-[#C11F2A]/[0.06] font-semibold"
@@ -40,7 +40,7 @@ function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
       <Link
         href={item.href}
         className={`
-          group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
+          group flex items-center gap-3 pr-4 pl-6 py-1.5 text-sm transition-all duration-150
           ${
             active
               ? "text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold"
@@ -51,7 +51,7 @@ function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
         <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">
           $
         </span>
-        <span className="truncate">{item.label}</span>
+        <span className="truncate text-xs">{item.label}</span>
         {active && <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />}
       </Link>
     </li>
@@ -126,18 +126,17 @@ export function Sidebar({
           <div className="mb-2">
             <button
               onClick={() => setReportsOpen(!reportsOpen)}
-              className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
+              className="flex w-full items-center gap-1 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
             >
+              Report
               <ChevronRight
                 className={`h-3 w-3 transition-transform duration-200 ${reportsOpen ? "rotate-90" : ""}`}
                 strokeWidth={2.5}
               />
-              <BarChart3 className="h-3.5 w-3.5" strokeWidth={2} />
-              Report
             </button>
 
             {reportsOpen && (
-              <ul className="mt-1">
+              <ul>
                 {reportItems.map((item) => (
                   <NavFileItem
                     key={item.href}
@@ -154,23 +153,20 @@ export function Sidebar({
             )}
           </div>
 
-          <div className="mx-5 my-3 border-t-2 border-[#D1CCC0]" />
-
           <div>
             <button
               onClick={() => setDeepOpen(!deepOpen)}
-              className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
+              className="flex w-full items-center gap-1 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
             >
+              Deep Research
               <ChevronRight
                 className={`h-3 w-3 transition-transform duration-200 ${deepOpen ? "rotate-90" : ""}`}
                 strokeWidth={2.5}
               />
-              <Search className="h-3.5 w-3.5" strokeWidth={2} />
-              Deep Research
             </button>
 
             {deepOpen && (
-              <ul className="mt-1">
+              <ul>
                 {deepResearchItems.map((item) => (
                   <NavTickerItem
                     key={item.href}

@@ -1,6 +1,6 @@
 {
   "name": "Supri Spinach — Daily Stock Report",
-  "short_name": "Mr. Supri",
+  "short_name": "Supri Spinach",
   "description": "AI-generated daily stock analysis for 31 watchlist stocks",
   "start_url": "/",
   "scope": "/",

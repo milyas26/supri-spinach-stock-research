@@ -143,15 +143,19 @@ body::before {
   font-weight: 700;
 }
 
-.md-content table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0 1.5rem;
-  font-size: 0.68rem;
-  border: 2px solid var(--color-border-strong);
-  display: block;
+.md-content .md-table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 1rem 0 1.5rem;
+}
+
+.md-content table {
+  width: 100%;
+  min-width: max-content;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.68rem;
+  border: 2px solid var(--color-border-strong);
 }
 
 .md-content thead {
@@ -293,8 +297,6 @@ body::before {
   }
   .md-content table {
     font-size: 0.8rem;
-    display: table;
-    overflow-x: visible;
   }
   .md-content th {
     padding: 0.6rem 0.85rem;

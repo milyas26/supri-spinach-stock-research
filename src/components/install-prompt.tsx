@@ -63,7 +63,7 @@ export function InstallPrompt() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/icon-192.png" alt="icon" className="h-9 w-9 rounded-lg flex-shrink-0" />
           <div className="min-w-0">
-            <p className="text-xs font-semibold text-white leading-tight">Install Mr. Supri</p>
+            <p className="text-xs font-semibold text-white leading-tight">Install Supri Spinach</p>
             <p className="text-xs text-zinc-400 leading-tight">Add to home screen</p>
           </div>
         </div>
@@ -95,7 +95,7 @@ export function InstallPrompt() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/icon-192.png" alt="icon" className="h-9 w-9 rounded-lg flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-xs font-semibold text-white leading-tight mb-1">Install Mr. Supri</p>
+              <p className="text-xs font-semibold text-white leading-tight mb-1">Install Supri Spinach</p>
               <p className="text-xs text-zinc-400 leading-snug">
                 Tap{' '}
                 <span className="inline-block text-white font-bold">⎙</span>

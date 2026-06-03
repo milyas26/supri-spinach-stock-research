@@ -11,9 +11,13 @@ function fixExternalLinks(html: string): string {
   return html.replace(/<a /g, '<a target="_blank" rel="noopener noreferrer" ');
 }
 
+function wrapTables(html: string): string {
+  return html.replace(/<table/g, '<div class="md-table-wrapper"><table').replace(/<\/table>/g, '</table></div>');
+}
+
 export async function MarkdownRenderer({ content }: { content: string }) {
   const rawHtml = await renderMarkdown(content);
-  const html = fixExternalLinks(colorizeStatusSymbols(rawHtml));
+  const html = wrapTables(fixExternalLinks(colorizeStatusSymbols(rawHtml)));
 
   return (
     <article

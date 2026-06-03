@@ -20,15 +20,15 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Mr. Supri',
+    title: 'Supri Spinach',
     startupImage: '/icon-512.png',
   },
   other: {
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-    'apple-mobile-web-app-title': 'Mr. Supri',
-    'application-name': 'Mr. Supri',
+    'apple-mobile-web-app-title': 'Supri Spinach',
+    'application-name': 'Supri Spinach',
     'msapplication-TileColor': '#16a34a',
     'msapplication-TileImage': '/icon-192.png',
   },
@@ -46,6 +46,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${jetbrains.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <meta name="theme-color" content="#16a34a" />
