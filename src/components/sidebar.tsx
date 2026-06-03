@@ -1,0 +1,191 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { ChevronRight, BarChart3, Search, Menu, X } from 'lucide-react';
+import { useSidebar } from '@/components/sidebar-context';
+
+interface NavItem {
+  label: string;
+  href: string;
+  date?: string;
+}
+
+function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
+  return (
+    <li>
+      <Link
+        href={item.href}
+        className={`
+          group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
+          ${active
+            ? 'text-[#C11F2A] border-l-[3px] border-[#C11F2A] bg-[#C11F2A]/[0.06] font-semibold'
+            : 'text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]'}
+        `}
+      >
+        <span className="truncate text-xs">{item.label}</span>
+        {active && (
+          <span className="ml-auto h-1.5 w-1.5 bg-[#C11F2A]" />
+        )}
+      </Link>
+    </li>
+  );
+}
+
+function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
+  return (
+    <li>
+      <Link
+        href={item.href}
+        className={`
+          group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
+          ${active
+            ? 'text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold'
+            : 'text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]'}
+        `}
+      >
+        <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">$</span>
+        <span className="truncate">{item.label}</span>
+        {active && (
+          <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />
+        )}
+      </Link>
+    </li>
+  );
+}
+
+export function Sidebar({
+  reportItems,
+  deepResearchItems,
+}: {
+  reportItems: NavItem[];
+  deepResearchItems: NavItem[];
+}) {
+  const pathname = usePathname();
+  const { open, setOpen } = useSidebar();
+  const [reportsOpen, setReportsOpen] = useState(true);
+  const [deepOpen, setDeepOpen] = useState(true);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname, setOpen]);
+
+  return (
+    <>
+      <button
+        onClick={() => setOpen(true)}
+        className="fixed top-4 left-4 z-20 flex h-9 w-9 items-center justify-center bg-[#EDE9E0] border-2 border-[#2D2A26] md:hidden"
+        aria-label="Open sidebar"
+      >
+        <Menu className="h-4 w-4 text-[#1E1C19]" strokeWidth={2.5} />
+      </button>
+
+      <div
+        className={`sidebar-overlay ${open ? 'active' : ''}`}
+        onClick={() => setOpen(false)}
+      />
+
+      <aside
+        className={`
+          fixed md:relative z-40 flex h-full w-[272px] shrink-0 flex-col border-r-2 border-[#2D2A26] bg-[#EDE9E0] overflow-hidden
+          transition-transform duration-300 ease-in-out
+          ${open ? 'translate-x-0' : '-translate-x-full'}
+          md:translate-x-0 md:transition-none
+        `}
+      >
+        <div className="flex items-center gap-3 px-5 py-5 border-b-2 border-[#2D2A26]">
+          <div className="flex h-9 w-9 items-center justify-center bg-[#C11F2A]">
+            <BarChart3 className="h-4 w-4 text-white" strokeWidth={2.5} />
+          </div>
+          <div>
+            <div className="text-base font-bold text-[#1E1C19] tracking-tight leading-none">Supri Spinach</div>
+            <div className="text-[10px] text-[#8C857A] tracking-[0.2em] uppercase mt-0.5">Terminal</div>
+          </div>
+          <button
+            onClick={() => setOpen(false)}
+            className="ml-auto flex h-7 w-7 items-center justify-center hover:bg-[#E3DDD0] md:hidden"
+            aria-label="Close sidebar"
+          >
+            <X className="h-4 w-4 text-[#5C5650]" strokeWidth={2.5} />
+          </button>
+        </div>
+
+        <nav className="flex-1 overflow-y-auto py-3">
+          <div className="mb-2">
+            <button
+              onClick={() => setReportsOpen(!reportsOpen)}
+              className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
+            >
+              <ChevronRight
+                className={`h-3 w-3 transition-transform duration-200 ${reportsOpen ? 'rotate-90' : ''}`}
+                strokeWidth={2.5}
+              />
+              <BarChart3 className="h-3.5 w-3.5" strokeWidth={2} />
+              Report
+            </button>
+
+            {reportsOpen && (
+              <ul className="mt-1">
+                {reportItems.map((item) => (
+                  <NavFileItem
+                    key={item.href}
+                    item={item}
+                    active={pathname === item.href}
+                  />
+                ))}
+                {reportItems.length === 0 && (
+                  <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
+                    No reports yet
+                  </li>
+                )}
+              </ul>
+            )}
+          </div>
+
+          <div className="mx-5 my-3 border-t-2 border-[#D1CCC0]" />
+
+          <div>
+            <button
+              onClick={() => setDeepOpen(!deepOpen)}
+              className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
+            >
+              <ChevronRight
+                className={`h-3 w-3 transition-transform duration-200 ${deepOpen ? 'rotate-90' : ''}`}
+                strokeWidth={2.5}
+              />
+              <Search className="h-3.5 w-3.5" strokeWidth={2} />
+              Deep Research
+            </button>
+
+            {deepOpen && (
+              <ul className="mt-1">
+                {deepResearchItems.map((item) => (
+                  <NavTickerItem
+                    key={item.href}
+                    item={item}
+                    active={pathname === item.href}
+                  />
+                ))}
+                {deepResearchItems.length === 0 && (
+                  <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
+                    No research yet
+                  </li>
+                )}
+              </ul>
+            )}
+          </div>
+        </nav>
+
+        <div className="border-t-2 border-[#2D2A26] px-5 py-3.5">
+          <div className="flex items-center gap-2.5">
+            <span className="h-2 w-2 bg-[#C11F2A]" />
+            <span className="text-[10px] text-[#8C857A] tracking-[0.2em] uppercase">
+              Agent Active
+            </span>
+          </div>
+        </div>
+      </aside>
+    </>
+  );
+}

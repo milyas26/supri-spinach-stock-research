@@ -1,0 +1,38 @@
+{
+  "x-speckit-managed": "speckit:managed",
+  "version": 1,
+  "required": [
+    "name",
+    "purpose",
+    "phase",
+    "inputs",
+    "outputs",
+    "stop_conditions"
+  ],
+  "statuses": [
+    "DONE",
+    "DONE_WITH_CONCERNS",
+    "BLOCKED",
+    "NEEDS_CONTEXT"
+  ],
+  "selected_from": [
+    "brainstorm",
+    "research",
+    "docs-seeker",
+    "plan",
+    "project-management",
+    "scout",
+    "context-engineering",
+    "kanban",
+    "implementation-runner",
+    "test",
+    "debug",
+    "fix",
+    "code-review",
+    "security-scan",
+    "docs",
+    "journal",
+    "git",
+    "ship"
+  ]
+}
