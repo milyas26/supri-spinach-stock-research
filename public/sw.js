@@ -1,8 +1,9 @@
-const CACHE_NAME = 'supri-spinach-v1';
+const CACHE_NAME = 'supri-spinach-v2';
 const STATIC_ASSETS = [
   '/',
   '/manifest.json',
-  '/logo.png',
+  '/icon-192.png',
+  '/icon-512.png',
 ];
 
 self.addEventListener('install', (event) => {
@@ -28,7 +29,7 @@ self.addEventListener('fetch', (event) => {
   // Only handle same-origin requests
   if (url.origin !== self.location.origin) return;
 
-  // Network-first for HTML/navigation
+  // Network-first for HTML/navigation — fallback to cache
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request)
@@ -47,7 +48,9 @@ self.addEventListener('fetch', (event) => {
     url.pathname.startsWith('/_next/static/') ||
     url.pathname.endsWith('.png') ||
     url.pathname.endsWith('.svg') ||
-    url.pathname.endsWith('.ico')
+    url.pathname.endsWith('.ico') ||
+    url.pathname.endsWith('.woff2') ||
+    url.pathname.endsWith('.woff')
   ) {
     event.respondWith(
       caches.match(request).then(
