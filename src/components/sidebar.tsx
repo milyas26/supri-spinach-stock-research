@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { ChevronRight, BarChart3, Search, Menu, X } from 'lucide-react';
-import { useSidebar } from '@/components/sidebar-context';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { ChevronRight, BarChart3, Search, Menu, X } from "lucide-react";
+import { useSidebar } from "@/components/sidebar-context";
+import Image from "next/image";
 
 interface NavItem {
   label: string;
@@ -19,15 +20,15 @@ function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
         href={item.href}
         className={`
           group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
-          ${active
-            ? 'text-[#C11F2A] border-l-[3px] border-[#C11F2A] bg-[#C11F2A]/[0.06] font-semibold'
-            : 'text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]'}
+          ${
+            active
+              ? "text-[#C11F2A] border-l-[3px] border-[#C11F2A] bg-[#C11F2A]/[0.06] font-semibold"
+              : "text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]"
+          }
         `}
       >
         <span className="truncate text-xs">{item.label}</span>
-        {active && (
-          <span className="ml-auto h-1.5 w-1.5 bg-[#C11F2A]" />
-        )}
+        {active && <span className="ml-auto h-1.5 w-1.5 bg-[#C11F2A]" />}
       </Link>
     </li>
   );
@@ -40,16 +41,18 @@ function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
         href={item.href}
         className={`
           group flex items-center gap-3 px-4 py-1.5 text-sm transition-all duration-150
-          ${active
-            ? 'text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold'
-            : 'text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]'}
+          ${
+            active
+              ? "text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold"
+              : "text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]"
+          }
         `}
       >
-        <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">$</span>
+        <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">
+          $
+        </span>
         <span className="truncate">{item.label}</span>
-        {active && (
-          <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />
-        )}
+        {active && <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />}
       </Link>
     </li>
   );
@@ -82,7 +85,7 @@ export function Sidebar({
       </button>
 
       <div
-        className={`sidebar-overlay ${open ? 'active' : ''}`}
+        className={`sidebar-overlay ${open ? "active" : ""}`}
         onClick={() => setOpen(false)}
       />
 
@@ -90,17 +93,25 @@ export function Sidebar({
         className={`
           fixed md:relative z-40 flex h-full w-[272px] shrink-0 flex-col border-r-2 border-[#2D2A26] bg-[#EDE9E0] overflow-hidden
           transition-transform duration-300 ease-in-out
-          ${open ? 'translate-x-0' : '-translate-x-full'}
+          ${open ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0 md:transition-none
         `}
       >
         <div className="flex items-center gap-3 px-5 py-5 border-b-2 border-[#2D2A26]">
-          <div className="flex h-9 w-9 items-center justify-center bg-[#C11F2A]">
-            <BarChart3 className="h-4 w-4 text-white" strokeWidth={2.5} />
-          </div>
+          <Image
+            src="/logo.png"
+            width={45}
+            height={45}
+            alt="supri-spinach"
+            className="rounded-full"
+          />
           <div>
-            <div className="text-base font-bold text-[#1E1C19] tracking-tight leading-none">Supri Spinach</div>
-            <div className="text-[10px] text-[#8C857A] tracking-[0.2em] uppercase mt-0.5">Terminal</div>
+            <div className="text-base font-bold text-[#1E1C19] tracking-tight leading-none">
+              Supri Spinach
+            </div>
+            <div className="text-[10px] text-[#8C857A] tracking-[0.2em] uppercase mt-0.5">
+              Terminal
+            </div>
           </div>
           <button
             onClick={() => setOpen(false)}
@@ -118,7 +129,7 @@ export function Sidebar({
               className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
             >
               <ChevronRight
-                className={`h-3 w-3 transition-transform duration-200 ${reportsOpen ? 'rotate-90' : ''}`}
+                className={`h-3 w-3 transition-transform duration-200 ${reportsOpen ? "rotate-90" : ""}`}
                 strokeWidth={2.5}
               />
               <BarChart3 className="h-3.5 w-3.5" strokeWidth={2} />
@@ -151,7 +162,7 @@ export function Sidebar({
               className="flex w-full items-center gap-2.5 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
             >
               <ChevronRight
-                className={`h-3 w-3 transition-transform duration-200 ${deepOpen ? 'rotate-90' : ''}`}
+                className={`h-3 w-3 transition-transform duration-200 ${deepOpen ? "rotate-90" : ""}`}
                 strokeWidth={2.5}
               />
               <Search className="h-3.5 w-3.5" strokeWidth={2} />
