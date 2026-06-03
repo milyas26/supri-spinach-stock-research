@@ -7,9 +7,13 @@ function colorizeStatusSymbols(html: string): string {
     .replace(/🟡/g, '<span class="text-[#C8963E] inline-flex items-center"><span class="mr-1.5 text-lg leading-none">●</span></span>');
 }
 
+function fixExternalLinks(html: string): string {
+  return html.replace(/<a /g, '<a target="_blank" rel="noopener noreferrer" ');
+}
+
 export async function MarkdownRenderer({ content }: { content: string }) {
   const rawHtml = await renderMarkdown(content);
-  const html = colorizeStatusSymbols(rawHtml);
+  const html = fixExternalLinks(colorizeStatusSymbols(rawHtml));
 
   return (
     <article
