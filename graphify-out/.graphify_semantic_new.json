@@ -1,0 +1,2013 @@
+{
+  "nodes": [
+    {
+      "id": "package_json",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json"
+    },
+    {
+      "id": "opencode_config",
+      "label": "opencode.json",
+      "file_type": "code",
+      "source_file": "opencode.json"
+    },
+    {
+      "id": "tsconfig_json",
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json"
+    },
+    {
+      "id": "eslint_config",
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs"
+    },
+    {
+      "id": "next_config",
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts"
+    },
+    {
+      "id": "postcss_config",
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs"
+    },
+    {
+      "id": "pwa_manifest",
+      "label": "PWA Manifest",
+      "file_type": "code",
+      "source_file": "public/manifest.json"
+    },
+    {
+      "id": "service_worker",
+      "label": "Service Worker",
+      "file_type": "code",
+      "source_file": "public/sw.js"
+    },
+    {
+      "id": "skills_lock",
+      "label": "skills-lock.json",
+      "file_type": "code",
+      "source_file": "skills-lock.json"
+    },
+    {
+      "id": "speckit_schema",
+      "label": "Speckit Skill Schema",
+      "file_type": "code",
+      "source_file": ".speckit/skills/schema.json"
+    },
+    {
+      "id": "opencode_plugin_package",
+      "label": "OpenCode Plugin Package",
+      "file_type": "code",
+      "source_file": ".opencode/package.json"
+    },
+    {
+      "id": "root_layout",
+      "label": "RootLayout",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx"
+    },
+    {
+      "id": "home_page",
+      "label": "Home Page",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx"
+    },
+    {
+      "id": "deep_research_page",
+      "label": "DeepResearchPage",
+      "file_type": "code",
+      "source_file": "src/app/deep-research/[ticker]/page.tsx"
+    },
+    {
+      "id": "report_page",
+      "label": "ReportPage",
+      "file_type": "code",
+      "source_file": "src/app/reports/[filename]/page.tsx"
+    },
+    {
+      "id": "sidebar_context",
+      "label": "SidebarProvider",
+      "file_type": "code",
+      "source_file": "src/components/sidebar-context.tsx"
+    },
+    {
+      "id": "sw_registration",
+      "label": "ServiceWorkerRegistration",
+      "file_type": "code",
+      "source_file": "src/components/service-worker-registration.tsx"
+    },
+    {
+      "id": "markdown_renderer",
+      "label": "MarkdownRenderer",
+      "file_type": "code",
+      "source_file": "src/components/markdown-renderer.tsx"
+    },
+    {
+      "id": "sidebar_component",
+      "label": "Sidebar",
+      "file_type": "code",
+      "source_file": "src/components/sidebar.tsx"
+    },
+    {
+      "id": "install_prompt",
+      "label": "InstallPrompt",
+      "file_type": "code",
+      "source_file": "src/components/install-prompt.tsx"
+    },
+    {
+      "id": "navigation_lib",
+      "label": "Navigation Lib",
+      "file_type": "code",
+      "source_file": "src/lib/navigation.ts"
+    },
+    {
+      "id": "markdown_lib",
+      "label": "Markdown Lib",
+      "file_type": "code",
+      "source_file": "src/lib/markdown.ts"
+    },
+    {
+      "id": "nav_item_interface",
+      "label": "NavItem Interface",
+      "file_type": "code"
+    },
+    {
+      "id": "content_ts",
+      "label": "content.ts",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "getReportFiles",
+      "label": "getReportFiles",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "getDeepResearchFiles",
+      "label": "getDeepResearchFiles",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "getLatestReportFilename",
+      "label": "getLatestReportFilename",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "getReportContent",
+      "label": "getReportContent",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "getDeepResearchContent",
+      "label": "getDeepResearchContent",
+      "file_type": "code",
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "permissions_yaml",
+      "label": "Speckit Permissions Config",
+      "file_type": "code",
+      "source_file": ".speckit/permissions.yaml"
+    },
+    {
+      "id": "config_yaml",
+      "label": "Speckit Config",
+      "file_type": "code",
+      "source_file": ".speckit/config.yaml"
+    },
+    {
+      "id": "daily_stock_report_prd",
+      "label": "Daily Stock Report PRD",
+      "file_type": "document",
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/prd.md"
+    },
+    {
+      "id": "daily_stock_report_architecture",
+      "label": "Daily Stock Report Architecture",
+      "file_type": "document",
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/architecture.md"
+    },
+    {
+      "id": "daily_stock_report_tdd_evidence",
+      "label": "Daily Stock Report TDD Evidence",
+      "file_type": "document",
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/tdd-evidence.md"
+    },
+    {
+      "id": "daily_stock_report_story",
+      "label": "Daily Stock Report Story",
+      "file_type": "document",
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/story.md"
+    },
+    {
+      "id": "workflow_shape",
+      "label": "Speckit Shape Workflow",
+      "file_type": "document",
+      "source_file": ".speckit/workflows/shape.md"
+    },
+    {
+      "id": "workflow_tdd_run",
+      "label": "Speckit TDD Run Workflow",
+      "file_type": "document",
+      "source_file": ".speckit/workflows/tdd-run.md"
+    },
+    {
+      "id": "workflow_review",
+      "label": "Speckit Review Workflow",
+      "file_type": "document",
+      "source_file": ".speckit/workflows/review.md"
+    },
+    {
+      "id": "super_agent",
+      "label": "Spec Super Agent",
+      "file_type": "document",
+      "source_file": ".speckit/agents/super-agent.md"
+    },
+    {
+      "id": "rule_enterprise_safety",
+      "label": "Enterprise Safety Policy",
+      "file_type": "document",
+      "source_file": ".speckit/rules/enterprise-safety.md"
+    },
+    {
+      "id": "rule_agile_policy",
+      "label": "Agile Policy",
+      "file_type": "document",
+      "source_file": ".speckit/rules/agile-policy.md"
+    },
+    {
+      "id": "rule_tdd_policy",
+      "label": "TDD Policy",
+      "file_type": "document",
+      "source_file": ".speckit/rules/tdd-policy.md"
+    },
+    {
+      "id": "template_tdd_evidence",
+      "label": "TDD Evidence Template",
+      "file_type": "document",
+      "source_file": ".speckit/templates/tdd-evidence.md"
+    },
+    {
+      "id": "template_story",
+      "label": "Story Template",
+      "file_type": "document",
+      "source_file": ".speckit/templates/story.md"
+    },
+    {
+      "id": "skill_spec_test",
+      "label": "spec-test Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-test.md"
+    },
+    {
+      "id": "skill_spec_docs",
+      "label": "spec-docs Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-docs.md"
+    },
+    {
+      "id": "skill_spec_session",
+      "label": "spec-session Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-session.md"
+    },
+    {
+      "id": "skill_spec_research",
+      "label": "spec-research Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-research.md"
+    },
+    {
+      "id": "skill_spec_shape",
+      "label": "spec-shape Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-shape.md"
+    },
+    {
+      "id": "skill_spec_plan",
+      "label": "spec-plan Skill",
+      "file_type": "document",
+      "source_file": ".speckit/skills/spec-plan.md"
+    },
+    {
+      "id": "spec-debug_skill",
+      "label": "spec-debug Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-debug.md"
+    },
+    {
+      "id": "spec-graph_skill",
+      "label": "spec-graph Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-graph.md"
+    },
+    {
+      "id": "spec-catalog",
+      "label": "Spec Skill Catalog",
+      "file_type": "code",
+      "source_file": ".speckit/skills/catalog.md"
+    },
+    {
+      "id": "spec-ship_skill",
+      "label": "spec-ship Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-ship.md"
+    },
+    {
+      "id": "spec-review_skill",
+      "label": "spec-review Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-review.md"
+    },
+    {
+      "id": "spec-tdd_skill",
+      "label": "spec-tdd Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-tdd.md"
+    },
+    {
+      "id": "spec-context_skill",
+      "label": "spec-context Skill",
+      "file_type": "code",
+      "source_file": ".speckit/skills/spec-context.md"
+    },
+    {
+      "id": "speckit-tdd-developer_agent",
+      "label": "speckit-tdd-developer Agent",
+      "file_type": "code",
+      "source_file": ".opencode/agent/speckit-tdd-developer.md"
+    },
+    {
+      "id": "speckit-planner_agent",
+      "label": "speckit-planner Agent",
+      "file_type": "code",
+      "source_file": ".opencode/agent/speckit-planner.md"
+    },
+    {
+      "id": "speckit-reviewer_agent",
+      "label": "speckit-reviewer Agent",
+      "file_type": "code",
+      "source_file": ".opencode/agent/speckit-reviewer.md"
+    },
+    {
+      "id": "speckit-docs_agent",
+      "label": "speckit-docs Agent",
+      "file_type": "code",
+      "source_file": ".opencode/agent/speckit-docs.md"
+    },
+    {
+      "id": "frontend-design_skill",
+      "label": "frontend-design Skill",
+      "file_type": "code",
+      "source_file": ".agents/skills/frontend-design/SKILL.md"
+    },
+    {
+      "id": "RATU_deep-research",
+      "label": "RATU Deep Research",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "BRPT_deep-research",
+      "label": "BRPT Deep Research",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "WIFI_deep-research",
+      "label": "WIFI Deep Research",
+      "file_type": "document",
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "SUPA_deep-research",
+      "label": "SUPA Deep Research",
+      "file_type": "document",
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "BUMI_deep-research",
+      "label": "BUMI Deep Research",
+      "file_type": "document",
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "Report_watchlist",
+      "label": "Report Watchlist 31 Saham",
+      "file_type": "document",
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "author": "Supri Spinach"
+    },
+    {
+      "id": "RATU_company",
+      "label": "PT Raharja Energi Cepu Tbk (RATU)",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "BRPT_company",
+      "label": "PT Barito Pacific Tbk (BRPT)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "WIFI_company",
+      "label": "PT Solusi Sinergi Digital Tbk (WIFI)",
+      "file_type": "document",
+      "source_file": "content/deep-research/WIFI_2026-06-03.md"
+    },
+    {
+      "id": "SUPA_company",
+      "label": "PT Super Bank Indonesia Tbk (SUPA)",
+      "file_type": "document",
+      "source_file": "content/deep-research/SUPA_2026-06-03.md"
+    },
+    {
+      "id": "BUMI_company",
+      "label": "PT Bumi Resources Tbk (BUMI)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BUMI_2026-06-03.md"
+    },
+    {
+      "id": "Prajogo_Pangestu",
+      "label": "Prajogo Pangestu",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "Happy_Hapsoro",
+      "label": "Happy Hapsoro",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "Hashim_Djojohadikusumo",
+      "label": "Hashim Djojohadikusumo",
+      "file_type": "document",
+      "source_file": "content/deep-research/WIFI_2026-06-03.md"
+    },
+    {
+      "id": "Grab_Holdings",
+      "label": "Grab Holdings",
+      "file_type": "document",
+      "source_file": "content/deep-research/SUPA_2026-06-03.md"
+    },
+    {
+      "id": "Singtel",
+      "label": "Singtel",
+      "file_type": "document",
+      "source_file": "content/deep-research/SUPA_2026-06-03.md"
+    },
+    {
+      "id": "EMTEK",
+      "label": "PT Elang Mahkota Teknologi (EMTEK)",
+      "file_type": "document",
+      "source_file": "content/deep-research/SUPA_2026-06-03.md"
+    },
+    {
+      "id": "Megawati_Soekarnoputri",
+      "label": "Megawati Soekarnoputri",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "Smart_Money_Flow",
+      "label": "Smart Money Flow Analysis",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "Wyckoff_Accumulation",
+      "label": "Wyckoff Accumulation Pattern",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "Broker_Net_Position",
+      "label": "Broker Net Position Analysis",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "Holding_Company_Discount",
+      "label": "Holding Company Discount",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "Internet_Rakyat",
+      "label": "Internet Rakyat (IRA)",
+      "file_type": "document",
+      "source_file": "content/deep-research/WIFI_2026-06-03.md"
+    },
+    {
+      "id": "MSCI_Rebalancing",
+      "label": "MSCI Rebalancing",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "RAJA_company",
+      "label": "PT Rukun Raharja Tbk (RAJA)",
+      "file_type": "document",
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "BREN_company",
+      "label": "Barito Renewables (BREN)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "TPIA_company",
+      "label": "Chandra Asri Pacific (TPIA)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "CUAN_company",
+      "label": "Petrindo Jaya Kreasi (CUAN)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "KPC_company",
+      "label": "Kaltim Prima Coal (KPC)",
+      "file_type": "document",
+      "source_file": "content/deep-research/BUMI_2026-06-03.md"
+    },
+    {
+      "id": "Arutmin_company",
+      "label": "PT Arutmin Indonesia",
+      "file_type": "document",
+      "source_file": "content/deep-research/BUMI_2026-06-03.md"
+    },
+    {
+      "id": "icon-192_image",
+      "label": "Mr. Supri Spinach Mascot Icon",
+      "file_type": "image",
+      "source_file": "public/icon-192.png"
+    },
+    {
+      "id": "logo_image",
+      "label": "Mr. Supri Spinach Logo",
+      "file_type": "image",
+      "source_file": "public/logo.png"
+    },
+    {
+      "id": "file-icon_svg",
+      "label": "File Document Icon",
+      "file_type": "image",
+      "source_file": "public/file.svg"
+    },
+    {
+      "id": "public_vercel_svg",
+      "label": "Vercel Logo",
+      "file_type": "image",
+      "source_file": "public/vercel.svg"
+    },
+    {
+      "id": "public_next_svg",
+      "label": "Next.js Logo",
+      "file_type": "image",
+      "source_file": "public/next.svg"
+    },
+    {
+      "id": "public_globe_svg",
+      "label": "Globe Icon",
+      "file_type": "image",
+      "source_file": "public/globe.svg"
+    },
+    {
+      "id": "public_window_svg",
+      "label": "Browser Window Icon",
+      "file_type": "image",
+      "source_file": "public/window.svg"
+    },
+    {
+      "id": "public_icon_512",
+      "label": "Mr. Supri Spinach Mascot",
+      "file_type": "image",
+      "source_file": "public/icon-512.png"
+    }
+  ],
+  "edges": [
+    {
+      "source": "root_layout",
+      "target": "navigation_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "root_layout",
+      "target": "sidebar_component",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "root_layout",
+      "target": "sidebar_context",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "root_layout",
+      "target": "sw_registration",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "root_layout",
+      "target": "install_prompt",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "home_page",
+      "target": "content_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "deep_research_page",
+      "target": "content_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/deep-research/[ticker]/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "deep_research_page",
+      "target": "markdown_renderer",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/deep-research/[ticker]/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "report_page",
+      "target": "content_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/reports/[filename]/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "report_page",
+      "target": "markdown_renderer",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/reports/[filename]/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "markdown_renderer",
+      "target": "markdown_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/markdown-renderer.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "navigation_lib",
+      "target": "content_lib",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/navigation.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "sw_registration",
+      "target": "service_worker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/service-worker-registration.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "sidebar_component",
+      "target": "sidebar_context",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/sidebar.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "markdown_lib",
+      "target": "unified",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/markdown.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "postcss_config",
+      "target": "tailwind_css",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "postcss.config.mjs",
+      "weight": 1.0
+    },
+    {
+      "source": "root_layout",
+      "target": "pwa_manifest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/layout.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "sidebar_component",
+      "target": "nav_item_interface",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/sidebar.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "navigation_lib",
+      "target": "nav_item_interface",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/navigation.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "sidebar_component",
+      "target": "navigation_lib",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/sidebar.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "deep_research_page",
+      "target": "report_page",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/app/deep-research/[ticker]/page.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "sidebar_context",
+      "target": "sidebar_component",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "src/components/sidebar-context.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "install_prompt",
+      "target": "pwa_manifest",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/components/install-prompt.tsx",
+      "weight": 1.0
+    },
+    {
+      "source": "service_worker",
+      "target": "pwa_manifest",
+      "relation": "caches",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/sw.js",
+      "weight": 1.0
+    },
+    {
+      "source": "next_config",
+      "target": "package_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "next.config.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "eslint_config",
+      "target": "package_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eslint.config.mjs",
+      "weight": 1.0
+    },
+    {
+      "source": "tsconfig_json",
+      "target": "package_json",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tsconfig.json",
+      "weight": 1.0
+    },
+    {
+      "source": "getReportFiles",
+      "target": "content_ts",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getDeepResearchFiles",
+      "target": "content_ts",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getLatestReportFilename",
+      "target": "getReportFiles",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getReportContent",
+      "target": "content_ts",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getDeepResearchContent",
+      "target": "content_ts",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "config_yaml",
+      "target": "permissions_yaml",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/config.yaml",
+      "weight": 1.0
+    },
+    {
+      "source": "config_yaml",
+      "target": "super_agent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/config.yaml",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_tdd_evidence",
+      "target": "daily_stock_report_story",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/tdd-evidence.md",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_story",
+      "target": "daily_stock_report_tdd_evidence",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/story.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "workflow_shape",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "workflow_tdd_run",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "workflow_review",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_test",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_docs",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_session",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_research",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_shape",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "skill_spec_plan",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "rule_enterprise_safety",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "rule_agile_policy",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "super_agent",
+      "target": "rule_tdd_policy",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/agents/super-agent.md",
+      "weight": 1.0
+    },
+    {
+      "source": "workflow_tdd_run",
+      "target": "daily_stock_report_tdd_evidence",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/workflows/tdd-run.md",
+      "weight": 1.0
+    },
+    {
+      "source": "workflow_tdd_run",
+      "target": "template_tdd_evidence",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/workflows/tdd-run.md",
+      "weight": 1.0
+    },
+    {
+      "source": "workflow_tdd_run",
+      "target": "rule_tdd_policy",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".speckit/workflows/tdd-run.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_spec_plan",
+      "target": "daily_stock_report_prd",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".speckit/skills/spec-plan.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_spec_plan",
+      "target": "daily_stock_report_architecture",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".speckit/skills/spec-plan.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_spec_plan",
+      "target": "daily_stock_report_story",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".speckit/skills/spec-plan.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_spec_plan",
+      "target": "template_story",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/skills/spec-plan.md",
+      "weight": 1.0
+    },
+    {
+      "source": "skill_spec_plan",
+      "target": "template_tdd_evidence",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/skills/spec-plan.md",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_prd",
+      "target": "daily_stock_report_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/prd.md",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_architecture",
+      "target": "daily_stock_report_story",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/architecture.md",
+      "weight": 1.0
+    },
+    {
+      "source": "getReportFiles",
+      "target": "getReportContent",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getDeepResearchFiles",
+      "target": "getDeepResearchContent",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getReportFiles",
+      "target": "getLatestReportFilename",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "getDeepResearchFiles",
+      "target": "getDeepResearchContent",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_tdd_evidence",
+      "target": "template_tdd_evidence",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/tdd-evidence.md",
+      "weight": 1.0
+    },
+    {
+      "source": "daily_stock_report_story",
+      "target": "template_story",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/story.md",
+      "weight": 1.0
+    },
+    {
+      "source": "getLatestReportFilename",
+      "target": "getReportContent",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "src/lib/content.ts",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-debug_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-debug.md",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-graph_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-graph.md",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-ship_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-ship.md",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-review_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-review.md",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-tdd_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-tdd.md",
+      "weight": 1.0
+    },
+    {
+      "source": "spec-context_skill",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/skills/spec-context.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-tdd-developer_agent",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/agent/speckit-tdd-developer.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-planner_agent",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/agent/speckit-planner.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-reviewer_agent",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/agent/speckit-reviewer.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-docs_agent",
+      "target": "spec-catalog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".opencode/agent/speckit-docs.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-tdd-developer_agent",
+      "target": "spec-tdd_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/agent/speckit-tdd-developer.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-planner_agent",
+      "target": "spec-graph_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".opencode/agent/speckit-planner.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-reviewer_agent",
+      "target": "spec-review_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/agent/speckit-reviewer.md",
+      "weight": 1.0
+    },
+    {
+      "source": "speckit-docs_agent",
+      "target": "spec-ship_skill",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".opencode/agent/speckit-docs.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "RATU_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "BRPT_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "WIFI_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "SUPA_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "BUMI_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Happy_Hapsoro",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Prajogo_Pangestu",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Hashim_Djojohadikusumo",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Grab_Holdings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Singtel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "EMTEK",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Megawati_Soekarnoputri",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Wyckoff_Accumulation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Wyckoff_Accumulation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "Wyckoff_Accumulation",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Broker_Net_Position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Broker_Net_Position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Broker_Net_Position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Broker_Net_Position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "Broker_Net_Position",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Holding_Company_Discount",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Internet_Rakyat",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "MSCI_Rebalancing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_company",
+      "target": "RAJA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_company",
+      "target": "BREN_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_company",
+      "target": "TPIA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_company",
+      "target": "CUAN_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_company",
+      "target": "KPC_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_company",
+      "target": "Arutmin_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Report_watchlist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Report_watchlist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Report_watchlist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Report_watchlist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "Report_watchlist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/reports/Report_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Happy_Hapsoro",
+      "target": "Megawati_Soekarnoputri",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Happy_Hapsoro",
+      "target": "RAJA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Prajogo_Pangestu",
+      "target": "BRPT_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Hashim_Djojohadikusumo",
+      "target": "WIFI_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Grab_Holdings",
+      "target": "SUPA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Singtel",
+      "target": "SUPA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "EMTEK",
+      "target": "SUPA_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "icon-192_image",
+      "target": "logo_image",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/icon-192.png",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "SUPA_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/SUPA_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BUMI_deep-research",
+      "target": "Smart_Money_Flow",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BUMI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "BRPT_deep-research",
+      "target": "Holding_Company_Discount",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "WIFI_deep-research",
+      "target": "Internet_Rakyat",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/WIFI_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Smart_Money_Flow",
+      "target": "Broker_Net_Position",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "Smart_Money_Flow",
+      "target": "Wyckoff_Accumulation",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "RATU_company",
+      "target": "BUMI_company",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "content/deep-research/RATU_2026-06-03.md",
+      "weight": 1.0
+    },
+    {
+      "source": "public_vercel_svg",
+      "target": "public_next_svg",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "public/vercel.svg",
+      "weight": 1.0
+    },
+    {
+      "source": "public_globe_svg",
+      "target": "public_window_svg",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "public/globe.svg",
+      "weight": 1.0
+    },
+    {
+      "source": "public_icon_512",
+      "target": "public_vercel_svg",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "public/icon-512.png",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "pwa_architecture",
+      "label": "PWA System",
+      "nodes": [
+        "service_worker",
+        "pwa_manifest",
+        "sw_registration",
+        "install_prompt"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/sw.js"
+    },
+    {
+      "id": "markdown_rendering_pipeline",
+      "label": "Markdown Rendering Pipeline",
+      "nodes": [
+        "markdown_lib",
+        "markdown_renderer",
+        "report_page",
+        "deep_research_page"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/lib/markdown.ts"
+    },
+    {
+      "id": "sidebar_navigation_system",
+      "label": "Sidebar Navigation System",
+      "nodes": [
+        "sidebar_component",
+        "sidebar_context",
+        "navigation_lib",
+        "root_layout"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/sidebar.tsx"
+    },
+    {
+      "id": "content_file_access_pattern",
+      "label": "File Access Pattern",
+      "nodes": [
+        "getReportFiles",
+        "getDeepResearchFiles",
+        "getReportContent",
+        "getDeepResearchContent"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/content.ts"
+    },
+    {
+      "id": "speckit_skill_routing",
+      "label": "Speckit Skill Routing via Super Agent",
+      "nodes": [
+        "super_agent",
+        "skill_spec_test",
+        "skill_spec_docs",
+        "skill_spec_session",
+        "skill_spec_research",
+        "skill_spec_shape",
+        "skill_spec_plan"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".speckit/agents/super-agent.md"
+    },
+    {
+      "id": "daily_stock_report_artifacts",
+      "label": "Daily Stock Report Plan Artifacts",
+      "nodes": [
+        "daily_stock_report_prd",
+        "daily_stock_report_architecture",
+        "daily_stock_report_story",
+        "daily_stock_report_tdd_evidence"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/story.md"
+    },
+    {
+      "id": "speckit_skill_workflow",
+      "label": "Speckit Skill Workflow Phases",
+      "nodes": [
+        "spec-debug_skill",
+        "spec-graph_skill",
+        "spec-ship_skill",
+        "spec-review_skill",
+        "spec-tdd_skill",
+        "spec-context_skill"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".speckit/skills/catalog.md"
+    },
+    {
+      "id": "barito_empire_ownership",
+      "label": "Barito Empire Corporate Structure",
+      "nodes": [
+        "BRPT_company",
+        "BREN_company",
+        "TPIA_company",
+        "CUAN_company",
+        "Prajogo_Pangestu"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/deep-research/BRPT_2026-06-03.md"
+    },
+    {
+      "id": "smart_money_analysis_pattern",
+      "label": "Smart Money Broker Flow Analysis Pattern",
+      "nodes": [
+        "RATU_deep-research",
+        "BRPT_deep-research",
+        "WIFI_deep-research",
+        "SUPA_deep-research",
+        "BUMI_deep-research"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "content/deep-research/RATU_2026-06-03.md"
+    },
+    {
+      "id": "project_static_ui_icons",
+      "label": "Next.js Starter Template Static Assets",
+      "nodes": [
+        "public_vercel_svg",
+        "public_next_svg",
+        "public_globe_svg",
+        "public_window_svg"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

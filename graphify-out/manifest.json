@@ -1,0 +1,357 @@
+{
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/skills-lock.json": {
+    "mtime": 1780497305.253801,
+    "ast_hash": "c0855a0789ef4add2db5523cb387c355",
+    "semantic_hash": "c0855a0789ef4add2db5523cb387c355"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/postcss.config.mjs": {
+    "mtime": 1780498340.046555,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/package.json": {
+    "mtime": 1780500694.7279398,
+    "ast_hash": "53923ead4ce15ee6376d645c200b0060",
+    "semantic_hash": "53923ead4ce15ee6376d645c200b0060"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/opencode.json": {
+    "mtime": 1780498596.8380253,
+    "ast_hash": "65d22b62fc43ee1cd8d97affd448991f",
+    "semantic_hash": "65d22b62fc43ee1cd8d97affd448991f"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/tsconfig.json": {
+    "mtime": 1780498340.0481982,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/eslint.config.mjs": {
+    "mtime": 1780498340.0501058,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/next.config.ts": {
+    "mtime": 1780498340.0408652,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/schema.json": {
+    "mtime": 1780498596.8359745,
+    "ast_hash": "66fd01e46b32f26758e3467605013361",
+    "semantic_hash": "66fd01e46b32f26758e3467605013361"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.opencode/package.json": {
+    "mtime": 1780512796.4062002,
+    "ast_hash": "d3ab821609ec487b22aa5b0027f5f400",
+    "semantic_hash": "d3ab821609ec487b22aa5b0027f5f400"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/manifest.json": {
+    "mtime": 1780511701.2889228,
+    "ast_hash": "68689645b0cbad99eae3783d2cc67343",
+    "semantic_hash": "68689645b0cbad99eae3783d2cc67343"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/sw.js": {
+    "mtime": 1780511040.068009,
+    "ast_hash": "e98ec0d4291b954b4d655f8a34b059e5",
+    "semantic_hash": "e98ec0d4291b954b4d655f8a34b059e5"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/app/layout.tsx": {
+    "mtime": 1780512487.3601203,
+    "ast_hash": "19b30aa9bb5452abb7a9880559511134",
+    "semantic_hash": "19b30aa9bb5452abb7a9880559511134"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/app/page.tsx": {
+    "mtime": 1780500959.8937173,
+    "ast_hash": "4976b0c8119fd47b5284e99d9fd1d4fd",
+    "semantic_hash": "4976b0c8119fd47b5284e99d9fd1d4fd"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/app/deep-research/[ticker]/page.tsx": {
+    "mtime": 1780533620.0118687,
+    "ast_hash": "26af4305530638df6a061bf9baf726d3",
+    "semantic_hash": "26af4305530638df6a061bf9baf726d3"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/app/reports/[filename]/page.tsx": {
+    "mtime": 1780533609.02808,
+    "ast_hash": "b64232b251363cc1dbeed881da648cfd",
+    "semantic_hash": "b64232b251363cc1dbeed881da648cfd"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/components/sidebar-context.tsx": {
+    "mtime": 1780499369.533795,
+    "ast_hash": "d0849eab914aeb24f8ca446515fb993b",
+    "semantic_hash": "d0849eab914aeb24f8ca446515fb993b"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/components/service-worker-registration.tsx": {
+    "mtime": 1780508150.5995803,
+    "ast_hash": "b7f4ac2ddb7a83420bd3e67689d70bd3",
+    "semantic_hash": "b7f4ac2ddb7a83420bd3e67689d70bd3"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/components/markdown-renderer.tsx": {
+    "mtime": 1780511617.4045296,
+    "ast_hash": "acb23cb932a40ce388ab3daa235368cc",
+    "semantic_hash": "acb23cb932a40ce388ab3daa235368cc"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/components/sidebar.tsx": {
+    "mtime": 1780533599.7634008,
+    "ast_hash": "419db89186f87c2fdabab373e2dd519b",
+    "semantic_hash": "419db89186f87c2fdabab373e2dd519b"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/components/install-prompt.tsx": {
+    "mtime": 1780511701.2888677,
+    "ast_hash": "c20b358424d10fe3e4f2fa59b51c8631",
+    "semantic_hash": "c20b358424d10fe3e4f2fa59b51c8631"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/lib/navigation.ts": {
+    "mtime": 1780500934.8470507,
+    "ast_hash": "244d67c967ab8be568c0dc210a996e62",
+    "semantic_hash": "244d67c967ab8be568c0dc210a996e62"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/lib/markdown.ts": {
+    "mtime": 1780498439.40451,
+    "ast_hash": "8022679927770ebd9a69ad3d814ab678",
+    "semantic_hash": "8022679927770ebd9a69ad3d814ab678"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/src/lib/content.ts": {
+    "mtime": 1780500932.6013908,
+    "ast_hash": "0bc3660dd4d2a678964ea2471dce8fd1",
+    "semantic_hash": "0bc3660dd4d2a678964ea2471dce8fd1"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/permissions.yaml": {
+    "mtime": 1780498596.834383,
+    "ast_hash": "d1d62c96499f12188167b85747840a6a",
+    "semantic_hash": "d1d62c96499f12188167b85747840a6a"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/config.yaml": {
+    "mtime": 1780498596.8335078,
+    "ast_hash": "bd97bf2e287cc4b2fe93472c4c98d2d0",
+    "semantic_hash": "bd97bf2e287cc4b2fe93472c4c98d2d0"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/prd.md": {
+    "mtime": 1780500732.8066576,
+    "ast_hash": "5d7eec814b25b1d594fba94954118640",
+    "semantic_hash": "5d7eec814b25b1d594fba94954118640"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/architecture.md": {
+    "mtime": 1780500731.618972,
+    "ast_hash": "d4759be2be40d15eb418cacccc8a07f8",
+    "semantic_hash": "d4759be2be40d15eb418cacccc8a07f8"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/tdd-evidence.md": {
+    "mtime": 1780500730.4382665,
+    "ast_hash": "de65c356fc7cc64bea016aa2bd7e3f3f",
+    "semantic_hash": "de65c356fc7cc64bea016aa2bd7e3f3f"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/plans/20260603-2157-daily-stock-report-website-supri-spinach-terminal-next-js-app-that-renders-ai/story.md": {
+    "mtime": 1780500727.9174938,
+    "ast_hash": "c9c36a44f84b5c2cf01462c3cd6813cf",
+    "semantic_hash": "c9c36a44f84b5c2cf01462c3cd6813cf"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/workflows/shape.md": {
+    "mtime": 1780498596.834582,
+    "ast_hash": "78b4fa6b3a425bba471f2ade1971184f",
+    "semantic_hash": "78b4fa6b3a425bba471f2ade1971184f"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/workflows/tdd-run.md": {
+    "mtime": 1780498596.834789,
+    "ast_hash": "647777f043fdd52b2a80ae077ad99f65",
+    "semantic_hash": "647777f043fdd52b2a80ae077ad99f65"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/workflows/review.md": {
+    "mtime": 1780498596.834954,
+    "ast_hash": "8e24f3af82502daf3fd34e02dbf4a579",
+    "semantic_hash": "8e24f3af82502daf3fd34e02dbf4a579"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/agents/super-agent.md": {
+    "mtime": 1780498596.8356688,
+    "ast_hash": "290cc39284273fe80993f0879c20d1bc",
+    "semantic_hash": "290cc39284273fe80993f0879c20d1bc"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/rules/enterprise-safety.md": {
+    "mtime": 1780498596.8342128,
+    "ast_hash": "a311470ea37098d9915e35db58e488ae",
+    "semantic_hash": "a311470ea37098d9915e35db58e488ae"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/rules/agile-policy.md": {
+    "mtime": 1780498596.8338263,
+    "ast_hash": "ddbad6b702db1f94f87df600ec161c03",
+    "semantic_hash": "ddbad6b702db1f94f87df600ec161c03"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/rules/tdd-policy.md": {
+    "mtime": 1780498596.8340383,
+    "ast_hash": "2296cab82ca1e6ac941fb09340ec6842",
+    "semantic_hash": "2296cab82ca1e6ac941fb09340ec6842"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/templates/tdd-evidence.md": {
+    "mtime": 1780498596.8354445,
+    "ast_hash": "4aa874364c318de7dc614e12ae7071fa",
+    "semantic_hash": "4aa874364c318de7dc614e12ae7071fa"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/templates/story.md": {
+    "mtime": 1780498596.8351629,
+    "ast_hash": "03d10aec13c8a0d0f475ad294027d887",
+    "semantic_hash": "03d10aec13c8a0d0f475ad294027d887"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-test.md": {
+    "mtime": 1780498596.837382,
+    "ast_hash": "00362fa27ea42d47b8d1155feac89c54",
+    "semantic_hash": "00362fa27ea42d47b8d1155feac89c54"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-docs.md": {
+    "mtime": 1780498596.8377726,
+    "ast_hash": "5bd396a3eec05abd5bc553bbd1f38548",
+    "semantic_hash": "5bd396a3eec05abd5bc553bbd1f38548"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-session.md": {
+    "mtime": 1780498596.8368654,
+    "ast_hash": "cad9e40e9becd57f820af7a21e7e4372",
+    "semantic_hash": "cad9e40e9becd57f820af7a21e7e4372"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-research.md": {
+    "mtime": 1780498596.8362749,
+    "ast_hash": "c88652050cace18b460706c334ebc9f0",
+    "semantic_hash": "c88652050cace18b460706c334ebc9f0"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-shape.md": {
+    "mtime": 1780498596.8361347,
+    "ast_hash": "473d73d32eee78bd984daa0067c92964",
+    "semantic_hash": "473d73d32eee78bd984daa0067c92964"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-plan.md": {
+    "mtime": 1780498596.8364127,
+    "ast_hash": "3bc6dc0fb78d7b8f70213faf3aac7615",
+    "semantic_hash": "3bc6dc0fb78d7b8f70213faf3aac7615"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-debug.md": {
+    "mtime": 1780498596.837505,
+    "ast_hash": "af497b2d830c54fe942ac066e967df85",
+    "semantic_hash": "af497b2d830c54fe942ac066e967df85"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-graph.md": {
+    "mtime": 1780498596.837034,
+    "ast_hash": "5c9aecd46b78ad993057421933e46b0f",
+    "semantic_hash": "5c9aecd46b78ad993057421933e46b0f"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/catalog.md": {
+    "mtime": 1780498596.8358364,
+    "ast_hash": "83fef199329dbf757db412f68d99ff40",
+    "semantic_hash": "83fef199329dbf757db412f68d99ff40"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-ship.md": {
+    "mtime": 1780498596.8378942,
+    "ast_hash": "c2a04a86c9c2f2cead7112528600d622",
+    "semantic_hash": "c2a04a86c9c2f2cead7112528600d622"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-review.md": {
+    "mtime": 1780498596.8376303,
+    "ast_hash": "5aa91678c1f1afb7cc38cc8c29598a1b",
+    "semantic_hash": "5aa91678c1f1afb7cc38cc8c29598a1b"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-tdd.md": {
+    "mtime": 1780498596.837181,
+    "ast_hash": "5a868516d73da46ade67e06c7fe7894c",
+    "semantic_hash": "5a868516d73da46ade67e06c7fe7894c"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.speckit/skills/spec-context.md": {
+    "mtime": 1780498596.8365986,
+    "ast_hash": "af6452c6f17f6508d00bd982ac9b936a",
+    "semantic_hash": "af6452c6f17f6508d00bd982ac9b936a"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.opencode/agent/speckit-tdd-developer.md": {
+    "mtime": 1780498596.8384836,
+    "ast_hash": "0acdf9dbf71d17f0e7bece4d43f704e5",
+    "semantic_hash": "0acdf9dbf71d17f0e7bece4d43f704e5"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.opencode/agent/speckit-planner.md": {
+    "mtime": 1780498596.8383183,
+    "ast_hash": "d018056d5446b3e9a77f2472ffec98d6",
+    "semantic_hash": "d018056d5446b3e9a77f2472ffec98d6"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.opencode/agent/speckit-reviewer.md": {
+    "mtime": 1780498596.8386247,
+    "ast_hash": "cf8671b3e0527f69d24b58749da891d5",
+    "semantic_hash": "cf8671b3e0527f69d24b58749da891d5"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.opencode/agent/speckit-docs.md": {
+    "mtime": 1780498596.8387341,
+    "ast_hash": "510d6c4573e159172f7f64c1350fc73a",
+    "semantic_hash": "510d6c4573e159172f7f64c1350fc73a"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.agents/skills/frontend-design/SKILL.md": {
+    "mtime": 1780497305.2444518,
+    "ast_hash": "06a0520e81f698334258c73ff0de533b",
+    "semantic_hash": "06a0520e81f698334258c73ff0de533b"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/.agents/skills/frontend-design/LICENSE.txt": {
+    "mtime": 1780497305.2444532,
+    "ast_hash": "2ee41112a44fe7014dce33e26468ba93",
+    "semantic_hash": "2ee41112a44fe7014dce33e26468ba93"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/deep-research/RATU_2026-06-03.md": {
+    "mtime": 1780509670.7555985,
+    "ast_hash": "640ae4ccf7a5a20e07f4e63cda188062",
+    "semantic_hash": "640ae4ccf7a5a20e07f4e63cda188062"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/deep-research/BRPT_2026-06-03.md": {
+    "mtime": 1780509670.7553375,
+    "ast_hash": "ddda350adc527f065588ba0340a1aea5",
+    "semantic_hash": "ddda350adc527f065588ba0340a1aea5"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/deep-research/WIFI_2026-06-03.md": {
+    "mtime": 1780509670.7561765,
+    "ast_hash": "0d96157776655bc25f3c9f3842e611a1",
+    "semantic_hash": "0d96157776655bc25f3c9f3842e611a1"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/deep-research/SUPA_2026-06-03.md": {
+    "mtime": 1780509670.7559826,
+    "ast_hash": "24317c29eebaf9435793c573f5038f08",
+    "semantic_hash": "24317c29eebaf9435793c573f5038f08"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/deep-research/BUMI_2026-06-03.md": {
+    "mtime": 1780532731.1521707,
+    "ast_hash": "1cc11bad08ae0140ae6302e9f5835150",
+    "semantic_hash": "1cc11bad08ae0140ae6302e9f5835150"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/content/reports/Report_2026-06-03.md": {
+    "mtime": 1780502630.9610307,
+    "ast_hash": "27efb684fe22723c838bc8d20888e046",
+    "semantic_hash": "27efb684fe22723c838bc8d20888e046"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/file.svg": {
+    "mtime": 1780498340.0321026,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/icon-192.png": {
+    "mtime": 1780510971.9064229,
+    "ast_hash": "db5c8a8890234b5369f6c25383cb4f5e",
+    "semantic_hash": "db5c8a8890234b5369f6c25383cb4f5e"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/logo.png": {
+    "mtime": 1780501520.1490324,
+    "ast_hash": "bf42edf5007618648d1497f8b4d7f381",
+    "semantic_hash": "bf42edf5007618648d1497f8b4d7f381"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/vercel.svg": {
+    "mtime": 1780498340.0323484,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/next.svg": {
+    "mtime": 1780498340.0325608,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/globe.svg": {
+    "mtime": 1780498340.0327547,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/window.svg": {
+    "mtime": 1780498340.032995,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "/Users/muhammadilyas/Documents/PROJECTS/supri-spinach-stock-research/public/icon-512.png": {
+    "mtime": 1780510971.9324985,
+    "ast_hash": "49defb6de07017220919cbd022ca177e",
+    "semantic_hash": "49defb6de07017220919cbd022ca177e"
+  }
+}
