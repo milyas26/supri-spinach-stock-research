@@ -20,7 +20,11 @@ export function getDeepResearchFiles(): string[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace('.md', ''))
-    .sort();
+    .sort((a, b) => {
+      const dateA = a.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
+      const dateB = b.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
+      return dateB.localeCompare(dateA);
+    });
 }
 
 export function getLatestReportFilename(): string | null {
