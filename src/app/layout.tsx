@@ -55,6 +55,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="116308d7-ad11-4cfc-a86a-a5ee0cf13ffd"></script>
       </head>
       <body className="flex h-full overflow-hidden">
         <ServiceWorkerRegistration />
