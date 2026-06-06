@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getReportFiles, getReportContent } from '@/lib/content';
 import { MarkdownRenderer } from '@/components/markdown-renderer';
+import { Comments } from '@/components/comments';
 
 interface PageProps {
   params: Promise<{ filename: string }>;
@@ -24,6 +25,7 @@ export default async function ReportPage({ params }: PageProps) {
   return (
     <div>
       <MarkdownRenderer content={content} />
+      <Comments />
     </div>
   );
 }
