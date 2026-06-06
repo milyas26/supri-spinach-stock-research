@@ -25,6 +25,7 @@ export default async function DeepResearchPage({ params }: PageProps) {
   return (
     <div>
       <MarkdownRenderer content={content} />
+      <hr className="my-8 border-gray-300" />
       <Comments />
     </div>
   );
