@@ -16,8 +16,14 @@ export function getReportNav(): NavItem[] {
 }
 
 export function getDeepResearchNav(): NavItem[] {
-  return getDeepResearchFiles().map((ticker) => ({
-    label: ticker,
-    href: `/deep-research/${ticker}`,
-  }));
+  return getDeepResearchFiles().map((filename) => {
+    const timeMatch = filename.match(/_(\d{2}-\d{2})$/);
+    const time = timeMatch ? timeMatch[1].replace('-', ':') : undefined;
+    const label = timeMatch ? filename.replace(/_\d{2}-\d{2}$/, '') : filename;
+    return {
+      label,
+      href: `/deep-research/${filename}`,
+      ...(time && { date: time }),
+    };
+  });
 }

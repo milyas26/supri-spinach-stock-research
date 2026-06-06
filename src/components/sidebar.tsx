@@ -52,7 +52,16 @@ function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
           $
         </span>
         <span className="truncate text-xs">{item.label}</span>
-        {active && <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />}
+        {item.date && (
+          <span className={`ml-auto shrink-0 text-[9px] font-mono px-1.5 py-0.5 rounded ${
+            active
+              ? "bg-[#C8963E]/20 text-[#C8963E]"
+              : "bg-[#D6D0C5] text-[#8C857A]"
+          }`}>
+            {item.date}
+          </span>
+        )}
+        {active && !item.date && <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />}
       </Link>
     </li>
   );

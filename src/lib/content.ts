@@ -21,8 +21,8 @@ export function getDeepResearchFiles(): string[] {
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace('.md', ''))
     .sort((a, b) => {
-      const dateA = a.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
-      const dateB = b.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
+      const dateA = a.match(/(\d{4}-\d{2}-\d{2}_\d{2}-\d{2})/)?.[1] ?? '';
+      const dateB = b.match(/(\d{4}-\d{2}-\d{2}_\d{2}-\d{2})/)?.[1] ?? '';
       return dateB.localeCompare(dateA);
     });
 }
