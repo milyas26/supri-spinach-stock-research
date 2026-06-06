@@ -15,7 +15,7 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Supri Spinach — Daily Stock Report',
-  description: 'AI-generated daily stock analysis for 31 watchlist stocks',
+  description: 'AI-generated daily stock analysis for Konglo stocks',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
