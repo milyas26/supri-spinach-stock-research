@@ -17,7 +17,6 @@ export function Comments() {
     script.setAttribute('repo', 'milyas26/supri-spinach-stock-research');
     script.setAttribute('issue-term', 'pathname');
     script.setAttribute('theme', 'boxy-light');
-    script.setAttribute('label', 'req dong bang');
     script.setAttribute('crossorigin', 'anonymous');
     script.async = true;
     
