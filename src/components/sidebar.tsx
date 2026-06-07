@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronRight, BarChart3, Search, Menu, X } from "lucide-react";
+import { ChevronRight, Menu, X } from "lucide-react";
 import { useSidebar } from "@/components/sidebar-context";
 import Image from "next/image";
 
