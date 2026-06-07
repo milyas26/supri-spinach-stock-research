@@ -329,6 +329,15 @@ body::before {
 
 }
 
+/* ── Search Highlight ── */
+mark.search-highlight {
+  background: rgba(200, 150, 62, 0.2);
+  color: var(--color-text);
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 0.05em 0.15em;
+}
+
 /* ── Mobile sidebar overlay ── */
 .sidebar-overlay {
   display: none;

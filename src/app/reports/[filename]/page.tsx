@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getReportFiles, getReportContent } from '@/lib/content';
-import { MarkdownRenderer } from '@/components/markdown-renderer';
+import { processMarkdown } from '@/components/markdown-renderer';
+import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
 
 interface PageProps {
@@ -22,9 +23,11 @@ export default async function ReportPage({ params }: PageProps) {
     notFound();
   }
 
+  const html = await processMarkdown(content);
+
   return (
     <div>
-      <MarkdownRenderer content={content} />
+      <HighlightedContent html={html} />
       <hr className="my-8 border-gray-300" />
       <Comments />
     </div>

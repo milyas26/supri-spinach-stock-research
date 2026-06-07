@@ -6,6 +6,7 @@ import { SidebarProvider } from '@/components/sidebar-context';
 import { getReportNav, getDeepResearchNav } from '@/lib/navigation';
 import { ServiceWorkerRegistration } from '@/components/service-worker-registration';
 import { InstallPrompt } from '@/components/install-prompt';
+import { SearchTrigger } from '@/components/search-trigger';
 
 const jetbrains = JetBrains_Mono({
   variable: '--font-jetbrains-mono',
@@ -63,6 +64,7 @@ export default function RootLayout({
         <SidebarProvider>
           <Sidebar reportItems={reportItems} deepResearchItems={deepResearchItems} />
           <main className="flex-1 overflow-y-auto px-4 pt-14 pb-6 md:px-10 md:py-10">
+            <SearchTrigger />
             {children}
           </main>
         </SidebarProvider>

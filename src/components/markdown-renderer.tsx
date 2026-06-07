@@ -33,9 +33,13 @@ function wrapTables(html: string): string {
   return html.replace(/<table/g, '<div class="md-table-wrapper"><table').replace(/<\/table>/g, '</table></div>');
 }
 
-export async function MarkdownRenderer({ content }: { content: string }) {
+export async function processMarkdown(content: string): Promise<string> {
   const rawHtml = await renderMarkdown(content);
-  const html = wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml))));
+  return wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml))));
+}
+
+export async function MarkdownRenderer({ content }: { content: string }) {
+  const html = await processMarkdown(content);
 
   return (
     <article
