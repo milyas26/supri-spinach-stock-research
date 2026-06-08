@@ -35,7 +35,7 @@ export function SearchTrigger() {
         <Search size={15} className="text-text" strokeWidth={2.5} />
       </button>
 
-      <div className="hidden md:flex justify-end sticky top-0 z-20 py-2 mb-6">
+      <div className="hidden md:flex fixed top-10 right-10 z-20">
         <button
           onClick={() => setOpen(true)}
           className="flex items-center gap-2 px-3 py-1.5 text-sm border border-border

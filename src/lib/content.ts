@@ -43,3 +43,42 @@ export function getDeepResearchContent(ticker: string): string {
   if (!fs.existsSync(filePath)) throw new Error(`Research not found: ${ticker}`);
   return fs.readFileSync(filePath, 'utf-8');
 }
+
+export interface DeepResearchFileInfo {
+  filename: string; // without .md
+  ticker: string;   // e.g. BRPT
+  date: string;     // e.g. 2026-06-05
+  time: string;     // e.g. 19:20
+  href: string;
+}
+
+/**
+ * Given an active filename (without .md), extract the ticker symbol
+ * and return all files that share that same ticker, sorted newest first.
+ * Returns empty array if ticker has fewer than 2 files.
+ */
+export function getRelatedTickerFiles(activeFilename: string): DeepResearchFileInfo[] {
+  // Extract ticker: everything before the first _YYYY pattern
+  const tickerMatch = activeFilename.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);
+  if (!tickerMatch) return [];
+  const ticker = tickerMatch[1];
+
+  const all = getDeepResearchFiles();
+  const related = all.filter((f) => {
+    const m = f.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);
+    return m && m[1] === ticker;
+  });
+
+  if (related.length < 2) return [];
+
+  return related.map((f) => {
+    const m = f.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/)!;
+    return {
+      filename: f,
+      ticker: m[1],
+      date: m[2],
+      time: m[3].replace('-', ':'),
+      href: `/deep-research/${f}`,
+    };
+  });
+}
