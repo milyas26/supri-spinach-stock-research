@@ -65,6 +65,13 @@ body::before {
   background: var(--color-text-muted);
 }
 
+/* ── Heading anchor scroll offset (accounts for sticky header) ── */
+.md-content h1,
+.md-content h2,
+.md-content h3 {
+  scroll-margin-top: 5rem;
+}
+
 /* ── Markdown Content ── */
 .md-content {
   max-width: 56rem;

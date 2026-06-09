@@ -1,5 +1,6 @@
 import { renderMarkdown } from '@/lib/markdown';
 import { tickers } from '@/lib/tickers';
+import { extractToc, slugify, type TocItem } from '@/lib/toc';
 
 const tickerSet = new Set(tickers);
 
@@ -33,9 +34,35 @@ function wrapTables(html: string): string {
   return html.replace(/<table/g, '<div class="md-table-wrapper"><table').replace(/<\/table>/g, '</table></div>');
 }
 
+/**
+ * Inject id attrs into h1–h3 tags in rendered HTML.
+ * Uses same slugify logic as extractToc so IDs match.
+ */
+function injectHeadingIds(html: string): string {
+  const idCount: Record<string, number> = {};
+  return html.replace(/<(h[1-3])>([\s\S]*?)<\/h[1-3]>/gi, (match, tag, inner) => {
+    // strip inner HTML tags to get plain text
+    const text = inner.replace(/<[^>]+>/g, '').trim();
+    if (!text) return match;
+    const baseSlug = slugify(text);
+    idCount[baseSlug] = (idCount[baseSlug] ?? 0) + 1;
+    const id = idCount[baseSlug] === 1 ? baseSlug : `${baseSlug}-${idCount[baseSlug]}`;
+    return `<${tag} id="${id}">${inner}</${tag}>`;
+  });
+}
+
 export async function processMarkdown(content: string): Promise<string> {
   const rawHtml = await renderMarkdown(content);
-  return wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml))));
+  return injectHeadingIds(wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml)))));
+}
+
+/** Like processMarkdown but also returns extracted TOC items. */
+export async function processMarkdownWithToc(
+  content: string
+): Promise<{ html: string; toc: TocItem[] }> {
+  const html = await processMarkdown(content);
+  const toc = extractToc(content);
+  return { html, toc };
 }
 
 export async function MarkdownRenderer({ content }: { content: string }) {

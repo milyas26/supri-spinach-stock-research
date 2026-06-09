@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import { getDeepResearchFiles, getDeepResearchContent, getRelatedTickerFiles } from '@/lib/content';
-import { processMarkdown } from '@/components/markdown-renderer';
+import { processMarkdownWithToc } from '@/components/markdown-renderer';
 import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
 import { TickerTimeline } from '@/components/ticker-timeline';
+import { TableOfContents } from '@/components/table-of-contents';
 
 interface PageProps {
   params: Promise<{ ticker: string }>;
@@ -24,8 +25,10 @@ export default async function DeepResearchPage({ params }: PageProps) {
     notFound();
   }
 
-  const html = await processMarkdown(content);
+  const { html, toc } = await processMarkdownWithToc(content);
   const relatedFiles = getRelatedTickerFiles(ticker);
+
+  const tocItems = toc.filter(i => i.level > 1);
 
   return (
     <div className="flex flex-col xl:flex-row gap-8 xl:items-start">
@@ -38,8 +41,9 @@ export default async function DeepResearchPage({ params }: PageProps) {
         <hr className="my-8 border-gray-300" />
         <Comments />
       </div>
-      {/* Desktop timeline: visible at xl+ */}
-      <div className="hidden xl:block w-[200px] shrink-0 sticky top-14 self-start">
+      {/* Desktop right column: TOC + Timeline, visible at xl+ */}
+      <div className="hidden xl:flex xl:flex-col gap-8 w-[200px] shrink-0 sticky top-14 self-start">
+        {tocItems.length > 0 && <TableOfContents items={tocItems} />}
         <TickerTimeline files={relatedFiles} />
       </div>
     </div>
