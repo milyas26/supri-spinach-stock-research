@@ -4,7 +4,7 @@ import { extractToc, slugify, type TocItem } from '@/lib/toc';
 
 const tickerSet = new Set(tickers);
 
-function linkifyTickers(html: string): string {
+function linkifyTickers(html: string, deepResearchMap?: Map<string, string>): string {
   let insideAnchor = false;
   return html.replace(/(<[^>]+>)|(\b[A-Z]{3,5}\b)/g, (match, tag, word) => {
     if (tag) {
@@ -13,6 +13,10 @@ function linkifyTickers(html: string): string {
       return tag;
     }
     if (!insideAnchor && word && tickerSet.has(word)) {
+      const deepFile = deepResearchMap?.get(word);
+      if (deepFile) {
+        return `<a href="/deep-research/${deepFile}" target="_self" class="ticker-link ticker-link--research">${word}</a>`;
+      }
       return `<a href="https://stockbit.com/symbol/${word}" target="_blank" rel="noopener noreferrer" class="ticker-link">${word}</a>`;
     }
     return match;
@@ -51,16 +55,17 @@ function injectHeadingIds(html: string): string {
   });
 }
 
-export async function processMarkdown(content: string): Promise<string> {
+export async function processMarkdown(content: string, deepResearchMap?: Map<string, string>): Promise<string> {
   const rawHtml = await renderMarkdown(content);
-  return injectHeadingIds(wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml)))));
+  return injectHeadingIds(wrapTables(fixExternalLinks(colorizeStatusSymbols(linkifyTickers(rawHtml, deepResearchMap)))));
 }
 
 /** Like processMarkdown but also returns extracted TOC items. */
 export async function processMarkdownWithToc(
-  content: string
+  content: string,
+  deepResearchMap?: Map<string, string>
 ): Promise<{ html: string; toc: TocItem[] }> {
-  const html = await processMarkdown(content);
+  const html = await processMarkdown(content, deepResearchMap);
   const toc = extractToc(content);
   return { html, toc };
 }

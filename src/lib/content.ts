@@ -57,6 +57,22 @@ export interface DeepResearchFileInfo {
  * and return all files that share that same ticker, sorted newest first.
  * Returns empty array if ticker has fewer than 2 files.
  */
+/**
+ * Returns a map of ticker symbol → latest deep-research filename (without .md).
+ * Uses the existing sort order (newest first) so the first match per ticker wins.
+ */
+export function getTickerToLatestDeepResearch(): Map<string, string> {
+  const map = new Map<string, string>();
+  const files = getDeepResearchFiles(); // already sorted newest first
+  for (const f of files) {
+    const m = f.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);
+    if (m && !map.has(m[1])) {
+      map.set(m[1], f);
+    }
+  }
+  return map;
+}
+
 export function getRelatedTickerFiles(activeFilename: string): DeepResearchFileInfo[] {
   // Extract ticker: everything before the first _YYYY pattern
   const tickerMatch = activeFilename.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);

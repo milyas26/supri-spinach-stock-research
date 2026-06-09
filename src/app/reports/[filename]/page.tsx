@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getReportFiles, getReportContent } from '@/lib/content';
+import { getReportFiles, getReportContent, getTickerToLatestDeepResearch } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
 import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
@@ -24,7 +24,7 @@ export default async function ReportPage({ params }: PageProps) {
     notFound();
   }
 
-  const { html, toc } = await processMarkdownWithToc(content);
+  const { html, toc } = await processMarkdownWithToc(content, getTickerToLatestDeepResearch());
 
   return (
     <div className="flex flex-col xl:flex-row gap-8 xl:items-start">
