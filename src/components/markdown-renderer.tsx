@@ -42,11 +42,23 @@ function wrapTables(html: string): string {
  * Inject id attrs into h1–h3 tags in rendered HTML.
  * Uses same slugify logic as extractToc so IDs match.
  */
+function decodeHtmlEntities(str: string): string {
+  return str
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
+}
+
 function injectHeadingIds(html: string): string {
   const idCount: Record<string, number> = {};
   return html.replace(/<(h[1-3])>([\s\S]*?)<\/h[1-3]>/gi, (match, tag, inner) => {
-    // strip inner HTML tags to get plain text
-    const text = inner.replace(/<[^>]+>/g, '').trim();
+    // strip inner HTML tags then decode entities to get plain text — must match extractToc
+    const text = decodeHtmlEntities(inner.replace(/<[^>]+>/g, '').trim());
     if (!text) return match;
     const baseSlug = slugify(text);
     idCount[baseSlug] = (idCount[baseSlug] ?? 0) + 1;
