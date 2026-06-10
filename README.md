@@ -1,1 +1,1 @@
-<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/be1fbed7-5fdd-49e7-b8f5-236a8795b72a" />
+<img width="3600" height="2338" alt="mdka" src="https://github.com/user-attachments/assets/e276c0ba-3fc4-4768-85eb-fa9eeb134c88" />
