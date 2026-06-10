@@ -1,4 +1,4 @@
-import { getReportFiles, getDeepResearchFiles } from '@/lib/content';
+import { getReportFiles, getDeepResearchFiles, getGeneralFiles } from '@/lib/content';
 import { getTickerInfo } from '@/lib/tickers';
 
 export interface NavItem {
@@ -29,6 +29,19 @@ export function getReportNav(): NavItem[] {
     label: filename,
     href: `/reports/${filename}`,
   }));
+}
+
+export function getGeneralNav(): NavItem[] {
+  const files = getGeneralFiles();
+  return files.map((slug) => {
+    // slug format: NAME_YYYY-MM-DD_HH-MM  or just NAME
+    const match = slug.match(/^(.+?)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);
+    const label = match ? match[1].replace(/-/g, ' ') : slug.replace(/-/g, ' ');
+    return {
+      label,
+      href: `/general/${slug}`,
+    };
+  });
 }
 
 export function getDeepResearchNav(): TickerNavGroup[] {

@@ -73,6 +73,22 @@ export function getTickerToLatestDeepResearch(): Map<string, string> {
   return map;
 }
 
+export function getGeneralFiles(): string[] {
+  const dir = path.join(CONTENT_DIR, 'general');
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => f.replace('.md', ''))
+    .sort((a, b) => b.localeCompare(a));
+}
+
+export function getGeneralContent(slug: string): string {
+  const filePath = path.join(CONTENT_DIR, 'general', `${slug}.md`);
+  if (!fs.existsSync(filePath)) throw new Error(`General content not found: ${slug}`);
+  return fs.readFileSync(filePath, 'utf-8');
+}
+
 export function getRelatedTickerFiles(activeFilename: string): DeepResearchFileInfo[] {
   // Extract ticker: everything before the first _YYYY pattern
   const tickerMatch = activeFilename.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);

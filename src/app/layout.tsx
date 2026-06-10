@@ -3,7 +3,7 @@ import { JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { Sidebar } from '@/components/sidebar';
 import { SidebarProvider } from '@/components/sidebar-context';
-import { getReportNav, getDeepResearchNav } from '@/lib/navigation';
+import { getReportNav, getDeepResearchNav, getGeneralNav } from '@/lib/navigation';
 import { ServiceWorkerRegistration } from '@/components/service-worker-registration';
 import { InstallPrompt } from '@/components/install-prompt';
 import { SearchTrigger } from '@/components/search-trigger';
@@ -42,6 +42,7 @@ export default function RootLayout({
 }>) {
   const reportItems = getReportNav();
   const deepResearchGroups = getDeepResearchNav();
+  const generalItems = getGeneralNav();
 
   return (
     <html
@@ -62,7 +63,7 @@ export default function RootLayout({
         <ServiceWorkerRegistration />
         <InstallPrompt />
         <SidebarProvider>
-          <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} />
+          <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} generalItems={generalItems} />
           <main className="flex-1 overflow-y-auto px-4 pt-14 pb-6 md:px-10 md:py-10">
             <SearchTrigger />
             {children}

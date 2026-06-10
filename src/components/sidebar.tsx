@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronRight, Menu, X } from "lucide-react";
+import { ChevronRight, ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { useSidebar } from "@/components/sidebar-context";
 import Image from "next/image";
 
@@ -66,8 +66,8 @@ function TickerTreeItem({ group, activePath }: { group: TickerNavGroup; activePa
           <Image
             src={group.tickerLogo}
             alt={group.ticker}
-            width={20}
-            height={20}
+            width={22}
+            height={22}
             className="shrink-0 rounded-full object-cover bg-white"
             unoptimized
           />
@@ -139,15 +139,29 @@ function TickerTreeItem({ group, activePath }: { group: TickerNavGroup; activePa
 export function Sidebar({
   reportItems,
   deepResearchGroups,
+  generalItems,
 }: {
   reportItems: NavItem[];
   deepResearchGroups: TickerNavGroup[];
+  generalItems: NavItem[];
 }) {
   const pathname = usePathname();
   const { open, setOpen } = useSidebar();
   const [reportsOpen, setReportsOpen] = useState(true);
   const [deepOpen, setDeepOpen] = useState(true);
+  const [generalOpen, setGeneralOpen] = useState(true);
+  const [reportsExpanded, setReportsExpanded] = useState(false);
+  const [deepExpanded, setDeepExpanded] = useState(false);
+  const [generalExpanded, setGeneralExpanded] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  const REPORT_LIMIT = 2;
+  const DEEP_LIMIT = 15;
+  const GENERAL_LIMIT = 5;
+
+  const visibleReports = reportsExpanded ? reportItems : reportItems.slice(0, REPORT_LIMIT);
+  const visibleDeep = deepExpanded ? deepResearchGroups : deepResearchGroups.slice(0, DEEP_LIMIT);
+  const visibleGeneral = generalExpanded ? generalItems : generalItems.slice(0, GENERAL_LIMIT);
 
   useEffect(() => {
     setMounted(true);
@@ -217,7 +231,7 @@ export function Sidebar({
 
             {reportsOpen && (
               <ul>
-                {reportItems.map((item) => (
+                {visibleReports.map((item) => (
                   <NavFileItem
                     key={item.href}
                     item={item}
@@ -227,6 +241,20 @@ export function Sidebar({
                 {reportItems.length === 0 && (
                   <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
                     No reports yet
+                  </li>
+                )}
+                {reportItems.length > REPORT_LIMIT && (
+                  <li>
+                    <button
+                      onClick={() => setReportsExpanded(!reportsExpanded)}
+                      className="flex w-full items-center gap-1 px-6 py-1.5 text-[10px] text-[#8C857A] hover:text-[#1E1C19] transition-colors"
+                    >
+                      {reportsExpanded ? (
+                        <><ChevronUp className="h-3 w-3" strokeWidth={2.5} /> Show less</>
+                      ) : (
+                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {reportItems.length - REPORT_LIMIT} more</>
+                      )}
+                    </button>
                   </li>
                 )}
               </ul>
@@ -247,7 +275,7 @@ export function Sidebar({
 
             {deepOpen && (
               <ul>
-                {deepResearchGroups.map((group) => (
+                {visibleDeep.map((group) => (
                   <TickerTreeItem
                     key={group.ticker}
                     group={group}
@@ -257,6 +285,64 @@ export function Sidebar({
                 {deepResearchGroups.length === 0 && (
                   <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
                     No research yet
+                  </li>
+                )}
+                {deepResearchGroups.length > DEEP_LIMIT && (
+                  <li>
+                    <button
+                      onClick={() => setDeepExpanded(!deepExpanded)}
+                      className="flex w-full items-center gap-1 px-6 py-1.5 text-[10px] text-[#8C857A] hover:text-[#1E1C19] transition-colors"
+                    >
+                      {deepExpanded ? (
+                        <><ChevronUp className="h-3 w-3" strokeWidth={2.5} /> Show less</>
+                      ) : (
+                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {deepResearchGroups.length - DEEP_LIMIT} more</>
+                      )}
+                    </button>
+                  </li>
+                )}
+              </ul>
+            )}
+          </div>
+
+          <div>
+            <button
+              onClick={() => setGeneralOpen(!generalOpen)}
+              className="flex w-full items-center gap-1 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
+            >
+              General
+              <ChevronRight
+                className={`h-3 w-3 transition-transform duration-200 ${generalOpen ? "rotate-90" : ""}`}
+                strokeWidth={2.5}
+              />
+            </button>
+
+            {generalOpen && (
+              <ul>
+                {visibleGeneral.map((item) => (
+                  <NavFileItem
+                    key={item.href}
+                    item={item}
+                    active={pathname === item.href}
+                  />
+                ))}
+                {generalItems.length === 0 && (
+                  <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
+                    No content yet
+                  </li>
+                )}
+                {generalItems.length > GENERAL_LIMIT && (
+                  <li>
+                    <button
+                      onClick={() => setGeneralExpanded(!generalExpanded)}
+                      className="flex w-full items-center gap-1 px-6 py-1.5 text-[10px] text-[#8C857A] hover:text-[#1E1C19] transition-colors"
+                    >
+                      {generalExpanded ? (
+                        <><ChevronUp className="h-3 w-3" strokeWidth={2.5} /> Show less</>
+                      ) : (
+                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {generalItems.length - GENERAL_LIMIT} more</>
+                      )}
+                    </button>
                   </li>
                 )}
               </ul>
