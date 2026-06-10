@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const reportItems = getReportNav();
-  const deepResearchItems = getDeepResearchNav();
+  const deepResearchGroups = getDeepResearchNav();
 
   return (
     <html
@@ -62,7 +62,7 @@ export default function RootLayout({
         <ServiceWorkerRegistration />
         <InstallPrompt />
         <SidebarProvider>
-          <Sidebar reportItems={reportItems} deepResearchItems={deepResearchItems} />
+          <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} />
           <main className="flex-1 overflow-y-auto px-4 pt-14 pb-6 md:px-10 md:py-10">
             <SearchTrigger />
             {children}

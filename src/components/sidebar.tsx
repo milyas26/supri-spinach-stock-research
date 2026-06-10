@@ -13,6 +13,15 @@ interface NavItem {
   date?: string;
 }
 
+interface TickerNavGroup {
+  ticker: string;
+  tickerName?: string;
+  tickerLogo?: string;
+  latestHref: string;
+  hasMultiple: boolean;
+  items: NavItem[];
+}
+
 function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
   return (
     <li>
@@ -34,45 +43,105 @@ function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
   );
 }
 
-function NavTickerItem({ item, active }: { item: NavItem; active: boolean }) {
+function TickerTreeItem({ group, activePath }: { group: TickerNavGroup; activePath: string }) {
+  const [expanded, setExpanded] = useState(false);
+  const isLatestActive = activePath === group.latestHref;
+  const hasChildActive = group.items.some(item => item.href === activePath);
+
+  useEffect(() => {
+    if (hasChildActive && group.hasMultiple) setExpanded(true);
+  }, [hasChildActive, group.hasMultiple]);
+
   return (
     <li>
       <Link
-        href={item.href}
-        className={`
-          group flex items-center gap-3 pr-4 pl-6 py-1.5 text-sm transition-all duration-150
-          ${
-            active
-              ? "text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold"
-              : "text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]"
-          }
-        `}
+        href={group.latestHref}
+        className={`group flex items-center gap-2 pr-4 pl-4 py-1.5 text-sm transition-all duration-150 ${
+          isLatestActive
+            ? "text-[#C8963E] border-l-[3px] border-[#C8963E] bg-[#C8963E]/[0.08] font-semibold"
+            : "text-[#5C5650] border-l-[3px] border-transparent hover:text-[#1E1C19] hover:bg-[#E3DDD0]"
+        }`}
       >
-        <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">
-          $
-        </span>
-        <span className="truncate text-xs">{item.label}</span>
-        {item.date && (
-          <span className={`ml-auto shrink-0 text-[9px] font-mono px-1.5 py-0.5 rounded ${
-            active
-              ? "bg-[#C8963E]/20 text-[#C8963E]"
-              : "bg-[#D6D0C5] text-[#8C857A]"
-          }`}>
-            {item.date}
-          </span>
+        {group.tickerLogo ? (
+          <Image
+            src={group.tickerLogo}
+            alt={group.ticker}
+            width={20}
+            height={20}
+            className="shrink-0 rounded-full object-cover bg-white"
+            unoptimized
+          />
+        ) : (
+          <span className="text-[11px] font-bold tracking-widest text-[#8C857A]">$</span>
         )}
-        {active && !item.date && <span className="ml-auto h-1.5 w-1.5 bg-[#C8963E]" />}
+        <div className="flex min-w-0 flex-col">
+          <span className="text-xs font-bold leading-none">{group.ticker}</span>
+          {group.tickerName && (
+            <span className="truncate text-[9px] text-[#8C857A] leading-tight mt-0.5">{group.tickerName}</span>
+          )}
+        </div>
+        {group.hasMultiple && (
+          <>
+            <span className="shrink-0 text-[9px] font-mono px-1 py-0.5 rounded bg-[#D6D0C5] text-[#8C857A]">
+              {group.items.length}
+            </span>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setExpanded(!expanded);
+              }}
+              className="p-0.5 hover:bg-[#D6D0C5] rounded"
+            >
+              <ChevronRight
+                className={`h-3 w-3 text-[#8C857A] transition-transform duration-200 ${
+                  expanded ? "rotate-90" : ""
+                }`}
+                strokeWidth={2.5}
+              />
+            </button>
+          </>
+        )}
       </Link>
+
+      {expanded && group.hasMultiple && (
+        <ul>
+          {group.items.map((item) => {
+            const isActive = activePath === item.href;
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`flex items-center gap-2 px-4 pl-10 py-1 text-xs transition-all duration-150 ${
+                    isActive
+                      ? "text-[#C8963E] bg-[#C8963E]/[0.06] font-semibold"
+                      : "text-[#8C857A] hover:text-[#1E1C19] hover:bg-[#E3DDD0]"
+                  }`}
+                >
+                  <span className="truncate text-[11px]">{item.label}</span>
+                  {item.date && (
+                    <span className={`ml-auto shrink-0 text-[9px] font-mono px-1 py-0.5 rounded ${
+                      isActive ? "bg-[#C8963E]/20 text-[#C8963E]" : "bg-[#D6D0C5] text-[#8C857A]"
+                    }`}>
+                      {item.date}
+                    </span>
+                  )}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </li>
   );
 }
 
 export function Sidebar({
   reportItems,
-  deepResearchItems,
+  deepResearchGroups,
 }: {
   reportItems: NavItem[];
-  deepResearchItems: NavItem[];
+  deepResearchGroups: TickerNavGroup[];
 }) {
   const pathname = usePathname();
   const { open, setOpen } = useSidebar();
@@ -178,14 +247,14 @@ export function Sidebar({
 
             {deepOpen && (
               <ul>
-                {deepResearchItems.map((item) => (
-                  <NavTickerItem
-                    key={item.href}
-                    item={item}
-                    active={pathname === item.href}
+                {deepResearchGroups.map((group) => (
+                  <TickerTreeItem
+                    key={group.ticker}
+                    group={group}
+                    activePath={pathname}
                   />
                 ))}
-                {deepResearchItems.length === 0 && (
+                {deepResearchGroups.length === 0 && (
                   <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
                     No research yet
                   </li>
