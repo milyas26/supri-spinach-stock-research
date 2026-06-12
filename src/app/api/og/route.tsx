@@ -87,129 +87,121 @@ export async function GET(request: Request) {
           ))}
         </div>
 
-        {/* Main content — centered block */}
+        {/* Main content */}
         <div
           style={{
             display: 'flex',
+            flexDirection: 'column',
             flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '52px 0 44px',
+            padding: '52px 64px 44px 72px',
           }}
         >
-          <div
-            style={{
-              width: 1000,
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-          >
-            {/* Type badge */}
-            {type ? (
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 10,
-                  marginBottom: 28,
-                }}
-              >
-                <div
-                  style={{
-                    width: 6,
-                    height: 6,
-                    borderRadius: '50%',
-                    background: '#C11F2A',
-                  }}
-                />
-                <div
-                  style={{
-                    fontSize: 13,
-                    fontWeight: 700,
-                    color: '#C11F2A',
-                    letterSpacing: 3,
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {type}
-                </div>
-              </div>
-            ) : (
-              <div style={{ marginBottom: 28 }} />
-            )}
-
-            {/* Title */}
-            <div
-              style={{
-                fontSize: isLong ? 34 : 44,
-                fontWeight: 700,
-                color: '#1E1C19',
-                lineHeight: 1.25,
-                marginBottom: 20,
-                maxWidth: 1000,
-                letterSpacing: -0.5,
-              }}
-            >
-              {title}
-            </div>
-
-            {/* Description */}
-            <div
-              style={{
-                fontSize: 18,
-                fontWeight: 400,
-                color: '#5C5650',
-                lineHeight: 1.6,
-                maxWidth: 1000,
-                flex: 1,
-              }}
-            >
-              {description.slice(0, 130)}
-            </div>
-
-            {/* Footer */}
+          {/* Type badge */}
+          {type ? (
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between',
-                borderTop: '1px solid #D1CCC0',
-                paddingTop: 20,
-                marginTop: 8,
+                gap: 10,
+                marginBottom: 28,
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                <img
-                  src={logoDataUrl}
-                  alt="Supri Spinach logo"
-                  style={{
-                    width: 28,
-                    height: 28,
-                    objectFit: 'cover',
-                    borderRadius: '50%',
-                  }}
-                />
-                <div
-                  style={{
-                    fontSize: 15,
-                    fontWeight: 700,
-                    color: '#1E1C19',
-                    letterSpacing: 1.5,
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {siteName}
-                </div>
-              </div>
+              <div
+                style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: '50%',
+                  background: '#C11F2A',
+                }}
+              />
               <div
                 style={{
                   fontSize: 13,
-                  color: '#8C857A',
-                  letterSpacing: 0.5,
+                  fontWeight: 700,
+                  color: '#C11F2A',
+                  letterSpacing: 3,
+                  textTransform: 'uppercase',
                 }}
               >
-                suprispinach.bikin.site
+                {type}
               </div>
+            </div>
+          ) : (
+            <div style={{ marginBottom: 28 }} />
+          )}
+
+          {/* Title */}
+          <div
+            style={{
+              fontSize: isLong ? 32 : 42,
+              fontWeight: 700,
+              color: '#1E1C19',
+              lineHeight: 1.25,
+              marginBottom: 20,
+              maxWidth: 860,
+              letterSpacing: -0.5,
+            }}
+          >
+            {title}
+          </div>
+
+          {/* Description */}
+          <div
+            style={{
+              fontSize: 17,
+              fontWeight: 400,
+              color: '#5C5650',
+              lineHeight: 1.6,
+              maxWidth: 780,
+              flex: 1,
+            }}
+          >
+            {description.slice(0, 130)}
+          </div>
+
+          {/* Footer */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              borderTop: '1px solid #D1CCC0',
+              paddingTop: 20,
+              marginTop: 8,
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+              {/* Logo mark */}
+              <img
+                src={logoDataUrl}
+                alt="Supri Spinach logo"
+                style={{
+                  width: 28,
+                  height: 28,
+                  objectFit: 'cover',
+                  borderRadius: '50%',
+                }}
+              />
+              <div
+                style={{
+                  fontSize: 15,
+                  fontWeight: 700,
+                  color: '#1E1C19',
+                  letterSpacing: 1.5,
+                  textTransform: 'uppercase',
+                }}
+              >
+                {siteName}
+              </div>
+            </div>
+            <div
+              style={{
+                fontSize: 13,
+                color: '#8C857A',
+                letterSpacing: 0.5,
+              }}
+            >
+              suprispinach.bikin.site
             </div>
           </div>
         </div>
