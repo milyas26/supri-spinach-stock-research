@@ -1,7 +1,5 @@
 # 📊 Market Overview — 11 Juni 2026
 
-**Periode**: 10 Juni 18:00 WIB → 11 Juni 18:00 WIB
-
 ---
 
 ## 📈 IHSG
