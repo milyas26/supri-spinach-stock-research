@@ -1,9 +1,11 @@
 import { notFound } from 'next/navigation';
-import { getReportFiles, getReportContent, getTickerToLatestDeepResearch } from '@/lib/content';
+import type { Metadata } from 'next';
+import { getReportFiles, getReportContent, getTickerToLatestDeepResearch, extractMeta } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
 import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
 import { TableOfContents } from '@/components/table-of-contents';
+import { siteUrl } from '@/lib/site';
 
 interface PageProps {
   params: Promise<{ filename: string }>;
@@ -12,6 +14,34 @@ interface PageProps {
 export async function generateStaticParams() {
   const files = getReportFiles();
   return files.map((filename) => ({ filename }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { filename } = await params;
+  let content: string;
+  try {
+    content = getReportContent(filename);
+  } catch {
+    return {};
+  }
+  const { title, description } = extractMeta(content);
+  const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(description)}&type=${encodeURIComponent('Daily Report')}`;
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${siteUrl}/reports/${filename}`,
+      images: [{ url: ogUrl, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogUrl],
+    },
+  };
 }
 
 export default async function ReportPage({ params }: PageProps) {

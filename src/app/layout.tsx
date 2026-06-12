@@ -7,6 +7,7 @@ import { getReportNav, getDeepResearchNav, getGeneralNav } from '@/lib/navigatio
 import { ServiceWorkerRegistration } from '@/components/service-worker-registration';
 import { InstallPrompt } from '@/components/install-prompt';
 import { SearchTrigger } from '@/components/search-trigger';
+import { siteUrl, siteName, siteDescription } from '@/lib/site';
 
 const jetbrains = JetBrains_Mono({
   variable: '--font-jetbrains-mono',
@@ -14,22 +15,42 @@ const jetbrains = JetBrains_Mono({
   weight: ['400', '500', '600', '700', '800'],
 });
 
+const ogImageUrl = `${siteUrl}/api/og?title=${encodeURIComponent(siteName + ' \u2014 Daily Stock Report')}&desc=${encodeURIComponent(siteDescription)}`;
+
 export const metadata: Metadata = {
-  title: 'Supri Spinach — Daily Stock Report',
-  description: 'AI-generated daily stock analysis for Konglo stocks',
+  title: {
+    default: `${siteName} \u2014 Daily Stock Report`,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    type: 'website',
+    siteName,
+    title: `${siteName} \u2014 Daily Stock Report`,
+    description: siteDescription,
+    url: siteUrl,
+    images: [{ url: ogImageUrl, width: 1200, height: 630, alt: siteName }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${siteName} \u2014 Daily Stock Report`,
+    description: siteDescription,
+    images: [ogImageUrl],
+  },
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Supri Spinach',
+    title: siteName,
     startupImage: '/icon-512.png',
   },
   other: {
     'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
-    'apple-mobile-web-app-title': 'Supri Spinach',
-    'application-name': 'Supri Spinach',
+    'apple-mobile-web-app-title': siteName,
+    'application-name': siteName,
     'msapplication-TileColor': '#16a34a',
     'msapplication-TileImage': '/icon-192.png',
   },

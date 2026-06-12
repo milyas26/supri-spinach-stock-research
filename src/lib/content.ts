@@ -89,6 +89,43 @@ export function getGeneralContent(slug: string): string {
   return fs.readFileSync(filePath, 'utf-8');
 }
 
+export interface ContentMeta {
+  title: string;
+  description: string;
+}
+
+/**
+ * Extract title (first h1/h2 or first non-empty line) and description
+ * (first substantive paragraph) from raw markdown, stripping emoji.
+ */
+export function extractMeta(markdown: string): ContentMeta {
+  const stripEmoji = (s: string) =>
+    s.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+  const stripMd = (s: string) =>
+    s.replace(/^#+\s*/, '').replace(/\*{1,2}([^*]+)\*{1,2}/g, '$1').trim();
+
+  const lines = markdown.split('\n').map((l) => l.trim()).filter(Boolean);
+
+  let title = '';
+  let description = '';
+
+  for (const line of lines) {
+    if (!title && (line.startsWith('#') || line.length > 0)) {
+      title = stripEmoji(stripMd(line));
+      if (title) continue;
+    }
+    if (title && !description && !line.startsWith('#') && line.length > 20) {
+      description = stripEmoji(stripMd(line));
+      break;
+    }
+  }
+
+  return {
+    title: title || 'Supri Spinach',
+    description: description ? description.slice(0, 160) : 'IDX stocks deep research and analysis, powered by AI.',
+  };
+}
+
 export function getRelatedTickerFiles(activeFilename: string): DeepResearchFileInfo[] {
   // Extract ticker: everything before the first _YYYY pattern
   const tickerMatch = activeFilename.match(/^([A-Z0-9]+)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);

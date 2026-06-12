@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
-import { getDeepResearchFiles, getDeepResearchContent, getRelatedTickerFiles } from '@/lib/content';
+import type { Metadata } from 'next';
+import { getDeepResearchFiles, getDeepResearchContent, getRelatedTickerFiles, extractMeta } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
 import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
 import { TickerTimeline } from '@/components/ticker-timeline';
 import { TableOfContents } from '@/components/table-of-contents';
+import { siteUrl } from '@/lib/site';
 
 interface PageProps {
   params: Promise<{ ticker: string }>;
@@ -13,6 +15,34 @@ interface PageProps {
 export async function generateStaticParams() {
   const files = getDeepResearchFiles();
   return files.map((ticker) => ({ ticker }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { ticker } = await params;
+  let content: string;
+  try {
+    content = getDeepResearchContent(ticker);
+  } catch {
+    return {};
+  }
+  const { title, description } = extractMeta(content);
+  const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(description)}&type=${encodeURIComponent('Deep Research')}`;
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${siteUrl}/deep-research/${ticker}`,
+      images: [{ url: ogUrl, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogUrl],
+    },
+  };
 }
 
 export default async function DeepResearchPage({ params }: PageProps) {
