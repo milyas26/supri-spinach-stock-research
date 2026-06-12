@@ -220,8 +220,8 @@ export async function GET(request: Request) {
       </div>
     ),
     {
-      width: 800,
-      height: 472,
+      width: 1000,
+      height: 750,
       fonts: [
         { name: 'JetBrains Mono', data: fontRegular, weight: 400, style: 'normal' },
         { name: 'JetBrains Mono', data: fontBold, weight: 700, style: 'normal' },
