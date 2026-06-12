@@ -24,6 +24,11 @@ export async function GET(request: Request) {
 
   const isLong = title.length > 55;
 
+  // Cache at Vercel edge for 7 days — avoids cold start on repeat crawls
+  const headers = new Headers();
+  headers.set('Cache-Control', 'public, max-age=604800, immutable');
+  headers.set('Vercel-CDN-Cache-Control', 'public, max-age=604800, immutable');
+
   return new ImageResponse(
     (
       <div
@@ -222,6 +227,7 @@ export async function GET(request: Request) {
     {
       width: 1200,
       height: 630,
+      headers,
       fonts: [
         { name: 'JetBrains Mono', data: fontRegular, weight: 400, style: 'normal' },
         { name: 'JetBrains Mono', data: fontBold, weight: 700, style: 'normal' },
