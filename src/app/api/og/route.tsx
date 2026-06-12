@@ -1,7 +1,10 @@
 import { ImageResponse } from 'next/og';
-import { siteDescription, siteName, siteUrl } from '@/lib/site';
+import { siteDescription, siteName } from '@/lib/site';
+import fs from 'fs';
+import path from 'path';
 
-export const runtime = 'edge';
+// Node runtime — needed for fs.readFileSync to load bundled fonts
+export const runtime = 'nodejs';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -9,15 +12,15 @@ export async function GET(request: Request) {
   const description = searchParams.get('desc') ?? siteDescription;
   const type = searchParams.get('type') ?? '';
 
-  // Load JetBrains Mono from Google Fonts
-  const [fontRegular, fontBold] = await Promise.all([
-    fetch('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjOg.woff').then(
-      (r) => r.arrayBuffer(),
-    ),
-    fetch('https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbX2o-flEEny0FZhsfKu5WU4xD-IQ-PuZJJXxfpAO-Lf1I.woff').then(
-      (r) => r.arrayBuffer(),
-    ),
-  ]);
+  // Read fonts from public/fonts — bundled at build time, no network needed
+  const fontsDir = path.join(process.cwd(), 'public', 'fonts');
+  const [fontRegular, fontBold] = [
+    fs.readFileSync(path.join(fontsDir, 'JetBrainsMono-Regular.ttf')),
+    fs.readFileSync(path.join(fontsDir, 'JetBrainsMono-Bold.ttf')),
+  ];
+  const logoDataUrl = `data:image/png;base64,${fs
+    .readFileSync(path.join(process.cwd(), 'public', 'icon-192.png'))
+    .toString('base64')}`;
 
   const isLong = title.length > 55;
 
@@ -169,24 +172,16 @@ export async function GET(request: Request) {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
               {/* Logo mark */}
-              <div
+              <img
+                src={logoDataUrl}
+                alt="Supri Spinach logo"
                 style={{
                   width: 28,
                   height: 28,
-                  background: '#0D6B4E',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                  objectFit: 'cover',
+                  borderRadius: '50%',
                 }}
-              >
-                <div
-                  style={{
-                    width: 12,
-                    height: 12,
-                    background: '#F5F2EB',
-                  }}
-                />
-              </div>
+              />
               <div
                 style={{
                   fontSize: 15,
@@ -206,7 +201,7 @@ export async function GET(request: Request) {
                 letterSpacing: 0.5,
               }}
             >
-              supri-spinach.vercel.app
+              suprispinach.bikin.site
             </div>
           </div>
         </div>
