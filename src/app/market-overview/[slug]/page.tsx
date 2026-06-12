@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getMarketOverviewFiles, getMarketOverviewContent, extractMeta } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
@@ -51,7 +51,7 @@ export default async function MarketOverviewPage({ params }: PageProps) {
   try {
     content = getMarketOverviewContent(slug);
   } catch {
-    notFound();
+    redirect('/');
   }
 
   const { html, toc } = await processMarkdownWithToc(content);

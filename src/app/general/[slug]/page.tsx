@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getGeneralFiles, getGeneralContent, extractMeta } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
@@ -51,7 +51,7 @@ export default async function GeneralPage({ params }: PageProps) {
   try {
     content = getGeneralContent(slug);
   } catch {
-    notFound();
+    redirect('/');
   }
 
   const { html, toc } = await processMarkdownWithToc(content);

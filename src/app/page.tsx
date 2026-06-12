@@ -1,11 +1,12 @@
 import { redirect } from 'next/navigation';
-import { getLatestReportFilename } from '@/lib/content';
+import { getMarketOverviewFiles } from '@/lib/content';
 
 export default function Home() {
-  const latest = getLatestReportFilename();
+  const files = getMarketOverviewFiles();
+  const latest = files.length > 0 ? files[0] : null;
 
   if (latest) {
-    redirect(`/reports/${latest}`);
+    redirect(`/market-overview/${latest}`);
   }
 
   return (
