@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getDeepResearchFiles, getDeepResearchContent, getRelatedTickerFiles, extractMeta } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
@@ -52,7 +52,7 @@ export default async function DeepResearchPage({ params }: PageProps) {
   try {
     content = getDeepResearchContent(ticker);
   } catch {
-    notFound();
+    redirect('/');
   }
 
   const { html, toc } = await processMarkdownWithToc(content);
