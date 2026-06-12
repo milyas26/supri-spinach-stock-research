@@ -1,4 +1,4 @@
-import { getReportFiles, getDeepResearchFiles, getGeneralFiles } from '@/lib/content';
+import { getReportFiles, getDeepResearchFiles, getGeneralFiles, getMarketOverviewFiles } from '@/lib/content';
 import { getTickerInfo } from '@/lib/tickers';
 
 export interface NavItem {
@@ -40,6 +40,22 @@ export function getGeneralNav(): NavItem[] {
     return {
       label,
       href: `/general/${slug}`,
+    };
+  });
+}
+
+export function getMarketOverviewNav(): NavItem[] {
+  const files = getMarketOverviewFiles();
+  return files.map((slug) => {
+    // slug format: market-overview-YYYY_MM_DD  or similar
+    const match = slug.match(/(\d{4})[_-](\d{2})[_-](\d{2})$/);
+    const months = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+    const label = match
+      ? `${parseInt(match[3])} ${months[parseInt(match[2]) - 1]} ${match[1]}`
+      : slug.replace(/-/g, ' ');
+    return {
+      label,
+      href: `/market-overview/${slug}`,
     };
   });
 }

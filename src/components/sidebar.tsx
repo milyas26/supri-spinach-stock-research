@@ -137,29 +137,31 @@ function TickerTreeItem({ group, activePath }: { group: TickerNavGroup; activePa
 }
 
 export function Sidebar({
-  reportItems,
+  reportItems: _reportItems,
   deepResearchGroups,
   generalItems,
+  marketOverviewItems,
 }: {
   reportItems: NavItem[];
   deepResearchGroups: TickerNavGroup[];
   generalItems: NavItem[];
+  marketOverviewItems: NavItem[];
 }) {
   const pathname = usePathname();
   const { open, setOpen } = useSidebar();
-  const [reportsOpen, setReportsOpen] = useState(true);
+  const [marketOverviewOpen, setMarketOverviewOpen] = useState(true);
   const [deepOpen, setDeepOpen] = useState(true);
   const [generalOpen, setGeneralOpen] = useState(true);
-  const [reportsExpanded, setReportsExpanded] = useState(false);
+  const [marketOverviewExpanded, setMarketOverviewExpanded] = useState(false);
   const [deepExpanded, setDeepExpanded] = useState(false);
   const [generalExpanded, setGeneralExpanded] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  const REPORT_LIMIT = 2;
   const DEEP_LIMIT = 15;
   const GENERAL_LIMIT = 5;
+  const MARKET_OVERVIEW_LIMIT = 2;
 
-  const visibleReports = reportsExpanded ? reportItems : reportItems.slice(0, REPORT_LIMIT);
+  const visibleMarketOverview = marketOverviewExpanded ? marketOverviewItems : marketOverviewItems.slice(0, MARKET_OVERVIEW_LIMIT);
   const visibleDeep = deepExpanded ? deepResearchGroups : deepResearchGroups.slice(0, DEEP_LIMIT);
   const visibleGeneral = generalExpanded ? generalItems : generalItems.slice(0, GENERAL_LIMIT);
 
@@ -219,40 +221,40 @@ export function Sidebar({
         <nav className="flex-1 overflow-y-auto py-3">
           <div className="mb-2">
             <button
-              onClick={() => setReportsOpen(!reportsOpen)}
+              onClick={() => setMarketOverviewOpen(!marketOverviewOpen)}
               className="flex w-full items-center gap-1 px-5 py-2.5 text-[11px] font-bold text-[#8C857A] uppercase tracking-[0.2em] hover:text-[#1E1C19] transition-colors"
             >
-              Report
+              Market Overview
               <ChevronRight
-                className={`h-3 w-3 transition-transform duration-200 ${reportsOpen ? "rotate-90" : ""}`}
+                className={`h-3 w-3 transition-transform duration-200 ${marketOverviewOpen ? "rotate-90" : ""}`}
                 strokeWidth={2.5}
               />
             </button>
 
-            {reportsOpen && (
+            {marketOverviewOpen && (
               <ul>
-                {visibleReports.map((item) => (
+                {visibleMarketOverview.map((item) => (
                   <NavFileItem
                     key={item.href}
                     item={item}
                     active={pathname === item.href}
                   />
                 ))}
-                {reportItems.length === 0 && (
+                {marketOverviewItems.length === 0 && (
                   <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
-                    No reports yet
+                    No overviews yet
                   </li>
                 )}
-                {reportItems.length > REPORT_LIMIT && (
+                {marketOverviewItems.length > MARKET_OVERVIEW_LIMIT && (
                   <li>
                     <button
-                      onClick={() => setReportsExpanded(!reportsExpanded)}
+                      onClick={() => setMarketOverviewExpanded(!marketOverviewExpanded)}
                       className="flex w-full items-center gap-1 px-6 py-1.5 text-[10px] text-[#8C857A] hover:text-[#1E1C19] transition-colors"
                     >
-                      {reportsExpanded ? (
+                      {marketOverviewExpanded ? (
                         <><ChevronUp className="h-3 w-3" strokeWidth={2.5} /> Show less</>
                       ) : (
-                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {reportItems.length - REPORT_LIMIT} more</>
+                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {marketOverviewItems.length - MARKET_OVERVIEW_LIMIT} more</>
                       )}
                     </button>
                   </li>

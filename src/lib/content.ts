@@ -89,6 +89,22 @@ export function getGeneralContent(slug: string): string {
   return fs.readFileSync(filePath, 'utf-8');
 }
 
+export function getMarketOverviewFiles(): string[] {
+  const dir = path.join(CONTENT_DIR, 'market-overview');
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => f.replace('.md', ''))
+    .sort((a, b) => b.localeCompare(a));
+}
+
+export function getMarketOverviewContent(slug: string): string {
+  const filePath = path.join(CONTENT_DIR, 'market-overview', `${slug}.md`);
+  if (!fs.existsSync(filePath)) throw new Error(`Market overview not found: ${slug}`);
+  return fs.readFileSync(filePath, 'utf-8');
+}
+
 export interface ContentMeta {
   title: string;
   description: string;

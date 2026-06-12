@@ -1,7 +1,5 @@
 # 📊 Market Overview — 11 Juni 2026
 
----
-
 ## 📈 IHSG
 📉 **IHSG**: 5,886 (-0.27%)
 
