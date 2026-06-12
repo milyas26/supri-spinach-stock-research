@@ -125,14 +125,21 @@ export function extractMeta(markdown: string): ContentMeta {
   let title = '';
   let description = '';
 
+  // Matches short ticker/price lines like "**IHSG**: 6.008 (+2,07%)" or "📈 **BBCA**: 9.500 (+1.5%)"
+  const priceLineRe = /^\*{0,2}[A-Z]{3,5}\*{0,2}[:\s]+[\d.,]+/;
+
   for (const line of lines) {
     if (!title && (line.startsWith('#') || line.length > 0)) {
       title = stripEmoji(stripMd(line));
       if (title) continue;
     }
-    if (title && !description && !line.startsWith('#') && line.length > 20) {
-      description = stripEmoji(stripMd(line));
-      break;
+    if (title && !description && !line.startsWith('#')) {
+      const stripped = stripEmoji(stripMd(line));
+      // Skip short lines, price/ticker lines, and separator lines
+      if (stripped.length > 40 && !priceLineRe.test(stripped) && !/^[-|*]{3,}$/.test(stripped)) {
+        description = stripped;
+        break;
+      }
     }
   }
 
