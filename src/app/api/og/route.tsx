@@ -138,7 +138,7 @@ export async function GET(request: Request) {
               color: '#1E1C19',
               lineHeight: 1.25,
               marginBottom: 20,
-              maxWidth: 860,
+              maxWidth: 720,
               letterSpacing: -0.5,
             }}
           >
@@ -152,7 +152,7 @@ export async function GET(request: Request) {
               fontWeight: 400,
               color: '#5C5650',
               lineHeight: 1.6,
-              maxWidth: 780,
+              maxWidth: 680,
               flex: 1,
             }}
           >
@@ -220,8 +220,8 @@ export async function GET(request: Request) {
       </div>
     ),
     {
-      width: 1200,
-      height: 630,
+      width: 900,
+      height: 472,
       fonts: [
         { name: 'JetBrains Mono', data: fontRegular, weight: 400, style: 'normal' },
         { name: 'JetBrains Mono', data: fontBold, weight: 700, style: 'normal' },
