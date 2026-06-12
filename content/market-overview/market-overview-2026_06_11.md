@@ -24,7 +24,7 @@ IHSG ditutup melemah tipis setelah sempat terbang 2,7% di sesi awal. Pasar berge
 | 9 | AYLS | Agro Yasa Lestari | 127 | **+11.40%** | Barang Baku | 30K |
 | 10 | LAPD | Leyand International | 65 | **+10.17%** | Consumer Primer | 548K |
 
-⚠️ **Insight**: UVCR dan TMPO kompak naik >34% dengan volume anomaly EXTREME — spekulatif, waspada reversal. RISE (+25%) jadi satu-satunya yang punya bandarStatus Accumation dengan score 80. Consumer Non-Primer dominan dengan 4 dari 10 top gainers, tapi mayoritas volume anomali — lebih ke spekulasi daripada fundamental. Tidak ada nama besar di top gainers — semuanya saham lapis bawah.
+⚠️ **Insight**: UVCR dan TMPO kompak naik >34% dengan volume tinggi — spekulatif, waspada reversal. Consumer Non-Primer dominan dengan 4 dari 10 top gainers, tapi mayoritas volume anomali — lebih ke spekulasi daripada fundamental. Tidak ada nama besar di top gainers — semuanya saham lapis bawah.
 
 ---
 
