@@ -84,26 +84,6 @@ Teknologi jadi satu-satunya sektor hijau (+0.76%) walau cuma 22 ticker — didor
 
 ---
 
-## 🔥 Bandar / Smart Money Detection
-
-| Ticker | Bandar Status | Score | Momentum | Volume |
-|--------|--------------|-------|----------|--------|
-| UVCR | ⚪ Neutral | 50 | 📉 Downtrend | 🟥 EXTREME |
-| TMPO | ⚪ Neutral | 70 | 📈 Uptrend | 🟥 EXTREME |
-| RISE | 🟢 **Accumulation** | **80** | 📈 Uptrend | ✅ Normal |
-| VISI | 🔴 Distribution | 30 | 📈 Uptrend | 🟧 STRONG |
-| BABY | 🔴 Distribution | 30 | 📈 Uptrend | 🟥 EXTREME |
-| HRTA | 🔴 Distribution | 30 | 📉 Downtrend | 🟧 MILD |
-| TRUE | ⚪ Neutral | 50 | 📉 Downtrend | 🟧 MILD |
-| ARCI | ⚪ Neutral | 50 | 📉 Downtrend | 🟧 MILD |
-
-- **RISE** jadi satu-satunya top gainer dengan akumulasi genuine — bandarStatus Accumulation, score 80, volume normal. Saham properti murah ada aksi borong.
-- **UVCR & TMPO** naik gila-gilaan tapi volume anomaly EXTREME — kemungkinan pump & dump atau aksi spekulatif. BandarStatus Neutral.
-- **BABY & VISI** naik tinggi tapi bandarStatus Distribution — bandar jual di tengah kenaikan. Waspada top signal.
-- **HRTA**: bandar distribusi konsisten, skor 30, downtrend — asing jual 16.1M.
-
----
-
 ## 📰 Market News
 
 ### IHSG Ditutup Melemah 0,28% ke Level 5.886
