@@ -1,9 +1,6 @@
 # 📊 Market Overview — 12 Juni 2026
 
----
-
 ## 📈 IHSG
-
 📈 **IHSG**: 6.008 (+2,07%)
 
 IHSG berhasil _breakout_ kembali ke level psikologis 6.000 setelah sempat terpuruk ke 5.342 pada awal pekan. Hari ini ditutup di 6.008, naik 122 poin (+2,07%) dari penutupan kemarin di 5.886. Sentimen positif datang dari _peace talk_ AS-Iran yang mendorong rally di pasar global dan komoditas. Support terdekat di 5.900, resistance berikutnya di 6.100 — level yang terakhir disentuh akhir Mei lalu.
