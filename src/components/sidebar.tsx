@@ -380,7 +380,7 @@ export function Sidebar({
                   <line x1="10" x2="10" y1="2" y2="4" />
                   <line x1="14" x2="14" y1="2" y2="4" />
                 </svg>
-                <span className="text-[10px] tracking-[0.15em] uppercase">Beliin kopi/request</span>
+                <span className="text-[10px] tracking-[0.15em] uppercase">Beliin kopi</span>
               </a>
             </>
           )}

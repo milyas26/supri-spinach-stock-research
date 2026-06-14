@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getMarketOverviewFiles, getMarketOverviewContent, extractMeta } from '@/lib/content';
+import { getMarketOverviewFiles, getMarketOverviewContent, extractMeta, getTickerToLatestDeepResearch } from '@/lib/content';
 import { processMarkdownWithToc } from '@/components/markdown-renderer';
 import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
@@ -54,7 +54,7 @@ export default async function MarketOverviewPage({ params }: PageProps) {
     redirect('/');
   }
 
-  const { html, toc } = await processMarkdownWithToc(content);
+  const { html, toc } = await processMarkdownWithToc(content, getTickerToLatestDeepResearch());
   const tocItems = toc.filter((i) => i.level > 1);
 
   return (
