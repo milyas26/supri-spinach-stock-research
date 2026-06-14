@@ -96,7 +96,7 @@ export function SearchModal({ onClose }: { onClose: () => void }) {
   }, [selectedIndex]);
 
   const effectiveResults = query.length >= MIN_QUERY_LENGTH ? results : [];
-  const reports = effectiveResults.filter((r) => r.type === 'report');
+  const marketOverviews = effectiveResults.filter((r) => r.type === 'market-overview');
   const deepResearch = effectiveResults.filter((r) => r.type === 'deep-research');
 
   const showResults = !loading && query.length >= MIN_QUERY_LENGTH;
@@ -116,7 +116,7 @@ export function SearchModal({ onClose }: { onClose: () => void }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search reports & deep research..."
+            placeholder="Search market overviews & deep research..."
             className="flex-1 py-3 bg-transparent text-text outline-none font-mono text-sm
                        placeholder:text-text-muted"
           />
@@ -135,7 +135,7 @@ export function SearchModal({ onClose }: { onClose: () => void }) {
             <div className="flex flex-col items-center justify-center py-12">
               <Search size={32} className="text-text-muted mb-3 opacity-30" strokeWidth={1.5} />
               <p className="text-text-muted text-sm font-mono">
-                Search reports & deep research
+                Search market overviews & deep research
               </p>
               <p className="text-text-muted text-xs mt-1.5 font-mono opacity-50">
                 Search by document title or content
@@ -155,11 +155,11 @@ export function SearchModal({ onClose }: { onClose: () => void }) {
 
           {showResults && effectiveResults.length > 0 && (
             <div className="space-y-3">
-              {reports.length > 0 && (
+              {marketOverviews.length > 0 && (
                 <Section
-                  label="Reports"
+                  label="Market Overviews"
                   icon={<FileText size={12} className="text-accent" />}
-                  results={reports}
+                  results={marketOverviews}
                   query={query}
                   baseIndex={0}
                   selectedIndex={selectedIndex}
@@ -172,7 +172,7 @@ export function SearchModal({ onClose }: { onClose: () => void }) {
                   icon={<FlaskConical size={12} className="text-amber" />}
                   results={deepResearch}
                   query={query}
-                  baseIndex={reports.length}
+                  baseIndex={marketOverviews.length}
                   selectedIndex={selectedIndex}
                   onSelect={handleSelect}
                 />

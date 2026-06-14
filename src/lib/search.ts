@@ -4,7 +4,7 @@ import path from 'path';
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 export interface SearchResult {
-  type: 'report' | 'deep-research';
+  type: 'market-overview' | 'deep-research';
   title: string;
   href: string;
   snippet: string;
@@ -24,7 +24,7 @@ function getSnippet(content: string, query: string): string {
   return snippet.trim();
 }
 
-function formatReportTitle(filename: string): string {
+function formatMarketOverviewsTitle(filename: string): string {
   return filename;
 }
 
@@ -45,16 +45,16 @@ export function searchDocuments(query: string): SearchResult[] {
   const lowerQuery = query.toLowerCase();
   const results: SearchResult[] = [];
 
-  const reportsDir = path.join(CONTENT_DIR, 'reports');
-  if (fs.existsSync(reportsDir)) {
-    const reportFiles = fs
-      .readdirSync(reportsDir)
+  const marketOverviewsDir = path.join(CONTENT_DIR, 'market-overview');
+  if (fs.existsSync(marketOverviewsDir)) {
+    const marketOverviewFiles = fs
+      .readdirSync(marketOverviewsDir)
       .filter((f) => f.endsWith('.md'))
       .sort((a, b) => b.localeCompare(a));
 
-    for (const file of reportFiles) {
+    for (const file of marketOverviewFiles) {
       const filename = file.replace('.md', '');
-      const filePath = path.join(reportsDir, file);
+      const filePath = path.join(marketOverviewsDir, file);
       const content = fs.readFileSync(filePath, 'utf-8');
 
       const titleMatch = filename.toLowerCase().includes(lowerQuery);
@@ -62,9 +62,9 @@ export function searchDocuments(query: string): SearchResult[] {
 
       if (titleMatch || contentMatch) {
         results.push({
-          type: 'report',
-          title: formatReportTitle(filename),
-          href: `/reports/${filename}`,
+          type: 'market-overview',
+          title: formatMarketOverviewsTitle(filename),
+          href: `/market-overview/${filename}`,
           snippet: getSnippet(content, query),
         });
       }
