@@ -36,7 +36,7 @@ function NavFileItem({ item, active }: { item: NavItem; active: boolean }) {
           }
         `}
       >
-        <span className="truncate text-xs">{item.label}</span>
+        <span className="truncate text-xs capitalize">{item.label}</span>
         {active && <span className="ml-auto h-1.5 w-1.5 bg-[#C11F2A]" />}
       </Link>
     </li>
