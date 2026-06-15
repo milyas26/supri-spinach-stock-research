@@ -96,7 +96,13 @@ export function getMarketOverviewFiles(): string[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace('.md', ''))
-    .sort((a, b) => b.localeCompare(a));
+    .sort((a, b) => {
+      const extractDate = (s: string) => {
+        const m = s.match(/(\d{4})[_-](\d{2})[_-](\d{2})/);
+        return m ? `${m[1]}-${m[2]}-${m[3]}` : s;
+      };
+      return extractDate(b).localeCompare(extractDate(a));
+    });
 }
 
 export function getMarketOverviewContent(slug: string): string {
