@@ -28,7 +28,8 @@ CREATE TABLE IF NOT EXISTS comments (
   content_type TEXT NOT NULL CHECK (content_type IN ('market-overview', 'deep-research', 'reports', 'general')),
   content_slug TEXT NOT NULL,
   body TEXT NOT NULL CHECK (char_length(body) >= 1 AND char_length(body) <= 2000),
-  created_at TIMESTAMPTZ DEFAULT now()
+  created_at TIMESTAMPTZ DEFAULT now(),
+  updated_at TIMESTAMPTZ
 );
 
 CREATE INDEX IF NOT EXISTS idx_comments_content ON comments(content_type, content_slug, created_at DESC);

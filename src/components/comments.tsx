@@ -7,8 +7,10 @@ import { useLoginDialogStore } from '@/stores/login-dialog-store';
 
 interface CommentRow {
   id: string;
+  user_id: string;
   body: string;
   created_at: string;
+  updated_at?: string;
   users: { display_name: string | null; photo_url: string | null } | null;
 }
 
@@ -46,6 +48,11 @@ export function Comments() {
   const [submitting, setSubmitting] = useState(false);
   const [body, setBody] = useState('');
   const [error, setError] = useState('');
+
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editBody, setEditBody] = useState('');
+  const [saving, setSaving] = useState(false);
+  const [editError, setEditError] = useState('');
 
   const contentType = contentTypeFromPath(pathname);
   const contentSlug = contentSlugFromPath(pathname);
@@ -95,8 +102,51 @@ export function Comments() {
     }
   };
 
+  const startEdit = (c: CommentRow) => {
+    setEditingId(c.id);
+    setEditBody(c.body);
+    setEditError('');
+  };
+
+  const cancelEdit = () => {
+    setEditingId(null);
+    setEditBody('');
+    setEditError('');
+  };
+
+  const saveEdit = async () => {
+    if (!user?.uid || !editingId || !editBody.trim()) return;
+    setSaving(true);
+    setEditError('');
+
+    try {
+      const res = await fetch('/api/comments', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          commentId: editingId,
+          body: editBody.trim(),
+          firebaseUid: user.uid,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setEditError(data.error ?? 'Failed to update comment');
+      } else {
+        setComments((prev) =>
+          prev.map((c) => (c.id === editingId ? data.comment : c))
+        );
+        cancelEdit();
+      }
+    } catch {
+      setEditError('Network error');
+    } finally {
+      setSaving(false);
+    }
+  };
+
   return (
-    <section className="mt-8">
+    <section className="mt-8 max-w-[56rem] mx-auto">
       <h2 className="font-mono text-xs text-[#8C857A] mb-4 border-b border-gray-200 pb-2">
         comments ({comments.length})
       </h2>
@@ -113,15 +163,62 @@ export function Comments() {
               c.users?.display_name ||
               (c.users as unknown as { email?: string })?.email ||
               'anonymous';
+            const isOwner = user?.supabaseId && c.user_id === user.supabaseId;
+            const isEditing = editingId === c.id;
+
             return (
               <div key={c.id} className="font-mono text-[11px]">
                 <div className="flex items-center gap-1.5 mb-0.5">
                   <span className="text-[#5C5650] font-semibold">{name}</span>
-                  <span className="text-[#B0A89A]">{formatDate(c.created_at)}</span>
+                  <span className="text-[#B0A89A]">
+                    {formatDate(c.created_at)}
+                  </span>
+                  {c.updated_at && (
+                    <span className="text-[#B0A89A] italic">edited</span>
+                  )}
+                  {isOwner && !isEditing && (
+                    <button
+                      onClick={() => startEdit(c)}
+                      className="text-[#B0A89A] hover:text-[#5C5650] transition-colors ml-auto"
+                      title="Edit comment"
+                    >
+                      edit
+                    </button>
+                  )}
                 </div>
-                <p className="text-[#3A3630] leading-relaxed whitespace-pre-wrap">
-                  {c.body}
-                </p>
+                {isEditing ? (
+                  <div className="space-y-2">
+                    <textarea
+                      value={editBody}
+                      onChange={(e) => setEditBody(e.target.value)}
+                      rows={3}
+                      maxLength={2000}
+                      className="w-full font-mono text-[11px] p-2 bg-[#F7F5F0] border border-gray-300 rounded-sm text-[#3A3630] resize-none focus:outline-none focus:border-[#8C857A]"
+                    />
+                    {editError && (
+                      <p className="font-mono text-[10px] text-red-600">{editError}</p>
+                    )}
+                    <div className="flex gap-2">
+                      <button
+                        onClick={saveEdit}
+                        disabled={!editBody.trim() || editBody === c.body || saving}
+                        className="font-mono text-[11px] px-3 py-1 border border-[#8C857A] text-[#5C5650] hover:bg-[#E3DDD0] hover:text-[#1E1C19] disabled:opacity-40 disabled:cursor-not-allowed transition-colors rounded-sm"
+                      >
+                        {saving ? 'saving...' : 'save'}
+                      </button>
+                      <button
+                        onClick={cancelEdit}
+                        className="font-mono text-[11px] px-3 py-1 text-[#B0A89A] hover:text-[#5C5650] transition-colors"
+                      >
+                        cancel
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-[#3A3630] leading-relaxed whitespace-pre-wrap">
+                    {c.body}
+                  </p>
+                )}
               </div>
             );
           })}

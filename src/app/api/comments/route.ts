@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
   const supabaseAdmin = getSupabaseAdmin();
   const { data, error } = await supabaseAdmin
     .from("comments")
-    .select("id, body, created_at, users(display_name, photo_url)")
+    .select("id, user_id, body, created_at, users(display_name, photo_url)")
     .eq("content_type", contentType)
     .eq("content_slug", contentSlug)
     .order("created_at", { ascending: true });
@@ -68,7 +68,7 @@ export async function POST(request: Request) {
       content_slug: contentSlug,
       body: body.trim(),
     })
-    .select("id, body, created_at, users(display_name, photo_url)")
+    .select("id, user_id, body, created_at, users(display_name, photo_url)")
     .single();
 
   if (error) {
@@ -76,4 +76,54 @@ export async function POST(request: Request) {
   }
 
   return NextResponse.json({ comment: data }, { status: 201 });
+}
+
+export async function PUT(request: Request) {
+  const { commentId, body, firebaseUid } = await request.json();
+
+  if (!commentId || !body || !firebaseUid) {
+    return NextResponse.json({ error: "Missing fields" }, { status: 400 });
+  }
+
+  if (typeof body !== "string" || body.trim().length === 0) {
+    return NextResponse.json({ error: "Comment body cannot be empty" }, { status: 400 });
+  }
+
+  if (body.length > 2000) {
+    return NextResponse.json({ error: "Comment too long (max 2000 chars)" }, { status: 400 });
+  }
+
+  const userId = await getUserId(firebaseUid);
+  if (!userId) {
+    return NextResponse.json({ error: "User not found. Login first." }, { status: 401 });
+  }
+
+  const supabaseAdmin = getSupabaseAdmin();
+
+  const { data: existing } = await supabaseAdmin
+    .from("comments")
+    .select("user_id")
+    .eq("id", commentId)
+    .maybeSingle();
+
+  if (!existing) {
+    return NextResponse.json({ error: "Comment not found" }, { status: 404 });
+  }
+
+  if (existing.user_id !== userId) {
+    return NextResponse.json({ error: "Not your comment" }, { status: 403 });
+  }
+
+  const { data, error } = await supabaseAdmin
+    .from("comments")
+    .update({ body: body.trim(), updated_at: new Date().toISOString() })
+    .eq("id", commentId)
+    .select("id, user_id, body, created_at, updated_at, users(display_name, photo_url)")
+    .single();
+
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+
+  return NextResponse.json({ comment: data });
 }

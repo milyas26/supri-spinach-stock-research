@@ -70,7 +70,7 @@ export default async function DeepResearchPage({ params }: PageProps) {
         <div className="xl:hidden">
           <TickerTimeline files={relatedFiles} />
         </div>
-        <hr className="my-8 border-gray-300" />
+        <hr className="my-8 border-gray-300 max-w-[56rem] mx-auto" />
         <Comments />
       </div>
       {/* Desktop right column: TOC + Timeline, visible at xl+ */}

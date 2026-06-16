@@ -63,7 +63,7 @@ export default async function GeneralPage({ params }: PageProps) {
       <div className="flex-1 min-w-0">
         <BookmarkWrapper contentType="general" contentSlug={slug} label={slug} />
         <HighlightedContent html={html} />
-        <hr className="my-8 border-gray-300" />
+        <hr className="my-8 border-gray-300 max-w-[56rem] mx-auto" />
         <Comments />
       </div>
       {tocItems.length > 0 && (
