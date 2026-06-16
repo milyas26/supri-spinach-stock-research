@@ -1,34 +1,167 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { useAuthStore } from '@/stores/auth-store';
+import { useLoginDialogStore } from '@/stores/login-dialog-store';
+
+interface CommentRow {
+  id: string;
+  body: string;
+  created_at: string;
+  users: { display_name: string | null; photo_url: string | null } | null;
+}
+
+function contentTypeFromPath(pathname: string): string {
+  if (pathname.startsWith('/deep-research')) return 'deep-research';
+  if (pathname.startsWith('/reports')) return 'reports';
+  if (pathname.startsWith('/general')) return 'general';
+  if (pathname.startsWith('/market-overview')) return 'market-overview';
+  return 'deep-research';
+}
+
+function contentSlugFromPath(pathname: string): string {
+  const parts = pathname.split('/').filter(Boolean);
+  return parts.slice(1).join('/') || parts[0] || '';
+}
+
+function formatDate(iso: string): string {
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
+}
 
 export function Comments() {
-  const ref = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const user = useAuthStore((s) => s.user);
+  const setDialogOpen = useLoginDialogStore((s) => s.setOpen);
+
+  const [comments, setComments] = useState<CommentRow[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+  const [body, setBody] = useState('');
+  const [error, setError] = useState('');
+
+  const contentType = contentTypeFromPath(pathname);
+  const contentSlug = contentSlugFromPath(pathname);
 
   useEffect(() => {
-    if (!ref.current) return;
+    let cancelled = false;
+    fetch(`/api/comments?contentType=${contentType}&contentSlug=${encodeURIComponent(contentSlug)}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (!cancelled) setComments(d.comments ?? []);
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => { cancelled = true; };
+  }, [contentType, contentSlug]);
 
-    // Clear previous utterances
-    ref.current.innerHTML = '';
-    const script = document.createElement('script');
-    script.src = 'https://utteranc.es/client.js';
-    script.setAttribute('repo', 'milyas26/supri-spinach-stock-research');
-    script.setAttribute('issue-term', 'pathname');
-    script.setAttribute('theme', 'boxy-light');
-    script.setAttribute('crossorigin', 'anonymous');
-    script.async = true;
-    
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!user?.uid || !body.trim()) return;
+    setSubmitting(true);
+    setError('');
 
-    ref.current.appendChild(script);
-
-    return () => {
-      if (ref.current) {
-        ref.current.innerHTML = '';
+    try {
+      const res = await fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contentType,
+          contentSlug,
+          body: body.trim(),
+          firebaseUid: user.uid,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error ?? 'Failed to post comment');
+      } else {
+        setBody('');
+        setComments((prev) => [...prev, data.comment]);
       }
-    };
-  }, [pathname]);
+    } catch {
+      setError('Network error');
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
-  return <div ref={ref} className="mt-8" />;
+  return (
+    <section className="mt-8">
+      <h2 className="font-mono text-xs text-[#8C857A] mb-4 border-b border-gray-200 pb-2">
+        comments ({comments.length})
+      </h2>
+
+      {loading ? (
+        <p className="font-mono text-[11px] text-[#B0A89A]">loading comments...</p>
+      ) : (
+        <div className="space-y-4 mb-6">
+          {comments.length === 0 && (
+            <p className="font-mono text-[11px] text-[#B0A89A]">no comments yet</p>
+          )}
+          {comments.map((c) => {
+            const name =
+              c.users?.display_name ||
+              (c.users as unknown as { email?: string })?.email ||
+              'anonymous';
+            return (
+              <div key={c.id} className="font-mono text-[11px]">
+                <div className="flex items-center gap-1.5 mb-0.5">
+                  <span className="text-[#5C5650] font-semibold">{name}</span>
+                  <span className="text-[#B0A89A]">{formatDate(c.created_at)}</span>
+                </div>
+                <p className="text-[#3A3630] leading-relaxed whitespace-pre-wrap">
+                  {c.body}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {user ? (
+        <form onSubmit={handleSubmit} className="space-y-3">
+          <textarea
+            value={body}
+            onChange={(e) => setBody(e.target.value)}
+            placeholder="Write a comment..."
+            rows={3}
+            maxLength={2000}
+            className="w-full font-mono text-[11px] p-3 bg-[#F7F5F0] border border-gray-300 rounded-sm text-[#3A3630] placeholder-[#B0A89A] resize-none focus:outline-none focus:border-[#8C857A]"
+          />
+          {error && (
+            <p className="font-mono text-[10px] text-red-600">{error}</p>
+          )}
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-[10px] text-[#B0A89A]">
+              {user.email}
+            </span>
+            <button
+              type="submit"
+              disabled={!body.trim() || submitting}
+              className="font-mono text-[11px] px-4 py-1.5 border border-[#8C857A] text-[#5C5650] hover:bg-[#E3DDD0] hover:text-[#1E1C19] disabled:opacity-40 disabled:cursor-not-allowed transition-colors rounded-sm"
+            >
+              {submitting ? 'posting...' : 'post'}
+            </button>
+          </div>
+        </form>
+      ) : (
+        <button
+          onClick={() => setDialogOpen(true)}
+          className="font-mono text-[11px] text-[#8C857A] hover:text-[#1E1C19] transition-colors"
+        >
+          $ login to comment
+        </button>
+      )}
+    </section>
+  );
 }

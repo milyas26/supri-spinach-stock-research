@@ -7,6 +7,8 @@ import { getReportNav, getDeepResearchNav, getGeneralNav, getMarketOverviewNav }
 import { ServiceWorkerRegistration } from '@/components/service-worker-registration';
 import { InstallPrompt } from '@/components/install-prompt';
 import { SearchTrigger } from '@/components/search-trigger';
+import { LoginDialogOverlay } from '@/components/login-dialog-overlay';
+import { AuthInitializer } from '@/components/auth-initializer';
 import { siteUrl, siteName, siteDescription } from '@/lib/site';
 
 const jetbrains = JetBrains_Mono({
@@ -84,6 +86,8 @@ export default function RootLayout({
       <body className="flex h-full overflow-hidden">
         <ServiceWorkerRegistration />
         <InstallPrompt />
+        <LoginDialogOverlay />
+        <AuthInitializer />
         <SidebarProvider>
           <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} generalItems={generalItems} marketOverviewItems={marketOverviewItems} />
           <main className="flex-1 overflow-y-auto px-4 pt-14 pb-6 md:px-10 md:py-10">

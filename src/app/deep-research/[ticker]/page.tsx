@@ -6,6 +6,7 @@ import { HighlightedContent } from '@/components/highlighted-content';
 import { Comments } from '@/components/comments';
 import { TickerTimeline } from '@/components/ticker-timeline';
 import { TableOfContents } from '@/components/table-of-contents';
+import { BookmarkWrapper } from '@/components/bookmark-wrapper';
 import { siteUrl } from '@/lib/site';
 
 interface PageProps {
@@ -63,6 +64,7 @@ export default async function DeepResearchPage({ params }: PageProps) {
   return (
     <div className="flex flex-col xl:flex-row gap-8 xl:items-start">
       <div className="flex-1 min-w-0">
+        <BookmarkWrapper contentType="deep-research" contentSlug={ticker} label={ticker} />
         <HighlightedContent html={html} />
         {/* Mobile timeline: visible below xl */}
         <div className="xl:hidden">
