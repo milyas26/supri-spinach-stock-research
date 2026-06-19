@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronRight, ChevronDown, ChevronUp, Menu, X } from "lucide-react";
@@ -165,6 +165,65 @@ export function Sidebar({
   const visibleMarketOverview = marketOverviewExpanded ? marketOverviewItems : marketOverviewItems.slice(0, MARKET_OVERVIEW_LIMIT);
   const visibleDeep = deepExpanded ? deepResearchGroups : deepResearchGroups.slice(0, DEEP_LIMIT);
   const visibleGeneral = generalExpanded ? generalGroups : generalGroups.slice(0, GENERAL_LIMIT);
+
+  // Swipe-to-open gesture (mobile only)
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+  const EDGE_THRESHOLD = 100; // px from left edge to start swipe
+  const SWIPE_MIN_DISTANCE = 50; // min px to trigger open
+
+  const handleTouchStart = useCallback((e: TouchEvent) => {
+    const touch = e.touches[0];
+    // Only track swipes starting from left edge when sidebar closed
+    if (!open && touch.clientX <= EDGE_THRESHOLD) {
+      touchStartX.current = touch.clientX;
+      touchStartY.current = touch.clientY;
+    }
+    // Track swipe-to-close when sidebar open
+    if (open) {
+      touchStartX.current = touch.clientX;
+      touchStartY.current = touch.clientY;
+    }
+  }, [open]);
+
+  const handleTouchEnd = useCallback((e: TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartX.current;
+    const deltaY = Math.abs(touch.clientY - touchStartY.current);
+
+    // Ignore vertical swipes
+    if (deltaY > Math.abs(deltaX)) {
+      touchStartX.current = null;
+      touchStartY.current = null;
+      return;
+    }
+
+    // Swipe right → open
+    if (!open && deltaX >= SWIPE_MIN_DISTANCE) {
+      setOpen(true);
+    }
+    // Swipe left → close
+    if (open && deltaX <= -SWIPE_MIN_DISTANCE) {
+      setOpen(false);
+    }
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+  }, [open, setOpen]);
+
+  useEffect(() => {
+    // Only attach on mobile (md breakpoint = 768px)
+    const mq = window.matchMedia("(max-width: 767px)");
+    if (!mq.matches) return;
+
+    document.addEventListener("touchstart", handleTouchStart, { passive: true });
+    document.addEventListener("touchend", handleTouchEnd, { passive: true });
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [handleTouchStart, handleTouchEnd]);
 
   useEffect(() => {
     setMounted(true);
