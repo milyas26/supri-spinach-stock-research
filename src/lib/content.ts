@@ -80,7 +80,13 @@ export function getGeneralFiles(): string[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace('.md', ''))
-    .sort((a, b) => b.localeCompare(a));
+    .sort((a, b) => {
+      const extractDate = (s: string) => {
+        const m = s.match(/(\d{4}-\d{2}-\d{2})/);
+        return m ? m[1] : '';
+      };
+      return extractDate(b).localeCompare(extractDate(a));
+    });
 }
 
 export function getGeneralContent(slug: string): string {

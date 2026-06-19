@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   const reportItems = getReportNav();
   const deepResearchGroups = getDeepResearchNav();
-  const generalItems = getGeneralNav();
+  const generalGroups = getGeneralNav();
   const marketOverviewItems = getMarketOverviewNav();
 
   return (
@@ -89,7 +89,7 @@ export default function RootLayout({
         <LoginDialogOverlay />
         <AuthInitializer />
         <SidebarProvider>
-          <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} generalItems={generalItems} marketOverviewItems={marketOverviewItems} />
+          <Sidebar reportItems={reportItems} deepResearchGroups={deepResearchGroups} generalGroups={generalGroups} marketOverviewItems={marketOverviewItems} />
           <main className="flex-1 overflow-y-auto px-4 pt-14 pb-6 md:px-10 md:py-10">
             <SearchTrigger />
             {children}

@@ -140,12 +140,12 @@ function TickerTreeItem({ group, activePath }: { group: TickerNavGroup; activePa
 export function Sidebar({
   reportItems: _reportItems,
   deepResearchGroups,
-  generalItems,
+  generalGroups,
   marketOverviewItems,
 }: {
   reportItems: NavItem[];
   deepResearchGroups: TickerNavGroup[];
-  generalItems: NavItem[];
+  generalGroups: TickerNavGroup[];
   marketOverviewItems: NavItem[];
 }) {
   const pathname = usePathname();
@@ -164,7 +164,7 @@ export function Sidebar({
 
   const visibleMarketOverview = marketOverviewExpanded ? marketOverviewItems : marketOverviewItems.slice(0, MARKET_OVERVIEW_LIMIT);
   const visibleDeep = deepExpanded ? deepResearchGroups : deepResearchGroups.slice(0, DEEP_LIMIT);
-  const visibleGeneral = generalExpanded ? generalItems : generalItems.slice(0, GENERAL_LIMIT);
+  const visibleGeneral = generalExpanded ? generalGroups : generalGroups.slice(0, GENERAL_LIMIT);
 
   useEffect(() => {
     setMounted(true);
@@ -322,19 +322,19 @@ export function Sidebar({
 
             {generalOpen && (
               <ul>
-                {visibleGeneral.map((item) => (
-                  <NavFileItem
-                    key={item.href}
-                    item={item}
-                    active={pathname === item.href}
+                {visibleGeneral.map((group) => (
+                  <TickerTreeItem
+                    key={group.ticker}
+                    group={group}
+                    activePath={pathname}
                   />
                 ))}
-                {generalItems.length === 0 && (
+                {generalGroups.length === 0 && (
                   <li className="px-5 py-2 text-[11px] text-[#B8B0A4] italic">
                     No content yet
                   </li>
                 )}
-                {generalItems.length > GENERAL_LIMIT && (
+                {generalGroups.length > GENERAL_LIMIT && (
                   <li>
                     <button
                       onClick={() => setGeneralExpanded(!generalExpanded)}
@@ -343,7 +343,7 @@ export function Sidebar({
                       {generalExpanded ? (
                         <><ChevronUp className="h-3 w-3" strokeWidth={2.5} /> Show less</>
                       ) : (
-                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {generalItems.length - GENERAL_LIMIT} more</>
+                        <><ChevronDown className="h-3 w-3" strokeWidth={2.5} /> {generalGroups.length - GENERAL_LIMIT} more</>
                       )}
                     </button>
                   </li>

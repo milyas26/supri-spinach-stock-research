@@ -31,17 +31,55 @@ export function getReportNav(): NavItem[] {
   }));
 }
 
-export function getGeneralNav(): NavItem[] {
-  const files = getGeneralFiles();
-  return files.map((slug) => {
-    // slug format: NAME_YYYY-MM-DD_HH-MM  or just NAME
-    const match = slug.match(/^(.+?)_(\d{4}-\d{2}-\d{2})_(\d{2}-\d{2})$/);
-    const label = match ? match[1].replace(/-/g, ' ') : slug.replace(/-/g, ' ');
-    return {
-      label,
+export function getGeneralNav(): TickerNavGroup[] {
+  const files = getGeneralFiles(); // sorted newest first
+
+  const groups = new Map<string, TickerNavGroup>();
+
+  for (const slug of files) {
+    // slug format: PREFIX[-_]YYYY-MM-DD
+    const match = slug.match(/^(.+?)[-_](\d{4}-\d{2}-\d{2})$/);
+    if (!match) {
+      // fallback: unparseable files as standalone entries
+      const groupKey = slug;
+      if (!groups.has(groupKey)) {
+        groups.set(groupKey, {
+          ticker: slug.replace(/-/g, ' '),
+          latestHref: `/general/${slug}`,
+          hasMultiple: false,
+          items: [],
+        });
+      }
+      groups.get(groupKey)!.items.push({
+        label: slug.replace(/-/g, ' '),
+        href: `/general/${slug}`,
+      });
+      continue;
+    }
+
+    const [, prefix, date] = match;
+
+    if (!groups.has(prefix)) {
+      groups.set(prefix, {
+        ticker: prefix,
+        latestHref: `/general/${slug}`,
+        hasMultiple: false,
+        items: [],
+      });
+    }
+
+    const group = groups.get(prefix)!;
+    group.items.push({
+      label: formatDate(date),
       href: `/general/${slug}`,
-    };
-  });
+    });
+  }
+
+  for (const group of groups.values()) {
+    if (group.items.length > 1) group.hasMultiple = true;
+  }
+
+  return Array.from(groups.values());
 }
 
 export function getMarketOverviewNav(): NavItem[] {
