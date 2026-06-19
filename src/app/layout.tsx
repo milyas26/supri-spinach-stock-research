@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
     'apple-mobile-web-app-title': siteName,
     'application-name': siteName,
-    'msapplication-TileColor': '#16a34a',
+    'msapplication-TileColor': '#0a0a0a',
     'msapplication-TileImage': '/icon-192.png',
   },
 };
@@ -75,7 +75,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <meta name="theme-color" content="#16a34a" />
+        <meta name="theme-color" content="#0a0a0a" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png" />
         <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png" />
