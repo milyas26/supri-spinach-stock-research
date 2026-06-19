@@ -169,7 +169,7 @@ export function Sidebar({
   // Swipe-to-open gesture (mobile only)
   const touchStartX = useRef<number | null>(null);
   const touchStartY = useRef<number | null>(null);
-  const EDGE_THRESHOLD = 200; // px from left edge to start swipe
+  const EDGE_THRESHOLD = 400; // px from left edge to start swipe
   const SWIPE_MIN_DISTANCE = 50; // min px to trigger open
 
   const handleTouchStart = useCallback((e: TouchEvent) => {
