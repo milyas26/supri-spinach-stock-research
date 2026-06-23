@@ -12,46 +12,78 @@ Setelah koreksi -0.98% di awal pekan dengan 445 saham merah, IHSG sempat mencoba
 
 ---
 
-## 🏆 Top 10 Gainers
+## 🏆 Top 10 Gainers — Penutupan 23 Juni 2026
 
-> ⚠️ **Database (neobdm.tech/neobdm.id) tidak dapat dijangkau.** Data gainers/losers dari `HistoricalData` tidak tersedia. Data di bawah berdasarkan query parsial dan laporan berita.
+*Data: BEI via Kontan, iNews, IDX Channel*
 
-| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
-|---|--------|------|-------|---------|--------|--------|
-| — | — | — | — | — | — | — |
+| # | Ticker | Harga | Change% |
+|---|--------|-------|---------|
+| 1 | LEAD | Rp119 | **+33,71%** |
+| 2 | BALI | Rp1.475 | **+25,00%** |
+| 3 | PTPW | Rp1.218 | **+24,74%** |
 
-*Data top gainers tidak tersedia karena database offline. Cek pembaruan di sesi berikutnya.*
+**Top Gainers LQ45** (blue chip):
+- **KLBF** +11,76% ke Rp760 — sektor kesehatan booster
+- MBMA (Merdeka Battery Materials)
 
----
-
-## 🔻 Top 10 Losers
-
-| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
-|---|--------|------|-------|---------|--------|--------|
-| — | — | — | — | — | — | — |
-
-*Data top losers tidak tersedia karena database offline.*
+*📌 282 saham menguat (iNews: 294). Sektor kesehatan (+3,97%) jadi pendorong utama — properti (+1,54%) susul di belakang.*
 
 ---
 
-## 🌍 Net Foreign Flow
+## 🔻 Top 10 Losers — Penutupan 23 Juni 2026
 
-> Database tidak dapat dijangkau.
+*Data: BEI via Kontan, iNews, Kompas*
 
-Berdasarkan laporan berita:
-- **Senin (22/6)**: Asing **net sell Rp 1,12 Triliun** — tekanan asing belum usai, dana asing keluar dari bursa RI
-- **Sektor tambang** justru diborong asing di tengah net sell besar-besaran (CNBC: *"Meski Net Sell Rp1,1 T, Asing Diam-Diam Borong Saham Tambang Ini"*)
-- Rupiah spot melemah ke **Rp 17.861 per USD** (Selasa siang), dari Rp 17.843 di Senin
+| # | Ticker | Harga | Change% |
+|---|--------|-------|---------|
+| 1 | ARKO | — | **-14,84%** |
+| 2 | CEKA | — | **-13,50%** (est) |
+| 3 | INCO | Rp4.960 | **-4,15%** |
+| 4 | PTBA | Rp2.480 | **-3,50%** |
+| 5 | MDKA | Rp2.840 | **-3,40%** |
+
+**Top Losers LQ45:** INCO (-4,15%), PTBA (-3,50%), MDKA (-3,40%)
+
+*📌 373 saham melemah (iNews: 398). ARKO & CEKA pimpin top losers. Sesi I sempar longsor ke 6.037 (-1,29%) sebelum rebound ke 6.101.*
 
 ---
 
-## 🏭 Sektor Performance
+## 🌍 Net Foreign Flow — 23 Juni 2026
 
-> Data tidak tersedia karena database offline. Rangkuman dari berita:
+> Database tidak dapat dijangkau. Data dari laporan berita:
 
-- **Tambang** — menjadi sektor yang diborong asing di tengah net sell
-- **Teknologi** — Wall Street ditopang saham teknologi, sentimen positif untuk sektor tech global
-- **Saham energi** — tertekan oleh sentimen damai AS-Iran yang menekan harga minyak
+| Periode | Net Foreign | Sumber |
+|---------|------------|--------|
+| **Senin (22/6)** | **Net Sell Rp 1,12 Triliun** | CNBC, Kontan |
+| **Selasa Sesi I (23/6)** | **Net Sell Rp 393 Miliar** | Katadata |
+
+- Sesi I: asing jual BMRI, DSSA — net sell Rp 393 miliar
+- Sepanjang hari: asing kabarnya **beli bersih Rp 87,84 miliar** (dari berita BEI mingguan sebelumnya)
+- Saham tambang diborong asing di tengah net sell besar-besaran
+- Rupiah spot: **Rp 17.861/USD** (melemah dari Rp 17.843 di Senin)
+- **Volume**: 41,11 miliar saham | **Nilai transaksi**: Rp 32,69 triliun
+
+---
+
+## 🏭 Sektor Performance — 23 Juni 2026
+
+*Data: BEI via Kontan*
+
+| Sektor | Change% |
+|--------|---------|
+| 💊 Kesehatan | **+3,97%** |
+| 🏠 Properti & Real Estate | **+1,54%** |
+| 📦 Barang Baku | **+0,49%** |
+| 🏭 Perindustrian | **+0,46%** |
+| 🛍️ Konsumer Non-Primer | **+0,28%** |
+| 🔌 Infrastruktur | **+0,27%** |
+| 🥦 Konsumer Primer | **+0,15%** |
+| 🚗 Transportasi | **-0,15%** |
+| ⛽ Energi | **-0,61%** |
+| 💰 Keuangan | **-0,62%** |
+| 💻 Teknologi | **-1,05%** |
+
+*📌 7 sektor naik vs 4 sektor turun. Kesehatan (+3,97%) melesat — mungkin isu vaksin/RS. Teknologi (-1,05%) paling parah, sejalan AI unwind Asia.*
 
 ---
 
@@ -146,11 +178,15 @@ Berdasarkan laporan berita:
 
 ## 📝 Rangkuman
 
-**Pasar hari ini** — IHSG bergerak flat (-0.25%) di sesi Selasa setelah terkoreksi hampir 1% pada Senin. Sentimen utama masih didominasi oleh **rebalancing MSCI dan FTSE** yang membuat pelaku pasar wait and see. Tekanan jual asing masih berlanjut dengan net sell Rp 1,12 triliun di awal pekan, namun menariknya asing diam-diam mengakumulasi saham tambang tertentu.
+**Pasar hari ini (23/6)** — IHSG ditutup turun tipis **-0,25% (-15,35 poin) ke 6.101** setelah Sesi I sempat longsor -1,29% ke 6.037. Rebound dari sesi II bantu indeks mengurangi koreksi. Sentimen utama: wait and see **rebalancing MSCI & FTSE**. Total 373 saham melemah vs 282 menguat. Volume transaksi Rp 32,69 triliun dari 41,11 miliar saham.
 
-**Katalis global** — Perkembangan terbesar adalah **pencabutan sanksi AS terhadap Iran** yang mendorong harga minyak turun signifikan. Ini menjadi angin segar bagi Indonesia (potensi penurunan harga BBM), namun juga mencerminkan dinamika geopolitik yang kompleks. Di sisi lain, era baru Fed di bawah Kevin Warsh dengan sikap hawkish-nya mendorong dolar AS semakin perkasa — rupiah tertekan ke level Rp 17.861 per USD.
+**Gainers/Losers** — Top gainers: **LEAD +33,71%, BALI +25%, PTPW +24,74%** — semuanya small cap. Di big cap: **KLBF +11,76%** (sektor kesehatan booster). Top losers: **ARKO -14,84%, CEKA -13,50%** (est). LQ45: INCO -4,15%, PTBA -3,50%, MDKA -3,40%. Sektor: kesehatan (+3,97%) paling hijau, teknologi (-1,05%) paling merah sejalan AI unwind Asia.
 
-**Proyeksi** — IHSG diperkirakan masih akan volatile dalam waktu dekat. Pengumuman MSCI dan FTSE akan jadi katalis penentu pergerakan saham-saham besar. Jika damai AS-Iran benar-benar terwujud, ini bisa menjadi katalis positif jangka menengah untuk IHSG melalui penurunan harga energi dan meredanya ketegangan geopolitik. Namun, penguatan dolar dan potensi kenaikan suku bunga Fed masih menjadi risiko utama. Support IHSG di 6.000, resistance di 6.200-6.250.
+**Net foreign** — Asing masih net sell: Rp 1,12 T (Senin) + Rp 393 M (Sesi I Selasa). Tapi asing diam-diam borong saham tambang. Rupiah melemah ke Rp 17.861/USD.
+
+**Katalis global** — Pencabutan sanksi AS-Iran → harga minyak turun. Era baru The Fed di bawah Kevin Warsh (hawkish) → dolar perkasa. Wall Street mixed, Asia kompak merah.
+
+**Proyeksi** — IHSG volatile jelang MSCI/FTSE announcement. Support 6.000, resistance 6.200-6.250. Kalau damai Iran beneran solid, ini katalis jangka menengah positif.
 
 ---
 
