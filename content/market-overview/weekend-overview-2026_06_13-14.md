@@ -22,6 +22,74 @@ IHSG mencatat **rebound mingguan terkuat** dengan lonjakan **+7,38%** sepanjang 
 
 ---
 
+---
+
+## 🏆 Top 10 Leaders — Penggerak IHSG (8-12 Juni 2026)
+
+*Saham big cap yang jadi motor utama rebound IHSG. Data: BEI*
+
+| # | Ticker | Harga | Change% | Kontribusi (poin) | MCFF (Rp T) |
+|---|--------|-------|---------|-------------------|-------------|
+| 1 | BBCA | Rp5.925 | **+16,75%** | 79,63 | 274,6 |
+| 2 | BMRI | Rp4.200 | **+9,38%** | 28,17 | 146,5 |
+| 3 | SMMA | — | **+17,5%** | 24,26 | 72,67 |
+| 4 | DSSA | — | **+35,25%** | 18,96 | 32,45 |
+| 5 | BREN | — | **+13,65%** | 18,08 | 67,14 |
+| 6 | BBRI | — | **+4,01%** | 17,25 | 199,36 |
+| 7 | BRPT | — | **+14,86%** | 12,38 | 42,66 |
+| 8 | BBNI | — | **+10,9%** | 11,33 | 51,42 |
+| 9 | TPIA | — | **+41,76%** | 11,27 | 17,06 |
+| 10 | MORA | — | **+10,96%** | 11,21 | 50,6 |
+
+*📌 Insight: BBCA dominan banget — nyumbang 79,63 poin dari total ~414 poin kenaikan IHSG (19%). TPIA +41,76% dan DSSA +35,25% jadi kenaikan tertinggi di top leaders. Sektor perbankan (BBCA, BMRI, BBRI, BBNI) kuasai 4 dari 10.*
+> 📎 **Sumber**: [Bisnis.com — Top Leaders IHSG](https://market.bisnis.com/read/20260614/7/1980746/ihsg-melonjak-738-sepekan-saham-bbca-bmri-hingga-tpia-jadi-top-leaders) | [Kabar Nusantara — 10 Saham Paling Berpengaruh](https://www.kabarnusantara.id/saham-paling-berpengaruh-pergerakan-ihsg) | [EnvyTech — Top Gainers](https://www.envytech.co.id/10-saham-penggerak-utama-ihsg-dan-top-gainers-periode-8-12-juni-2026)
+
+---
+
+## 🔥 Top Gainers — Second & Third Liners (8-12 Juni 2026)
+
+*Saham lapis kedua/ketiga dengan kenaikan % tertinggi. Data: BEI via IDX Channel & EnvyTech*
+
+| # | Ticker | Harga Awal | Harga Akhir | Change% |
+|---|--------|-----------|------------|---------|
+| 1 | FORU | Rp1.620 | Rp3.770 | **+132,72%** |
+| 2 | BABY | — | Rp200 | **+78,57%** |
+| 3 | SGER | — | Rp406 | **+69,17%** |
+| 4 | ASPR | — | Rp216 | **+61,19%** |
+| 5 | POLU | — | Rp14.025 | **+56,27%** |
+| 6 | FOLK | — | Rp206 | **+53,73%** |
+| 7 | RISE | — | Rp1.190 | **+47,91%** |
+| 8 | RGAS | — | Rp149 | **+47,52%** |
+| 9 | MLPT | — | Rp20.200 | **+46,38%** |
+| 10 | TRIN | — | Rp456 | **+46,15%** |
+
+*📌 Insight: FORU melesat 132% — gila. Second/third liners dominasi top gainers, tanda rotasi dari big cap ke small cap mulai terjadi.*
+> 📎 **Sumber**: [IDX Channel — Deretan Top Gainers](https://www.idxchannel.com/market-news/deretan-top-gainers-pekan-ini-ada-saham-foru-hingga-mlpt) | [EnvyTech — Top Gainers](https://www.envytech.co.id/10-saham-penggerak-utama-ihsg-dan-top-gainers-periode-8-12-juni-2026)
+
+---
+
+## 🔻 Top 10 Laggards — Penahan IHSG (8-12 Juni 2026)
+
+*Saham yang justru merah di tengah IHSG hijau 7,38%*
+
+| # | Ticker | Change% | Tekanan (poin) | MCFF (Rp T) |
+|---|--------|---------|----------------|-------------|
+| 1 | MPRO | **-17,16%** | -4,78 | 10,29 |
+| 2 | SRAJ | **-8,33%** | -4,61 | 22,62 |
+| 3 | EMAS | **-5,74%** | -4,38 | 32,09 |
+| 4 | CPIN | **-2,37%** | -1,00 | 18,47 |
+| 5 | SUPA | **-12,77%** | -0,93 | 2,82 |
+| 6 | JSMR | **-7,47%** | -0,86 | 4,74 |
+| 7 | HRTA | **-12,95%** | -0,85 | 2,56 |
+| 8 | MDKA | **-1,17%** | -0,79 | 29,74 |
+| 9 | EXCL | **-3,02%** | -0,75 | 10,79 |
+| 10 | BELI | **-3,31%** | -0,70 | 9,14 |
+
+*📌 Insight: MPRO (Maha Properti) milik Dato Sri Tahir jadi penekan terbesar. HRTA (Hartadinata) -12,95% juga cukup dalam. Tapi tekanan top laggards cuma -20,5 poin total vs top leaders +235 poin — makanya IHSG tetap hijau.*
+> 📎 **Sumber**: [Bisnis.com — Top Laggards MPRO, EMAS, EXCL](https://market.bisnis.com/read/20260614/7/1980749/mpro-emas-hingga-excl-jadi-top-laggards-saat-ihsg-melonjak-738-sepekan)
+
+---
+
 ## 🇮🇩 Berita Domestik — Pasar & Ekonomi
 
 ### 1. IHSG Naik 7,38% Sepekan, Kapitalisasi Pasar Tembus Rp 10.524 Triliun
