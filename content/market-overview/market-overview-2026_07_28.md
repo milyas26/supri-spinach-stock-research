@@ -4,190 +4,174 @@
 
 ## 📈 IHSG
 
-📉 **IHSG**: 6.130,58 (-55,19 poin / **-0,89%**)
+📉 **IHSG**: 6,131 (-0.89%)
 
-IHSG melanjutkan pelemahan untuk hari kelima beruntun, ditutup di level 6.130 pada Selasa (28/7). Koreksi terjadi di tengah ketidakpastian domestik pasca pengunduran diri mendadak Gubernur BI Perry Warjiyo pada akhir pekan lalu, ditambah sentimen eksternal dari aksi jual besar-besaran saham teknologi global dan anjloknya bursa Korea Selatan (KOSPI -11%). IHSG sempat menyentuh level terendah intraday di 6.144 sebelum memangkas sebagian pelemahan, namun tekanan jual tetap dominan dengan 360 saham terkoreksi vs 265 saham menguat.
-
-**Perjalanan IHSG 5 Hari Terakhir:**
-| Tanggal | Close | Change |
-|---------|-------|--------|
-| 22 Jul (Rab) | 6.334 | -0,09% |
-| 23 Jul (Kam) | 6.315 | -0,30% |
-| 24 Jul (Jum) | 6.196 | -1,88% |
-| 27 Jul (Sen) | 6.186 | -0,17% |
-| **28 Jul (Sel)** | **6.130** | **-0,89%** |
+IHSG melanjutkan pelemahan untuk hari kelima berturut-turut, ditutup turun 0,89% ke level 6.131. Penurunan dipicu oleh aksi jual saham-saham berkapitalisasi besar (BBCA, BREN, DSSA) menjelang rapat FOMC The Fed yang dimulai pada hari yang sama. Level support terdekat berada di 6.050, sementara resistance di 6.200. Sentimen global mendominasi, dengan pasar menanti keputusan suku bunga The Fed yang berpotensi menaikkan suku bunga — sebuah skenario yang tidak diharapkan pasar.
 
 ---
 
-## 🏆 Top Gainers (Non-LQ45)
+## 🏆 Top 10 Gainers
 
-| # | Ticker | Nama | Harga | Change% |
-|---|--------|------|-------|---------|
-| 1 | KOBX | Kobexindo Tractors | 198 | **+33,78%** |
-| 2 | ALKA | Alakasa Industrindo | 1.715 | **+24,73%** |
-| 3 | DWGL | Dwi Guna Laksana | 285 | **+24,35%** |
+| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
+|---|--------|------|-------|---------|--------|--------|
+| 1 | DWGL | Dwi Guna Laksana | 286 | **+24.35%** | Energi | 125K |
+| 2 | AISA | FKS Food Sejahtera | 121 | **+15.24%** | Barang Konsumen Primer | 3.4M |
+| 3 | BEEF | Estika Tata Tiara | 374 | **+10.00%** | Barang Konsumen Primer | 338K |
+| 4 | NTBK | Nusatama Berkah | 99 | **+10.00%** | Perindustrian | 4.1M |
+| 5 | NANO | Nanotech Indonesia Global | 34 | **+9.68%** | Barang Konsumen Primer | 702K |
+| 6 | NSSS | Nusantara Sawit Sejahtera | 905 | **+8.38%** | Barang Konsumen Primer | 165K |
+| 7 | BFIN | BFI Finance Indonesia | 845 | **+8.33%** | Keuangan | 532K |
+| 8 | DSNG | Dharma Satya Nusantara | 1,340 | **+6.77%** | Barang Konsumen Primer | 76K |
+| 9 | ASLC | Autopedia Sukses Lestari | 67 | **+6.35%** | Barang Konsumen Non-Primer | 553K |
+| 10 | RLCO | Abadi Lestari Indonesia | 5,050 | **+5.65%** | Barang Konsumen Primer | 26K |
 
-### 🏆 Top Gainers LQ45
-
-| # | Ticker | Nama | Harga | Change% |
-|---|--------|------|-------|---------|
-| 1 | EXCL | XLSmart Telecom Sejahtera | 2.440 | **+2,95%** |
-| 2 | AMRT | Sumber Alfaria Trijaya | 1.340 | **+2,29%** |
-| 3 | ISAT | Indosat | 1.950 | **+1,83%** |
-
-*Saham telekomunikasi menjadi primadona di saat pasar melemah — EXCL, ISAT, dan AMRT mencatatkan penguatan sebagai saham defensif. Saham gorengan KOBX, ALKA, DWGL mendominasi top gainers non-LQ45 dengan kenaikan >20%.*
-
-> Sumber: [Kompas](https://money.kompas.com/read/2026/07/28/170322626/ihsg-ditutup-28-juli-2026-turun-55-poin-ke-613058-bumi-top-losers), [iNews](https://www.inews.id/finance/keuangan/ihsg-hari-ini-ditutup-kembali-melemah-380-saham-terkoreksi)
+*Sektor Barang Konsumen Primer mendominasi dengan 5 dari 10 top gainers, mencerminkan pergerakan defensif di tengah pelemahan IHSG. DWGL melesat 24,35% setelah sentiment positif di sektor energi. Volume tinggi di AISA (3,4M) dan NTBK (4,1M) menunjukkan minat investor ritel yang signifikan.*
 
 ---
 
-## 🔻 Top Losers
+## 🔻 Top 10 Losers
 
-### 🔻 Top Losers Non-LQ45
+| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
+|---|--------|------|-------|---------|--------|--------|
+| 1 | KDTN | Puri Sentul Permai | 320 | **-14.89%** | Barang Konsumen Non-Primer | 147K |
+| 2 | ARKO | Arkora Hydro | 4,600 | **-10.24%** | Infrastruktur | 53K |
+| 3 | ENRG | Energi Mega Persada | 1,290 | **-8.83%** | Energi | 1.1M |
+| 4 | ELTY | Bakrieland Development | 32 | **-8.57%** | Properti & Real Estat | 1.0M |
+| 5 | BTEK | Bumi Teknokultura Unggul | 11 | **-8.33%** | Barang Konsumen Primer | 1.5M |
+| 6 | TAXI | Express Transindo Utama | 12 | **-7.69%** | Transportasi & Logistik | 256K |
+| 7 | KREN | Quantum Clovera Investama | 13 | **-7.14%** | Teknologi | 185K |
+| 8 | PGUN | Pradiksi Gunatama | 7,525 | **-7.10%** | Barang Konsumen Primer | 842 |
+| 9 | WOOD | Integra Indocabinet | 232 | **-6.45%** | Barang Konsumen Non-Primer | 87K |
+| 10 | PAMG | Bima Sakti Pertiwi | 59 | **-6.35%** | Properti & Real Estat | 1.2M |
 
-| # | Ticker | Nama | Harga | Change% |
-|---|--------|------|-------|---------|
-| 1 | MPRO | Maha Properti Indonesia | 12.275 | **-14,90%** |
-| 2 | KDTN | Puri Sentul Permai | 320 | **-14,89%** |
-| 3 | — | Ciptadana Asset Management | 56 | **-13,85%** |
-
-### 🔻 Top Losers LQ45
-
-| # | Ticker | Nama | Harga | Change% |
-|---|--------|------|-------|---------|
-| 1 | BUMI | Bumi Resources | 165 | **-2,94%** |
-| 2 | CUAN | Petrindo Jaya Kreasi | 670 | **-2,90%** |
-| 3 | ANTM | Aneka Tambang | 2.890 | **-2,69%** |
-
-*Sektor properti dan energi paling tertekan — MPRO dan KDTN ambles >14% di jajaran top losers. Di LQ45, saham komoditas/energi (BUMI, CUAN, ANTM) kompak turun seiring koreksi harga minyak dan sentimen bearish global.*
-
-> Sumber: [Kompas](https://money.kompas.com/read/2026/07/28/170322626/ihsg-ditutup-28-juli-2026-turun-55-poin-ke-613058-bumi-top-losers), [iNews](https://www.inews.id/finance/keuangan/ihsg-hari-ini-ditutup-kembali-melemah-380-saham-terkoreksi)
+*ENRG menjadi saham dengan nilai transaksi terbesar di jajaran top losers (Rp149,5 miliar), terkoreksi 8,83% seiring tekanan di sektor energi. Saham-saham properti (ELTY, PAMG) juga tertekan, mencerminkan aksi risk-off menjelang keputusan The Fed. Volume tinggi di BTEK (1,5M) dan PAMG (1,2M) menunjukkan adanya distribusi signifikan.*
 
 ---
 
 ## 🌍 Net Foreign Flow
 
-**Selasa, 28 Juli 2026:**
-- **Net Foreign Sell**: > **Rp1 Triliun** (IHSG turun 5 hari beruntun, tekanan jual asing berlanjut)
-- **Total Nilai Transaksi**: Rp10,70 Triliun
-- **Volume**: 24,87 Miliar saham
+- **Net Foreign**: **-Rp796,58 Miliar** (Net Sell)
+- **Total Volume**: Rp9,13 Triliun
+- **Rata-rata Perubahan**: -0.24%
+- **Total Ticker Aktif**: 499
 
-**Senin, 27 Juli 2026 (referensi):**
-- **Net Foreign Sell**: Rp820,67 Miliar
-  - Pasar Reguler: Rp491,89 Miliar
-  - Pasar Negosiasi & Tunai: Rp328,77 Miliar
+Investor asing mencatat net sell hampir Rp800 miliar — salah satu yang terbesar dalam sepekan terakhir. Sektor Keuangan menjadi yang paling dibuang asing (-Rp297,69M), diikuti Energi (-Rp270,74M) dan Barang Baku (-Rp77,62M). Sektor Barang Konsumen Primer menjadi satu-satunya sektor dengan net foreign inflow positif (+Rp1,75M), konsisten dengan pola defensif.
 
-**Top Net Sell (Senin, 27/7):**
-| Ticker | Nama | Net Sell |
-|--------|------|----------|
-| TPIA | Chandra Asri Pacific | Rp99,55 M |
-| EMAS | Merdeka Gold Resources | Rp88,79 M |
-| BULL | Buana Lintas Lautan | Rp52,20 M |
-| BBRI | Bank Rakyat Indonesia | Rp45,86 M |
-| ASII | Astra International | Rp44,89 M |
-| DSSA | Dian Swastatika Sentosa | Rp36,50 M |
-| ANTM | Aneka Tambang | Rp27,11 M |
-| BUMI | Bumi Resources | Rp21,31 M |
-| CUAN | Petrindo Jaya Kreasi | Rp20,98 M |
-
-**Top Net Buy (Senin, 27/7):**
-| Ticker | Nama | Net Buy |
-|--------|------|---------|
-| BBCA | Bank Central Asia | Rp96,17 M |
-| AADI | Adaro Andalan Indonesia | Rp15,22 M |
-| RAJA | Rukun Raharja | Rp14,11 M |
-| MEDC | Medco Energi Internasional | Rp10,24 M |
-| AKRA | AKR Corporindo | Rp9,94 M |
-| INKP | Indah Kiat Pulp & Paper | Rp9,74 M |
-| GGRM | Gudang Garam | Rp9,44 M |
-
-*Asing terciduk diam-diam memborong BBCA (Rp96 M) di saat IHSG merah, menandakan kepercayaan terhadap saham perbankan blue chip masih terjaga. Sebaliknya, TPIA dan EMAS menjadi sasaran jual terbesar.*
-
-> Sumber: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260728075221-17-754273/ihsg-melemah-pasca-gubernur-bi-mundur-asing-kompak-lego-10-saham-ini), [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260728075645-17-754276/asing-terciduk-diam-diam-borong-10-saham-ini-kala-ihsg-merah), [Kontan](https://pusatdata.kontan.co.id/news/ihsg-turun-5-hari-beruntun-net-sell-asing-lebih-dari-rp-1-triliun-hari-ini-287)
+Saham BBCA dan TINS justru diborong asing meski IHSG jatuh, menurut laporan Bisnis.com.
 
 ---
 
 ## 🏭 Sektor Performance
 
-| Sektor | Change% |
-|--------|---------|
-| ✅ Barang Konsumer Primer | **+0,52%** |
-| ❌ Properti & Real Estat | **-3,25%** |
-| ❌ Energi | **-1,75%** |
-| ❌ Perindustrian | **-1,00%** |
-| ❌ Teknologi | **-0,88%** |
-| ❌ Keuangan | **-0,85%** |
-| ❌ Infrastruktur | **-0,76%** |
-| ❌ Transportasi | **-0,74%** |
-| ❌ Kesehatan | **-0,63%** |
-| ❌ Barang Baku | **-0,53%** |
-| ❌ Barang Konsumer Non-Primer | **-0,34%** |
+| Sektor | Jumlah | Rata-rata Change% | Net Foreign (M) |
+|--------|--------|-------------------|-----------------|
+| Barang Konsumen Primer | 71 | **+0.69%** | +1.75M |
+| Barang Baku | 52 | **+0.05%** | -77.62M |
+| Kesehatan | 21 | **+0.03%** | -37.84M |
+| Teknologi | 22 | **+0.01%** | -12.48M |
+| Keuangan | 50 | **-0.22%** | -297.69M |
+| Perindustrian | 30 | **-0.42%** | -33.36M |
+| Energi | 61 | **-0.48%** | -270.74M |
+| Infrastruktur | 42 | **-0.59%** | -47.57M |
+| Transportasi & Logistik | 25 | **-0.59%** | -1.25M |
+| Barang Konsumen Non-Primer | 84 | **-0.64%** | -12.54M |
+| Properti & Real Estat | 41 | **-0.67%** | -7.22M |
 
-*Hanya satu sektor yang bertahan hijau: barang konsumer primer (+0,52%) — sektor defensif yang biasanya jadi tempat pelarian saat pasar lesu. Properti & real estat menjadi yang terburuk (-3,25%), diikuti energi (-1,75%). Mayoritas sektor (10 dari 11) berada di zona merah.*
-
-> Sumber: [Kompas](https://money.kompas.com/read/2026/07/28/170322626/ihsg-ditutup-28-juli-2026-turun-55-poin-ke-613058-bumi-top-losers)
+*Hanya 4 sektor yang mampu bertahan di zona hijau: Barang Konsumen Primer (+0,69%), Barang Baku (+0,05%), Kesehatan (+0,03%), dan Teknologi (+0,01%). Properti & Real Estat menjadi sektor paling tertekan (-0,67%) bersama Barang Konsumen Non-Primer (-0,64%). Keuangan dan Energi menjadi sektor dengan outflow asing terbesar, masing-masing -Rp297,69M dan -Rp270,74M.*
 
 ---
 
 ## 📰 Market News
 
-### 🆘 Gubernur BI Perry Warjiyo Mundur — Destry Damayanti Jadi Plt
-Perry Warjiyo mengundurkan diri dari jabatan Gubernur Bank Indonesia pada Sabtu (25/7) karena alasan pribadi, mengejutkan pasar keuangan. Pemerintah menunjuk Deputi Gubernur Senior BI Destry Damayanti sebagai Pelaksana Tugas Gubernur BI. IHSG sempat anjlok ke 6.144 pada Senin sebelum memangkas pelemahan, menunjukkan pelaku pasar belum panik namun tetap wait-and-see terhadap arah kebijakan moneter ke depan.
-> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260728075221-17-754273/ihsg-melemah-pasca-gubernur-bi-mundur-asing-kompak-lego-10-saham-ini)
+### Breaking News! IHSG Turun 1,51% ke Bawah 6.050
+> IHSG melanjutkan pelemahan tajam pada sesi Rabu (29/7), sempat tembus ke bawah level 6.050 — level psikologis penting. Penurunan terjadi di tengah kekhawatiran hasil rapat FOMC.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260729102206-17-754659/breaking-news-ihsg-turun-151-ke-bawah-6050)
 
-### 💰 KSSK Libatkan Danantara — Sentimen Positif bagi Pasar
-Presiden Prabowo meminta BPI Danantara dilibatkan dalam rapat Komite Stabilitas Sistem Keuangan (KSSK). Kehadiran Danantara diharapkan memperkuat koordinasi kebijakan fiskal, moneter, dan investasi sehingga kebijakan ekonomi lebih terintegrasi. Langkah ini dipandang positif oleh pasar karena berpotensi meningkatkan kepercayaan investor dan mendorong arus modal asing.
-> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/research/20260727192638-128-754246/angin-segar-untuk-ihsg-rupiah-minyak-anjlok-kssk-danantara-diperkuat)
+### Penyebab Tiba-Tiba IHSG Anjlok 1,5%
+> Analis mengidentifikasi beberapa faktor: aksi jual asing besar-besaran menjelang keputusan The Fed, tekanan di saham big caps (BBCA, BREN, DSSA), dan ketidakpastian global akibat perang dagang Trump.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260729103542-17-754671/penyebab-tiba-tiba-ihsg-anjlok-15)
 
-### 📉 IHSG Turun 5 Hari Beruntun — Net Sell Asing Tembus >Rp1 Triliun
-IHSG mencatat pelemahan lima hari beruntun dengan tekanan jual asing yang terus berlanjut. Lebih dari Rp1 triliun net sell asing tercatat pada hari ini, menambah total tekanan jual asing dalam sepekan terakhir. Tercatat 360 saham melemah, 281 menguat, dan 304 stagnan. Nilai transaksi mencapai Rp10,8 triliun.
-> **Sumber**: [iNews](https://www.inews.id/finance/keuangan/ihsg-hari-ini-ditutup-kembali-melemah-380-saham-terkoreksi), [Kontan](https://pusatdata.kontan.co.id/news/ihsg-turun-5-hari-beruntun-net-sell-asing-lebih-dari-rp-1-triliun-hari-ini-287)
+### IHSG Ditutup Turun ke 6.130 Jelang FOMC, Saham DSSA-BREN Melemah
+> IHSG turun 0,89% ke 6.130,58 pada perdagangan Selasa (28/7) menjelang FOMC. Saham DSSA dan BREN menjadi pemberat utama. Pasar khawatir The Fed akan kembali menaikkan suku bunga di tengah inflasi yang masih tinggi.
+> **Sumber**: [Bisnis.com](https://market.bisnis.com/read/20260728/7/1991743/ihsg-ditutup-turun-ke-6130-jelang-fomc-saham-dssa-bren-melemah)
 
-### 🏆 Media Asing Sorot IHSG — Disebut Sudah Masuk Bull Market
-Meski terkoreksi 0,89%, IHSG tetap masuk dalam 3 besar bursa saham terbaik di Asia sepanjang tahun ini. Media asing menyoroti ketahanan IHSG di tengah krisis global dan pengunduran diri Gubernur BI, menilai pasar modal Indonesia sudah memasuki fase bull market.
-> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260728113134-17-754366/media-asing-sorot-ihsg-disebut-sudah-masuk-bull-market), [CNBC Indonesia](https://www.cnbcindonesia.com/research/20260728101645-128-754338/melemah-hari-ini-ihsg-tetap-masuk-3-besar-bursa-saham-terbaik-asia)
+### Asing Kompak Borong 10 Saham Ini Kala IHSG Merah
+> Meski IHSG terkoreksi signifikan, investor asing tercatat membeli 10 saham secara kolektif. Saham-saham yang diborong termasuk di sektor tambang dan konsumen yang dinilai sudah murah.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260729083030-17-754622/asing-kompak-borong-10-saham-ini-kala-ihsg-merah)
 
-### 🇰🇷 Bursa Korsel Trading Halt — KOSPI Anjlok 11%
-KOSPI ambles lebih dari 11% ke level 6.012 pada Selasa (28/7) hingga memicu trading halt untuk ke-8 kalinya tahun ini. Aksi jual besar-besaran dipicu kekhawatiran persaingan AI dari China — saham Samsung Electronics ambles 13,1% dan SK Hynix ambles 13,5%. Produsen chip China CXMT melonjak 466% di debut IPO-nya pekan lalu.
-> **Sumber**: [Kompas](https://money.kompas.com/read/2026/07/28/134131626/bursa-korsel-sempat-trading-halt-setelah-kospi-ambles-11-persen)
+### TINS-BBCA Diborong Asing saat IHSG Jatuh, Net Sell Tembus Rp1,1 Triliun
+> Net sell asing tercatat Rp1,1 triliun pada perdagangan Selasa (28/7), namun saham TINS (Timah) dan BBCA (Bank BCA) justru diborong. Hal ini mengindikasikan selective buying oleh asing di tengah aksi jual massal.
+> **Sumber**: [Bisnis.com](https://market.bisnis.com/read/20260728/7/1991792/tins-bbca-diborong-asing-saat-ihsg-jatuh-net-sell-tembus-rp11-triliun)
+
+### IHSG Sempat Tembus ke Bawah 6.050 — Ke Mana Arah Selanjutnya?
+> IHSG berhasil rebound tipis setelah menyentuh level 6.050. Analis melihat support kuat di 6.000-6.050. Jika The Fed dovish, IHSG berpotensi rebound ke 6.200-6.300.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260729121458-17-754708/ihsg-sempat-tembus-ke-bawah-6050-ke-mana-arah-selanjutnya)
+
+### IHSG Turun 5 Hari — Bagaimana Nasib Pasar Saham Hari Ini (29/7)
+> IHSG telah turun selama 5 hari berturut-turut. Analis mencermati potensi technical rebound jika The Fed memberikan sinyal akomodatif.
+> **Sumber**: [Kontan](https://insight.kontan.co.id/news/ihsg-turun-5-hari-bagaimana-nasib-pasar-saham-hari-ini-297)
+
+### Ekonom Apresiasi Langkah BI Pertahankan Suku Bunga
+> Bank Indonesia mempertahankan suku bunga acuan di tengah tekanan global. Ekonom menilai langkah ini tepat untuk menjaga stabilitas rupiah dan mengendalikan inflasi tanpa menghambat pertumbuhan.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260728185807-17-754534/ekonom-apresiasi-langkah-bi-pertahankan-suku-bunga)
+
+### Bursa Asia Rebound, Kospi & Nikkei Bergerak di Zona Hijau
+> Bursa Asia mayoritas menguat pada Rabu (29/7) dengan Kospi dan Nikkei di zona hijau, memberikan sentimen positif bagi IHSG untuk rebound.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/market/20260729083329-17-754623/bursa-asia-rebound-kospi-nikkei-bergerak-di-zona-hijau)
 
 ---
 
 ## 🌏 Macro & Global
 
-### 🛢️ Minyak Anjlok 7-8% — Iran-AS Jeda Serangan, Negosiasi Hormuz
-Harga minyak mentah dunia anjlok tajam pada Senin — Brent turun 8,6% ke US$88,49/barel, WTI turun 7,7% ke US$82,43/barel — setelah AS menahan diri dari serangan ke Iran untuk malam kedua berturut-turut, Iran menghentikan serangan balasan, dan negosiator Iran-Oman memajukan pembicaraan untuk membuka kembali Selat Hormuz. Ini adalah langkah diplomatik paling substantif sejak konflik dimulai Februari lalu. Namun, analis memperingatkan bahwa ranjau laut yang hilang di Selat Hormuz membatasi kemampuan Iran untuk membuka kembali jalur pelayaran sepenuhnya dalam waktu dekat.
-> **Sumber**: [TechTimes](https://www.techtimes.com/articles/321730/20260727/oil-sinks-7-us-iran-pause-hormuz-shipping-talks-ahead-fed-decision.htm), [LiveWire Markets](https://www.livewiremarkets.com/wires/escalating-middle-east-tensions-shift-the-balance-of-risk-on-oil-price)
+### 🔴 Puluhan Jam Penuh Guncangan — Dunia Cemas Menanti Keputusan The Fed
+> Rapat FOMC dua hari (28-29 Juli) menjadi pusat perhatian global. Pasar keuangan Indonesia berakhir di zona merah, bursa saham dan rupiah melemah. Skenario kenaikan suku bunga masih ada di meja — sesuatu yang bisa memperkuat dolar AS dan menekan pasar emerging market.
+> **Sumber**: [CNBC Indonesia Research](https://www.cnbcindonesia.com/research/20260728192349-128-754549/puluhan-jam-penuh-guncangan-dunia-cemas-menanti-keputusan-the-fed)
 
-### 🏛️ The Fed Mulai Rapat FOMC — Suku Bunga Ditahan, tapi Sinyal September Kunci
-The Fed memulai rapat FOMC dua hari (28-29 Juli) dengan ekspektasi pasar 62% akan menahan suku bunga di 3,5-3,75%. Perang Iran dan kenaikan harga minyak sebelumnya telah mendorong probabilitas kenaikan suku bunga September ke ~82%. Namun, aksi jual minyak hari Senin mengurangi urgensi kenaikan. Ketua Fed Kevin Warsh diperkirakan akan menjadi sorotan utama — ia belum memberikan forward guidance yang jelas, berbeda dengan pendahulunya.
-> **Sumber**: [The National](https://www.thenationalnews.com/business/economy/2026/07/27/iran-war-escalation-puts-federal-reserve-in-a-bind/), [TechTimes](https://www.techtimes.com/articles/321675/20260727/federal-reserve-july-meeting-oil-pullback-cuts-hike-odds-one-three-september-surges.htm)
+### 🔴 Fed Interest Rate Meeting Begins With a Hike on the Table
+> Federal Reserve memulai pertemuan kebijakan moneternya dengan kenaikan suku bunga masih menjadi opsi. Ada "family fight" internal antara hawk dan dove. Goldman menyebut keputusan minggu ini "unusually uncertain".
+> **Sumber**: [Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/fed-interest-rate-meeting-begins-100000374.html)
 
-### 💵 Rupiah Tembus Rp18.000/USD — Terlemah dalam 7 Hari
-Rupiah ditutup di Rp18.000/USD pada Senin (27/7), melemah 0,36% dan menjadi level terlemah dalam 7 hari perdagangan. Pada Selasa (28/7), rupiah makin tertekan ke kisaran Rp18.080-Rp18.089/USD, terdampak pengunduran diri Gubernur BI, tekanan dolar AS, dan outflow asing. Bank-bank menjual dolar AS di atas Rp18.000.
-> **Sumber**: [Kompas](https://money.kompas.com/read/2026/07/28/103558626/rupiah-kembali-melemah-bank-jual-dollar-as-di-atas-rp-18000), [Pintu News](https://pintu.co.id/news/286458-kurs-rupiah-hari-ini-28juli2026), [Bloomberg Technoz](https://www.bloombergtechnoz.com/detail-news/116394/rupiah-offshore-tertekan-ketidakpastian-bi-bayangi-pasar-spot)
+### ⚠️ Trump Nyalakan Lagi Perang Dagang — Dunia Disebut Lebih Rentan
+> Donald Trump kembali mengancam perang tarif baru, dan analis menyebut ekonomi global saat ini lebih rentan dibanding 2018. Eskalasi perang dagang AS-China bisa memicu resesi global.
+> **Sumber**: [CNBC Indonesia](https://www.cnbcindonesia.com/news/20260728075636-4-754275/trump-nyalakan-lagi-perang-dagang-kali-ini-dunia-disebut-lebih-rentan)
 
-### 🇨🇳 China AI-Anxiety Guncang Pasar Global — Saham Chip Rontok
-Kekhawatiran terhadap kompetisi AI China memicu aksi jual massal saham semikonduktor global. Produsen chip China CXMT melonjak 466% di hari pertama IPO, sementara China dikabarkan telah memulai produksi massal mesin litografi DUV buatan sendiri. Analis Morningstar menilai aksi jual berlebihan, karena posisi dominan produsen chip global belum akan tergeser dalam waktu dekat.
-> **Sumber**: [Kompas](https://money.kompas.com/read/2026/07/28/134131626/bursa-korsel-sempat-trading-halt-setelah-kospi-ambles-11-persen), [Business Standard](https://www.business-standard.com/markets/news/asian-shares-slide-as-ai-anxiety-sparks-tech-rout-broad-market-selloff-126072800105_1.html)
+### ⚠️ IMF Says Oil Markets Have Depleted All 3 'Shock Absorbers'
+> IMF memperingatkan pasar minyak telah kehilangan seluruh 3 "shock absorbers"-nya sementara konflik AS-Iran mengancam eskalasi lagi. Harga minyak berpotensi kembali melonjak jika gencatan senjata runtuh.
+> **Sumber**: [Yahoo Finance](https://finance.yahoo.com/energy/articles/imf-says-oil-markets-depleted-161500264.html)
 
-### 🌏 Eskalasi Perang Iran Beri Tekanan ke The Fed
-Konflik Iran yang memanas kembali membuat bank sentral global dalam posisi sulit — inflasi energi mendorong harga-harga naik, sementara pertumbuhan ekonomi melambat. Houthi memberlakukan embargo maritim di Bab Al Mandeb, mengancam rute suplai minyak alternatif. Fed futures mengindikasikan kenaikan suku bunga September semakin mungkin, yang bisa berdampak pada arus modal keluar dari emerging markets termasuk Indonesia.
-> **Sumber**: [The National](https://www.thenationalnews.com/business/economy/2026/07/27/iran-war-escalation-puts-federal-reserve-in-a-bind/), [FXStreet](https://www.fxstreet.com/analysis/the-seeming-reprieve-in-the-iran-war-is-as-uncertain-as-conditions-can-get-202607271302)
+### 🟡 Persistently High Inflation to Nag Global Economy
+> Inflasi yang tetap tinggi terus mengganggu ekonomi global menurut polling Reuters. Ini memperkuat argumen bagi The Fed untuk tetap hawkish, yang berimplikasi negatif bagi pasar emerging market termasuk Indonesia.
+> **Sumber**: [Yahoo Finance](https://finance.yahoo.com/economy/articles/persistently-high-inflation-nag-global-122731993.html)
+
+### 🟡 Brüchige Waffenruhe — USA fangen iranischen Raketenangriff ab
+> Gencatan senjata AS-Iran yang rapuh kembali diuji. AS berhasil mencegat serangan rudal Iran, dan harga minyak naik merespons ketegangan. Situasi ini membuat pasar energi tetap volatil.
+> **Sumber**: [Yahoo Finance (DE)](https://de.finance.yahoo.com/nachrichten/bruchige-waffenruhe-usa-fangen-iranischen-060657786.html)
+
+### 🟡 Jeda Saling Serang AS-Iran — Harga Minyak Melandai
+> Harga minyak sempat melandai setelah jeda konflik AS-Iran, namun volatilitas tetap tinggi. Dampak ke Indonesia: potensi tekanan biaya energi impor.
+> **Sumber**: [Kontan](https://insight.kontan.co.id/news/jeda-saling-serang-as-iran-harga-minyak-melandai)
+
+### 🟡 Nilai Tukar Rupiah Dibuka Melemah Rp18.109 per dolar AS
+> Rupiah melanjutkan pelemahan ke Rp18.109 per dolar AS, tertekan ekspektasi hawkish The Fed dan ketidakpastian global. Pelemahan rupiah menambah tekanan bagi IHSG.
+> **Sumber**: [Bisnis.com](https://market.bisnis.com/read/20260729/93/1991931/nilai-tukar-rupiah-dibuka-melemah-rp18109-per-dolar-as-rabu-297)
+
+### 🟡 Wall Street Bangkit, Ketegangan AS-Iran Mereda dan The Fed Dinanti
+> Wall Street ditutup mixed dengan kecenderungan menguat setelah ketegangan AS-Iran mereda. Pasar kini fokus penuh pada keputusan The Fed.
+> **Sumber**: [Kontan](https://tv.kontan.co.id/video/S6067AkPYBs)
 
 ---
 
 ## 📝 Rangkuman
 
-**1. Pasar Dalam Tekanan — IHSG 5 Hari Merah Beruntun**
-IHSG ditutup turun 0,89% ke 6.130, memperpanjang koreksi menjadi lima hari beruntun. Tekanan berasal dari dalam negeri (pengunduran diri Gubernur BI Perry Warjiyo yang mengejutkan pasar) dan luar negeri (aksi jual saham teknologi global yang dipicu China AI-anxiety, KOSPI ambles 11%). Sebanyak 360 saham terkoreksi dengan total nilai transaksi Rp10,7 triliun — relatif sepi menunjukkan investor wait-and-see.
+**1. Kondisi Pasar**: IHSG ditutup turun 0,89% ke 6.131 pada Selasa (28/7), memperpanjang koreksi 5 hari berturut-turut. Pasar bergerak di bawah tekanan tinggi menjelang keputusan FOMC The Fed. Net foreign outflow hampir Rp800 miliar menjadi salah satu yang terbesar dalam sepekan, dengan saham-saham keuangan dan energi menjadi yang paling dibuang. Total volume transaksi mencapai Rp9,13 triliun dari 499 ticker aktif.
 
-**2. Foreign Outflow Makin Deras — Net Sell >Rp1 Triliun**
-Asing tercatat menjual bersih lebih dari Rp1 triliun hari ini, menjadikan total pelemahan asing dalam sepekan sangat signifikan. Saham TPIA, EMAS, BBRI, dan ASII paling banyak dilepas. Namun, BBCA justru diborong asing Rp96 miliar — indikasi bahwa investor asing tetap selektif memilih saham berkualitas di tengah koreksi. Rupiah ikut tertekan hingga Rp18.089/USD, terlemah dalam sepekan.
+**2. Sektor dan Saham**: Sektor Barang Konsumen Primer menjadi satu-satunya yang menonjol (+0,69%) — pola defensif klasik di tengah pelemahan pasar. Saham DWGL (+24,35%) dan AISA (+15,24%) memimpin gainers dengan volume tinggi. Di sisi losers, saham energi (ENRG -8,83%) dan properti (ELTY -8,57%, PAMG -6,35%) menjadi yang paling tertekan. Menariknya, asing tetap memborong BBCA dan TINS di tengah aksi jual massal — indikasi selective buying.
 
-**3. Dua Sisi Katalis Pekan Ini: BI Shock vs Minyak Anjlok**
-Dari sisi positif: harga minyak anjlok 7-8% setelah AS-Iran berdamai sementara dan negosiasi Hormuz berjalan — angin segar buat inflasi dan neraca dagang Indonesia. Pelibatan Danantara dalam KSSK juga jadi sentimen positif struktural. Dari sisi negatif: ketidakpastian kepemimpinan BI, rapat FOMC yang bisa memberi sinyal hawkish, dan kekhawatiran resesi global akibat gejolak perang dan suku bunga tinggi. Properti (-3,25%) dan energi (-1,75%) menjadi sektor paling tertekan. Pekan ini krusial — hasil rapat The Fed Rabu malam akan menentukan arah IHSG selanjutnya.
+**3. Katalis Utama**: Tiga katalis utama mendominasi pergerakan hari ini: (1) Rapat FOMC The Fed yang berlangsung 28-29 Juli dengan opsi kenaikan suku bunga masih di atas meja; (2) Ancaman perang dagang Trump yang kembali memanas, meningkatkan risiko resesi global; (3) Konflik AS-Iran yang rapuh — gencatan senjata masih bisa runtuh, membuat harga minyak volatil. Rupiah yang melemah ke Rp18.109/USD menambah tekanan eksternal.
+
+Proyeksi: Keputusan The Fed pada Kamis dini hari akan menjadi penentu arah IHSG. Jika The Fed dovish (pause/tahan suku bunga), IHSG berpotensi technical rebound ke 6.200-6.300. Jika hawkish (naikkan suku bunga), IHSG berisiko menembus support 6.000. Bursa Asia yang rebound pagi ini memberi harapan, namun kehati-hatian tetap diperlukan.
 
 ---
 
-*Report oleh Supri Spinach | 28 Juli 2026 19:11 WIB*
+*Report oleh Supri Spinach | 2026-07-29_19-08 WIB*
+*Data: Yahoo Finance ^JKSE, HistoricalData (quant_bdm)*
