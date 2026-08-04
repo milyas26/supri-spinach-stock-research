@@ -21,71 +21,90 @@ IHSG ditutup di zona hijau pada Jumat (10/7) setelah bergerak konsisten di terit
 
 ---
 
-## 🏆 Top Gainers — 10 Juli 2026
+## 🏆 Top 10 Gainers — 10 Juli 2026
 
-*Data: BEI, IDX Channel, Kompas, iNews*
+*Data: HistoricalData (quant_bdm) — 10 Juli 2026*
 
-### Opening / Sesi I
+| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
+|---|--------|------|-------|---------|--------|--------|
+| 1 | KOKA | Koka Indonesia | 170 | **+21,43%** | Infrastruktur | 3.5M |
+| 2 | NTBK | Nusatama Berkah | 106 | **+17,78%** | Perindustrian | 9.8M |
+| 3 | DATA | Remala Abadi | 2.310 | **+11,06%** | Infrastruktur | 146K |
+| 4 | DGIK | Nusa Konstruksi Enjiniring | 138 | **+10,40%** | Infrastruktur | 72K |
+| 5 | NANO | Nanotech Indonesia Global | 22 | **+10,00%** | Konsumer Primer | 393K |
+| 6 | LMAX | Lupromax Pelumas Indonesia | 112 | **+9,80%** | Konsumer Non-Primer | 30K |
+| 7 | KREN | Quantum Clovera Investama | 12 | **+9,09%** | Teknologi | 55K |
+| 8 | PIPA | Multi Makmur Lemindo | 124 | **+8,77%** | Perindustrian | 1.5M |
+| 9 | ELSA | Elnusa | 655 | **+8,26%** | Energi | 636K |
+| 10 | AEGS | Anugerah Spareparts Sejahtera | 40 | **+8,11%** | Konsumer Non-Primer | 46K |
 
-| # | Ticker | Change% | Keterangan |
-|---|--------|---------|-----------|
-| 1 | RANS | **+34,12%** | Debut IPO, langsung ARA — saham Raffi Ahmad |
-| 2 | PRDL | — | Prodia Diagnostic Line |
-| 3 | Insight IM | — | Insight Investment Management |
-
-### LQ45 Leaders
-- **ANTM** — pimpin penguatan LQ45 (Kontan)
-- **INCO** — ikut menguat di LQ45
-
-### Sesi I — HRTA Gacor
-- **HRTA** (Hartadinata Abadi) — jadi sorotan di sesi I, saham emas/perhiasan
-- 405 saham naik vs 208 turun di sesi I
-- 8 indeks sektoral menghijau: properti (+1,22%), transportasi (+1,12%), basic materials (+1,09%)
-
-### Penutupan
-- IHSG: 5.924,36 (+0,20%), LQ45: 589,25 (+0,32%)
-- 326 saham menguat, 138 melemah (opening)
-- Nilai transaksi: **Rp 80,46 triliun** (Indopremier)
+*📌 Dominasi small cap — 8 dari 10 top gainers di bawah Rp 500/saham. NTBK paling ramai (9,8M volume). ELSA satu-satunya yang masuk kategori mid-cap, naik 8,26% di tengah rally sektor energi.*
 
 ---
 
-## 🔻 Top Losers — 10 Juli 2026
+## 🔻 Top 10 Losers — 10 Juli 2026
 
-| # | Ticker | Keterangan |
-|---|--------|-----------|
-| 1 | BAPA | Bekasi Asri Pemula |
-| 2 | JELI | Niramas Utama |
-| 3 | Danareksa IM | Danareksa Investment Management |
+*Data: HistoricalData (quant_bdm) — 10 Juli 2026*
 
-*📌 Sektor industri (-0,67%) dan infrastruktur jadi pemberat. Tekanan dari sektor industri karena profit-taking pasca rally mingguan.*
+| # | Ticker | Nama | Harga | Change% | Sektor | Volume |
+|---|--------|------|-------|---------|--------|--------|
+| 1 | BAPA | Bekasi Asri Pemula | 282 | **-14,55%** | Properti & Real Estat | 1.7M |
+| 2 | HATM | Habco Trans Maritima | 410 | **-9,69%** | Transportasi & Logistik | 183K |
+| 3 | JAST | Jasnita Telekomindo | 86 | **-8,51%** | Infrastruktur | 898K |
+| 4 | AHAP | Asuransi Harta Aman Pratama | 95 | **-7,77%** | Keuangan | 1.7M |
+| 5 | ASLI | Asri Karya Lestari | 184 | **-7,54%** | Infrastruktur | 107K |
+| 6 | WOOD | Integra Indocabinet | 186 | **-5,58%** | Konsumer Non-Primer | 199K |
+| 7 | ARTO | Bank Jago | 1.135 | **-5,42%** | Keuangan | 124K |
+| 8 | PJHB | Pelayaran Jaya Hidup Baru | 158 | **-4,82%** | Transportasi & Logistik | 59K |
+| 9 | VKTR | VKTR Teknologi Mobilitas | 520 | **-4,59%** | Konsumer Non-Primer | 180K |
+| 10 | WINR | Winner Nusantara Jaya | 21 | **-4,55%** | Properti & Real Estat | 129K |
+
+*📌 BAPA (properti) paling dalam -14,55%. ARTO (Bank Jago) & VKTR jadi loser populer. AHAP (asuransi) di-jual asing -1,1 M net foreign.*
+
+---
+
+## 🌍 Net Foreign Flow — 10 Juli 2026
+
+*Data: HistoricalData (quant_bdm)*
+
+- **Net Foreign**: **-278,53 Miliar** (net sell)
+- **Total Value**: **Rp 6,96 Triliun**
+- **Rata-rata Perubahan**: +0,47%
+- **Total Ticker**: 499
+
+**Net Foreign per Sektor:**
+| Sektor | Net Foreign (M) |
+|--------|-----------------|
+| ⛽ Energi | **+53,45** |
+| 🥦 Konsumer Primer | **+19,57** |
+| 💻 Teknologi | **+14,90** |
+| 💰 Keuangan | **-171,43** |
+| 🔌 Infrastruktur | **-85,94** |
+| 📦 Barang Baku | **-66,27** |
+
+*📌 Asing net sell Rp 278 M — tekanan utama di sektor keuangan (-171 M). Tapi menariknya asing borong saham energi (+53 M) dan teknologi (+15 M) di tengah net sell.*
 
 ---
 
 ## 🏭 Sektor Performance — 10 Juli 2026
 
-*Data: BEI, Media Indonesia, Indopremier*
+*Data: HistoricalData (quant_bdm)*
 
-| Sektor | Change% | Arah |
-|--------|---------|------|
-| ⛽ Energi | **+0,97%** | 📈 |
-| 📦 Barang Baku | **+0,56%** | 📈 |
-| 🏠 Properti | **+0,56%** | 📈 |
-| 🔌 Infrastruktur | — | 📉 |
-| 🏭 Perindustrian | **-0,67%** | 📉 Terburuk |
-| 🏥 Kesehatan | — | 📉 |
+| Sektor | Jumlah | Rata-rata Change% | Net Foreign (M) |
+|--------|--------|-------------------|-----------------|
+| 🏭 Perindustrian | 30 | **+1,09%** | -0,78 |
+| 🔌 Infrastruktur | 42 | **+1,04%** | -85,94 |
+| 💻 Teknologi | 22 | **+0,70%** | +14,90 |
+| 📦 Barang Baku | 52 | **+0,65%** | -66,27 |
+| ⛽ Energi | 61 | **+0,64%** | +53,45 |
+| 🛍️ Konsumer Non-Primer | 84 | **+0,44%** | -26,91 |
+| 🥦 Konsumer Primer | 71 | **+0,41%** | +19,57 |
+| 🏠 Properti & Real Estat | 41 | **+0,22%** | -5,22 |
+| 💰 Keuangan | 50 | **+0,09%** | -171,43 |
+| 💊 Kesehatan | 21 | **+0,04%** | -8,03 |
+| 🚗 Transportasi & Logistik | 25 | **-0,49%** | -1,87 |
 
-*📌 7 sektor naik, 4 turun. Energi paling kuat (+0,97%), industri paling lemah (-0,67%). Properti naik 1,22% di sesi I sebelum profit-taking sore.*
-
----
-
-## 🌍 Net Foreign Flow
-
-> ⚠️ Database unreachable. Data dari laporan berita:
-
-- **Kamis (9/7)**: Asing masih **net sell** berlanjut (Kontan: "asing masih melanjutkan net sell hingga Kamis")
-- **Jumat (10/7)**: Data closing belum tersedia
-- **Rupiah**: Menguat — "ikut perkasa di akhir pekan" (Viva/Antara), didorong pelemahan indeks dolar AS
-- **Nilai transaksi**: Rp 80,46 triliun (volume 179,7 juta lot) — sangat tinggi untuk IHSG di 5.900-an
+*📌 10 dari 11 sektor hijau — cuma transportasi yang merah. Perindustrian & infrastruktur paling kuat, tapi keuangan (yang ditekan asing) paling lemah dari yang hijau.*
 
 ---
 
@@ -102,10 +121,6 @@ IHSG ditutup di zona hijau pada Jumat (10/7) setelah bergerak konsisten di terit
 ### RANS Debut IPO, Langsung ARA +34%
 > PT Rans Entertainment Indonesia Tbk (RANS) milik Raffi Ahmad debut di BEI dengan lonjakan 34,12% langsung sentuh ARA. Jadi top gainers di sesi pembukaan.
 > 📎 Sumber: [IDN Times](https://www.idntimes.com/business/economy/ihsg-menguat-pagi-ini-saham-rans-melesat-34-persen-00-gshdq-pbs0sv) | [IDX Channel](https://www.idxchannel.com/market-news/ihsg-hari-ini-dibuka-menguat-ke-5936-rans-langsung-top-gainers)
-
-### Saham HRTA Gacor, Properti Pimpin Penguatan Sesi I
-> Sesi I IHSG ditutup naik 0,10% ke 5.918 dengan 405 saham naik. Sektor properti (+1,22%) dan transportasi (+1,12%) memimpin. HRTA menjadi salah satu saham yang gacor.
-> 📎 Sumber: [Kompas](https://money.kompas.com/read/2026/07/10/134625126/ihsg-sesi-i-10-juli-2026-naik-603-poin-ke-591847-saham-hrta-gacor)
 
 ### Pengusaha Optimistis IHSG Kembali ke 9.000 dalam 3 Tahun
 > Boy Thohir dan Anindya Bakrie optimistis IHSG bisa kembali ke level 9.000, didukung fundamental emiten yang solid dan makroekonomi Indonesia yang tetap tumbuh.
@@ -155,14 +170,16 @@ IHSG ditutup di zona hijau pada Jumat (10/7) setelah bergerak konsisten di terit
 
 ## 📝 Rangkuman
 
-**Pasar hari ini (10/7)** — IHSG ditutup menguat tipis +0,20% ke 5.924 setelah bergerak konsisten hijau sejak pembukaan. Sesi I: 405 saham naik, properti & transportasi leading. Sesi II: profit-taking tapi tetap tutup positif. Nilai transaksi Rp 80,46 T — sangat tinggi di level 5.900-an menandakan partisipasi institusi besar. WoW: +0,14% nyaris flat — IHSG belum bisa breakout 6.000.
+**Pasar hari ini (10/7)** — IHSG ditutup menguat tipis +0,20% ke 5.924 setelah bergerak konsisten hijau sejak pembukaan. Dari 499 ticker, rata-rata naik +0,47% — 10 dari 11 sektor hijau, cuma transportasi yang merah. Nilai transaksi Rp 6,96 T. WoW: +0,14% nyaris flat — IHSG belum bisa breakout 6.000.
 
-**Katalis utama** — Pasar mengabaikan **eskalasi perang AS-Iran** (90 fasilitas militer Iran dihantam, Hormuz lumpuh, minyak +6% mingguan) dan justru fokus pada **rally semikonduktor Asia** (KOSPI +2,4%, SK Hynix +238% YTD). Sentimen risk-on dari AI/tech lebih dominan daripada geopolitik. Di domestik: **B50 diluncurkan Prabowo** (hemat devisa Rp170T/tahun), tapi **konsumsi domestik melorot** (IKK kontraksi 3 bulan, ritel masih merah). **RANS debut IPO ARA +34%** — sentimen positif small cap.
+**Gainers/Losers** — Top gainers didominasi small cap murah (8 dari 10 di bawah Rp 500): KOKA +21,43%, NTBK +17,78%. Losers: BAPA -14,55%, HATM -9,69%, ARTO & VKTR jadi saham populer yang dijual. ELSA naik 8,26% sejalan rally energi.
 
-**Headwinds** — IMF warning: ekonomi global 2026 cuma 3%, 4 risiko besar. The Fed bentuk gugus tugas → higher-for-longer, carry trade ke RI mengecil. Asing masih net sell berlanjut. Konsumsi domestik jadi lampu kuning.
+**Net foreign** — Asing net sell **Rp 278 M** dengan tekanan terbesar di sektor keuangan (-171 M) — konsisten dengan ARTO, AHAP yang merah. Tapi asing beli bersih di energi (+53 M) & teknologi (+15 M) — rotasi ke sektor komoditas/tech.
+
+**Katalis utama** — Pasar mengabaikan eskalasi perang AS-Iran (90 fasilitas militer Iran dihantam, Hormuz lumpuh, minyak +6% mingguan) dan fokus pada rally semikonduktor Asia (KOSPI +2,4%, SK Hynix +238% YTD). Di domestik: B50 diluncurkan Prabowo (hemat devisa Rp170T/tahun), tapi konsumsi domestik melorot (IKK kontraksi 3 bulan).
 
 **Proyeksi** — Support 5.850, resistance 5.950. Kalo breakout dan sustain di atas 6.000 dengan volume, konfirmasi reversal. B50 + potensi commodity rally dari konflik Hormuz bisa jadi katalis positif buat emiten sawit & tambang (ANTM, INCO, CPO). Tapi konsumsi domestik + Fed hawkish jadi batasan upside.
 
 ---
 
-*Report oleh Supri Spinach | 10 Juli 2026 19:23 WIB*
+*Report oleh Supri Spinach | 10 Juli 2026 (regenerate dengan data DB)*
